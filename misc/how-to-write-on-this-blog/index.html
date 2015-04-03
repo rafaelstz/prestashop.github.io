@@ -58,7 +58,7 @@
       <header class="post-header">
         <h1 class="post-title">How to write on this blog</h1>
         
-          <h3 class="post-subtitle">or: How we try to ensure that only developers can write on the devblog</h3>
+          <h3 class="post-subtitle">or: How we tried to ensure that only developers could write on the devblog :)</h3>
         
       </header>
 
@@ -118,49 +118,50 @@
     <div class="col-md-10">
 
       <article class="post-content">
-        <p>When we started talking about a dev blog, we thought about who can write, what we want to talk about, 
-who’s going to review the articles…</p>
+        <p>When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about, 
+who was going to review the articles…</p>
 
-<p>Technically, WordPress was the first solution we reviewed 
-but after giving it more thought we realized it would be too much hassle to maintain it: 
-plugin updates, core updates, database backups, security issues etc.</p>
+<p>Technically, WordPress was the first solution we reviewed but after giving it more thought we realized it would be too much of a hassle to maintain: plugin updates, core updates, database backups, security issues, etc.</p>
 
-<p>We then came up with a better idea: <a href="http://jekyllrb.com/">Jekyll</a>. Jekyll uses a set of configuration and data files, 
-articles, and resources (CSS, images, font,…) to generate a <strong>fully static website, made only of plain HTML files</strong>. 
-Since you can version everything with <em>Git</em> and you don’t have to set any database, it seems like the easiest ‘CMS’.</p>
-
-<p>This blog is also meant to become the ‘place to be’ for the PrestaShop tech community and Jekyll is definitely the 
-best option out there. <strong>You can actually make a <em>Pull Request</em> on GitHub to edit any content.</strong></p>
+<p>We then came up with a better idea: <a href="http://jekyllrb.com/">Jekyll</a>. </p>
 
 <p><img src="/assets/images/2015/04/jekyll.png" alt="Jekyll Logo" /></p>
 
+<p>Jekyll uses a set of configuration and data files, article files (written in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> or pretty much <a href="http://jekyllrb.com/docs/posts/">any other format</a>), and resources (CSS, images, fonts, etc.) to generate a <strong>fully static website, made only of plain HTML files</strong>.
+Since you can version everything with <em>Git</em> and you don’t have to set up any database, it seems like the easiest ‘CMS’. So that’s what we’re reading now: plain HTML generated from Markdown markup through Jekyll!</p>
+
+<p>This blog is also meant to become the ‘place to be’ for the PrestaShop tech community, and Jekyll is definitely the 
+best option out there – and <strong>you can actually make a <em>Pull Request</em> on GitHub to edit any content.</strong> Actually, <a href="https://pages.github.com/">GitHub’s Pages</a> features is powered by Jekyll too, so we’re not really choosing in the blind here :)</p>
+
 <h2 id="tldr">TL;DR</h2>
 
-<p>You don’t have to read all the details, if you want to write an article you can simply follow those steps:</p>
+<p>You don’t have to read all the details below: if you want to write an article right away, you can simply follow those steps:</p>
 
 <ol>
-  <li>Fork <a href="https://github.com/PrestaShop/build.prestashop.com">the repo</a> (see GitHub doc)</li>
+  <li>Fork <a href="https://github.com/PrestaShop/build.prestashop.com">the repo</a> (see <a href="https://help.github.com/articles/fork-a-repo/">GitHub doc</a>)</li>
   <li>Download <a href="https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown" download="2015-12-31-demo-post.markdown">this sample file</a>.</li>
-  <li>Rename it according to the date and your topic <strong>(NOTE: date in the file name is mandatory)</strong>.</li>
+  <li>Rename it according to the date and your topic <strong>(NOTE: the date in the file name is mandatory)</strong>.</li>
   <li>Move it to the right folder: <code>_posts/news</code> for a blog post, <code>_howtos/CATEGORY</code> for a tutorial.</li>
   <li>Write it.</li>
-  <li>Make a Pull-Request.</li>
+  <li>Make a <a href="https://help.github.com/articles/creating-a-pull-request/">Pull-Request</a> on the initial project you forked.</li>
 </ol>
 
-<p class="text-center"><a href="https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown" class="btn btn-success" download="2015-12-31-demo-post.markdown">Download demo article</a></p>
+<p class="text-center"><a href="https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown" class="btn btn-success" download="2015-12-31-demo-post.markdown">Download a demo article</a></p>
 
-<p>You can even get GitHub to do most of the work for you for you (see video below).</p>
+<p>You can even get GitHub to do most of the work for you for you: see the video below.</p>
 
 <iframe width="797" height="598" src="https://www.youtube.com/embed/vU4pj0-3Odc?rel=0" frameborder="0" allowfullscreen=""></iframe>
 
-<h2 id="set-everything-up-locally">Set everything up locally</h2>
+<h2 id="the-whole-">The whole #!</h2>
 
-<p>You don’t have to do that, but let’s be honest, when you write your article you want to preview how it will render.</p>
+<p>You only need this section if you intend to set everything up locally. You don’t have to do that, but let’s be honest, when you write your article, you want to preview how it will render, before sending it over to us :)</p>
 
-<h3 id="install-required-software">Install required software</h3>
+<p>Still, this is pretty much developer-targetted, so beware: technical stuffs ahead!</p>
 
-<p>In order to get the blog working you will need a few (command line) tools. I’ll let you find out how to do so
-on their website, according to your OS.</p>
+<h3 id="installing-the-required-software">Installing the required software</h3>
+
+<p>In order to get the blog working locally, you will need a few (command line) tools. I’ll let you find out how to do so
+on their respective websites, according to your OS.</p>
 
 <ul>
   <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby</a> (I use Ruby 2.0.0)</li>
@@ -169,40 +170,39 @@ on their website, according to your OS.</p>
   <li><a href="http://bundler.io/">Bundler</a></li>
 </ul>
 
-<h3 id="fork-and-clone">Fork and clone</h3>
+<p>Download them, install them, then come back here for more! Of course you can also read their doc and get acquainted about the awesome NPM, Bower and Bundler tools – they might be of great use for your other web projects!</p>
 
-<p>Next, fork the repo into your GitHub account then clone it on your local machine.
-If you don’t know how to do this, please <a href="https://help.github.com/articles/fork-a-repo/">check out the GitHub Help</a>.</p>
+<h3 id="forking-and-cloning">Forking and cloning</h3>
 
-<h3 id="install-dependencies-and-build-jekyll">Install dependencies and build Jekyll</h3>
+<p>Next, <a href="https://help.github.com/articles/fork-a-repo/">fork</a> <a href="https://github.com/PrestaShop/build.prestashop.com">the build.prestashop.com repo</a> into your GitHub account, then <a href="https://help.github.com/articles/fetching-a-remote/">clone it</a> on your local machine.</p>
 
-<p><em>Bundler</em> will install Jekyll and all the ruby dependencies. Then <em>Bower</em> will install all the front-end required libraries
-like ‘bootstrap-sass’ or ‘fontawesome’. Finally we use bundler to build jekyll and watch any file change.</p>
+<h3 id="installing-dependencies-and-building-jekyll">Installing dependencies and building Jekyll</h3>
+
+<p><em>Bundler</em> will install Jekyll and all the Ruby dependencies. Then <em>Bower</em> will install all the front-end required libraries, such as ‘bootstrap-sass’ and ‘fontawesome’. Finally, we use Bundler to build Jekyll and <em>watch</em> any file change.</p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">bundle install
 bower install
 bundle <span class="nb">exec </span>jekyll build --watch</code></pre></div>
 
 <div class="alert alert-note" role="alert"><h4><i class="fa fa-file-text-o"></i> Note</h4>
-<p>When you’re using the <code>--watch</code> option, it’s only watching content and styles. So if you are changing
-any plugin or any line in your <code>_config.yml</code>, you’ll have to quit (<code>ctrl+C</code>) and rebuild.</p>
+<p>When you’re using the <code>--watch</code> option, it only watches content and styles. So if you are changing any plugin or any line in your <code>_config.yml</code>, you’ll have to quit (<code>ctrl+C</code>) and rebuild.</p>
 </div>
 
-<h2 id="create-a-new-article">Create a new article</h2>
+<h2 id="creating-your-article">Creating your article</h2>
 
 <h3 id="directory-structure">Directory structure</h3>
 
-<p>As a writer, you are interested in <strong>Assets</strong>, <strong>_howtos</strong> and <strong>news</strong>.</p>
+<p>As a contributing writer on the Build blog, you are mostly interested in <strong>/assets</strong>, <strong>/_howtos</strong> and <strong>/news</strong> folders.</p>
 
 <p><img src="/assets/images/2015/04/directory_structure.png" alt="Jekyll Logo" /></p>
 
 <h3 id="article-directories">Article directories</h3>
 
-<p>With Jekyll, the location of your files matter. On this blog we have two kinds of articles:</p>
+<p>With Jekyll, the location of your files matter. On this blog, we have two kinds of articles:</p>
 
 <ul>
-  <li><strong>News</strong> : They live in the <code>news/_posts</code> folder and they show up on the home page.</li>
-  <li><strong>How-Tos</strong> : They live in the <code>_howtos</code> folder and are sorted by topic. These posts are displayed on the How-Tos 
+  <li><strong>News</strong>: They live in the <code>news/_posts</code> folder and they show up on the home page.</li>
+  <li><strong>How-Tos</strong>: They live in the <code>_howtos</code> folder and are sorted by topic. These posts are displayed on the How-Tos 
 page and they are sorted by topic.</li>
 </ul>
 
@@ -210,19 +210,21 @@ page and they are sorted by topic.</li>
 <p>If you need to create a new topic, create a subfolder in <code>_howtos</code> and edit the <code>page_collections</code> configuration in <code>config.yml</code>.</p>
 
 <p>The topics are displayed in the same order as shown in the <code>_config.yml</code> file.</p>
+
+<p>Please ask us before creating a brand new topic!</p>
 </div>
 
 <h3 id="file-name">File name</h3>
 
-<p>Any article of any type has to be in a file named by following the pattern below. If it doesn’t, Jekyll won’t recognize it.</p>
+<p>Any article of any type has to be in a file named using the following the time-based pattern. Make sure to follow that convention: if you do not, Jekyll won’t recognize your file.</p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">YYYY-MM-DD-some-hyphen-separated-name.markdown</code></pre></div>
 
 <h3 id="file-header-yaml-front-matter">File header (<em>YAML Front Matter</em>)</h3>
 
-<p>Jekyll makes it really easy to set your post meta. The top of your file has to include some information like ‘author’ or ‘layout’.</p>
+<p>Jekyll makes it really easy to set your post meta information. The top of your file has to include some information like ‘author’ or ‘layout’, <a href="http://jekyllrb.com/docs/frontmatter/">in YAML format</a>.</p>
 
-<p>Copy and paste the following line at the top of your new file and change the relevant values.</p>
+<p>Copy and paste the following lines at the top of your new file, and customize the relevant values.</p>
 
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
 <span class="l-Scalar-Plain">layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">post</span>
@@ -235,15 +237,15 @@ page and they are sorted by topic.</li>
 <span class="l-Scalar-Plain">published</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span>
 <span class="nn">---</span></code></pre></div>
 
-<p>I assume you will understand what you are supposed to change. <em>Icon</em> can be any icon from FontAwesome.</p>
+<p>I assume you will understand what you are supposed to change. <em>Icon</em> can be <a href="http://fortawesome.github.io/Font-Awesome/icons/">any icon from FontAwesome</a>.</p>
 
 <div class="alert alert-important" role="alert"><h4><i class="fa fa-exclamation-triangle"></i> Important</h4>
-<p>Articles must be submitted with the published setting set to false, we will only publish it after review.</p>
+<p>Articles must be submitted with the ‘published’ setting set to false. We will only publish it after review.</p>
 </div>
 
-<h2 id="make-sure-youre-an-author">Make sure you’re an author</h2>
+<h2 id="making-sure-youre-an-author">Making sure you’re an author</h2>
 
-<p>If it’s your first article you will have to add yourself to the author list. Open up the <code>_data/authors.yml</code> file and add your personal details. The first line is your ID and that’s what you have to use in your article header.</p>
+<p>If this is your first article, you will have to add yourself to the author list. Open up the <code>_data/authors.yml</code> file and add your personal details. The first line is your ID and that’s what you have to use in your article header.</p>
 
 <p>Now fill up as much info as you can. <code>display_name</code> and <code>avatar</code> are mandatory.</p>
 
@@ -258,14 +260,14 @@ page and they are sorted by topic.</li>
     <span class="l-Scalar-Plain">github</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">julienbourdeau</span>
     <span class="l-Scalar-Plain">website</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://www.example.com</span>
     <span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="p-Indicator">&gt;</span>
-        <span class="no">This is a description of the author with details about what he does really </span>
+        <span class="no">This is a description of the author with details about what he really does</span>
         <span class="no">and the cool thing is: it&#39;s multiline.</span></code></pre></div>
 
-<h2 id="write-your-article">Write your article</h2>
+<h2 id="writing-your-article">Writing your article</h2>
 
 <h3 id="markdown--liquid">Markdown &amp; Liquid</h3>
 
-<p>All article must be written using Markdown syntax. With Jekyll we use <a href="http://kramdown.gettalong.org/index.html">Kramdown</a> as a markdown converter and the <a href="https://github.com/Shopify/liquid">Liquid template engine</a></p>
+<p>All article must be written using the Markdown syntax. With Jekyll, we use <a href="http://kramdown.gettalong.org/index.html">Kramdown</a> as a markdown converter, and the <a href="https://github.com/Shopify/liquid">Liquid template engine</a>.</p>
 
 <p>If you are struggling to get the result you want, you can still use pure HTML.</p>
 
@@ -277,13 +279,15 @@ page and they are sorted by topic.</li>
   <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">A good Markdown CheetSheat</a></li>
 </ul>
 
-<p>The next part will describe some important tricks to write a good article.</p>
+<h2 id="tips-and-tricks">Tips and tricks</h2>
+
+<p>This part describes some important tricks to write a good article.</p>
 
 <h3 id="images">Images</h3>
 
-<p>Images have to be <code>assets/images/YYYY/MM</code> folder, find or create the subdirectory according to the date of the article.</p>
+<p>Images have to be in the <code>assets/images/YYYY/MM</code> folder (with a custom YYYY and MM, of course): find or create the subdirectory according to the date of the article.</p>
 
-<p>Using markdown your image should look like this:</p>
+<p>Using Markdown, your image should look like this:</p>
 
 <div class="highlight"><pre><code class="language-liquid" data-lang="liquid">![Jekyll Logo](/assets/images/2015/04/jekyll.png)</code></pre></div>
 
@@ -291,14 +295,13 @@ page and they are sorted by topic.</li>
 
 <h4 id="inline-code">Inline code</h4>
 
-<p>When you need to refer to a <code>CSS property</code>, a <code>specific file</code>, a <code>function name</code> or anything similar, use the following syntax to highlight it in your text.</p>
+<p>When you need to refer to a <code>CSS property</code>, a <code>specific file</code>, a <code>function name</code> or anything similar, use the following syntax to highlight it in your text:</p>
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">`define(&#39;_PS_DEV_MODE_&#39;)` in file  `config.inc.php` or  `Tools::getValue()`</code></pre></div>
 
-<h4 id="block-code">Block code</h4>
+<h4 id="block-of-code">Block of code</h4>
 
-<p>When it comes to serious code block, it’s always better to use syntax highlighting, with Jekyll it works a bit differently compared to GitHub. 
-You will have to use a liquid tag: <code>{% highlight LANG OPT_1 OPT_2 %}</code></p>
+<p>When it comes to serious code blocks, it’s always better to use syntax highlighting. With Jekyll, it works a bit differently compared to GitHub (because GitHub uses their own <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub-flavored Markdown</a>): you have to use a <a href="https://github.com/Shopify/liquid">Liquid tag</a>: <code>{% highlight LANG OPT_1 OPT_2 %}</code></p>
 
 <pre><code>{% highlight php startinline=true linenos %}
 class IndexControllerCore extends FrontController
@@ -324,22 +327,22 @@ class IndexControllerCore extends FrontController
   <tbody>
     <tr>
       <td><code>LANG</code></td>
-      <td><strong>Mandatory</strong>. Can take almost any language: html, php, ruby, javascript,…</td>
+      <td><strong>Mandatory</strong>. Can take almost any language: html, php, ruby, javascript, etc.</td>
     </tr>
     <tr>
       <td><code>startinline=true</code></td>
-      <td><strong>Optional</strong>. Only used for php, this way you don’t have to write <code>&lt;?php</code> and  <code>?&gt;</code>. If you are mixing up PHP and HTML don’t set this parameter.</td>
+      <td><strong>Optional</strong>. Only used for PHP, this way you don’t have to write <code>&lt;?php</code> and  <code>?&gt;</code>. If you are mixing up PHP and HTML, don’t set this parameter.</td>
     </tr>
     <tr>
       <td><code>lineos</code></td>
-      <td><strong>Optional</strong>. Display line number. Default: false</td>
+      <td><strong>Optional</strong>. Display line number. Default: false.</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="embed-gist">Embed gist</h4>
+<h4 id="embed-a-github-gist">Embed a GitHub gist</h4>
 
-<p>If your code will or may be updated you can easily embed a gist using the gist liquid tag.</p>
+<p>If your code will or may be updated, you can easily embed a a <a href="https://gist.github.com/">GitHub gist</a> using the Liquid’s <code>gist</code> tag.</p>
 
 <div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">gist</span><span class="w"> </span>YOUR_GIST_USER_ID/YOUR_GIST_ID<span class="w"> </span><span class="p">%}</span></code></pre></div>
 
@@ -352,7 +355,7 @@ class IndexControllerCore extends FrontController
 
 <h3 id="alerts">Alerts</h3>
 
-<p>If you want to highlight some content, we have few type available, they are similar to alerts from Bootstrap.</p>
+<p>If you want to highlight some content (hint, note, tip, alert, etc.), we have few types of highlighting available. They are similar to <a href="http://getbootstrap.com/components/#alerts">alerts from Bootstrap</a>.</p>
 
 <div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">alert</span><span class="w"> </span>TYPE<span class="w">  </span>SHOW_TITLE<span class="w"> </span><span class="p">%}</span>
 You content goes here. **Markdown** _is_ `supported`.
@@ -368,7 +371,7 @@ You content goes here. **Markdown** _is_ `supported`.
   <tbody>
     <tr>
       <td><code>TYPE</code></td>
-      <td><strong>Mandatory</strong>. Define the type of hint: note/info/important/tip</td>
+      <td><strong>Mandatory</strong>. Define the type of hint: note/info/important/tip.</td>
     </tr>
     <tr>
       <td><code>SHOW_TITLE</code></td>
@@ -376,7 +379,6 @@ You content goes here. **Markdown** _is_ `supported`.
     </tr>
   </tbody>
 </table>
-
 
       </article>
 
