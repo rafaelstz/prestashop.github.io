@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PrestaShop Developers&#39; blog</title>
+    <description>Official blog for PrestaShop development straight from the core dev team.</description>
+    <link>http://prestashop.github.io/build.prestashop.com/</link>
+    <atom:link href="http://prestashop.github.io/build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 01 Apr 2015 17:16:19 +0200</pubDate>
+    <lastBuildDate>Wed, 01 Apr 2015 17:16:19 +0200</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Welcome to build.prestashop.com!</title>
+        <description>&lt;p&gt;Welcome to build.prestashop.com!&lt;/p&gt;
+
+&lt;p&gt;Brought to you by PrestaShop Core team, build.prestashop.com gives you insights of PrestaShop ongoing developments. 
+We’re here to share with you what we’re working on, and what developing for PrestaShop means for you, as a developer from the PrestaShop community.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-it-about-exactly&quot;&gt;What is it about exactly?&lt;/h3&gt;
+
+&lt;p&gt;To make it short, this blog is here to &lt;strong&gt;keep you updated with PrestaShop latest technical evolutions&lt;/strong&gt;, by:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Communicating on the upcoming code updates&lt;/li&gt;
+  &lt;li&gt;Sharing the ongoing projects and developments&lt;/li&gt;
+  &lt;li&gt;Telling you about our latest news as a dev team&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;what-is-there-for-you&quot;&gt;What is there for you?&lt;/h3&gt;
+
+&lt;p&gt;&lt;i class=&quot;fa fa-chevron-circle-right&quot;&gt;&lt;/i&gt; We’ve already started with the &lt;strong&gt;Core weekly&lt;/strong&gt; section: each week you’ll find the highlights of what happened in and around PrestaShop’s Core.&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;fa fa-chevron-circle-right&quot;&gt;&lt;/i&gt;  If a new method or feature requires some in-depth explanations, we’ll provide you with detailed &lt;strong&gt;how-tos&lt;/strong&gt; (don’t forget you can also check the [Developer Guide] (http://doc.prestashop.com/display/PS16/Developer+Guide)).&lt;/p&gt;
+
+&lt;p&gt;&lt;i class=&quot;fa fa-chevron-circle-right&quot;&gt;&lt;/i&gt;  If you’ve submitted a massive [pull-request on GitHub] (https://github.com/PrestaShop/PrestaShop), you might want to &lt;strong&gt;present your PR&lt;/strong&gt; to the community: what it brings, the choices you’ve made, how it impacts the Core. Here is the place to let people know about it! &lt;/p&gt;
+
+&lt;p&gt;We’re an open-source project and we want to keep growing with you: see how [you can contribute] (https://prestashop.github.io/build.prestashop.com/misc/how-to-write-on-this-blog/) to build.prestashop.com.&lt;/p&gt;
+
+&lt;p&gt;If there’s anything else you’d like to know or if you have some more ideas for this blog, don’t hesitate to comment!&lt;/p&gt;
+
+&lt;p&gt;Happy coding!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 Mar 2015 13:12:00 +0200</pubDate>
+        <link>http://prestashop.github.io/build.prestashop.com/news/welcome/</link>
+        <guid isPermaLink="true">http://prestashop.github.io/build.prestashop.com/news/welcome/</guid>
+        
+        <category>news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>PrestaShop Core Weekly - Week 10</title>
+        <description>&lt;p&gt;Hi everyone, and welcome to the second edition of the PrestaShop Core Weekly post, focusing on the activity from March 2nd to March 8th of 2015.
+As last week’s Core Weekly, I’ll highlight some of the more important happenings in and around the Core of PrestaShop.&lt;/p&gt;
+
+&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
+
+&lt;p&gt;Last week saw the release of &lt;a href=&quot;https://www.prestashop.com/forums/topic/423651-new-release-prestashop-16014/&quot;&gt;version 1.6.0.14&lt;/a&gt;, right after a big week which saw two releases on two consecutive days, &lt;a href=&quot;https://www.prestashop.com/forums/topic/428304-prestashop-core-weekly-week-10/&quot;&gt;1.6.0.12 and 1.6.0.13&lt;/a&gt;. As you can see, the PrestaShop team is willing to go the extra mile to make sure that the user have the best e-commerce software in the industry, and are not willing to compromise, even if it means pushing a new version because of newfound blocker bug.
+&lt;a href=&quot;https://www.prestashop.com/en/developers-versions/changelog/1.6.0.14&quot;&gt;See the (short) changelog for 1.6.0.14&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
+
+&lt;p&gt;Now, onto the past week, starting from Monday, March 2nd to Sunday, March 8th.&lt;/p&gt;
+
+&lt;h3 id=&quot;notable-accepted-pull-requests&quot;&gt;Notable accepted pull requests:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2567&quot;&gt;2567&lt;/a&gt;: PHPDocs + Code formatting + Refractoring for CategoryController. Thank you gskema!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2547&quot;&gt;2547&lt;/a&gt;: FO: re-open customer thread from history page. Thanks Axome!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2544&quot;&gt;2544&lt;/a&gt;: Project: Huge work on code standardization. Thanks PrestaEdit!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Find all PRs closed last week &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-03-02+is%3Aclosed&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;notable-closed-forge-tickets&quot;&gt;Notable closed Forge tickets:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4733&quot;&gt;PSCSX-4733&lt;/a&gt;: threads statuses could not be translated&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4857&quot;&gt;PSCSX-4857&lt;/a&gt;: Wrong product url translation&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4853&quot;&gt;PSCSX-4853&lt;/a&gt;: classes/productsale.php crash&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4850&quot;&gt;PSCSX-4850&lt;/a&gt;: employee permissions: employee has no access to state in addresses when Localization -&amp;gt; state is not selected&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4816&quot;&gt;PSCSX-4816&lt;/a&gt;: Property Carrier-&amp;gt;name is not valid causes multiple bugs&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4791&quot;&gt;PSCSX-4791&lt;/a&gt;: Unable to add stock (classic system) after disabling advanced stock&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Find all Forge tickets closed last week here: &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4775?jql=project%20%3D%20PSCSX%20AND%20status%20in%20%28Resolved%2C%20Closed%29%20AND%20resolution%20in%20%28Fixed%2C%20Done%29%20AND%20resolved%20%3E%3D%202015-03-02%20AND%20resolved%20%3C%3D%202015-03-08%20ORDER%20BY%20updated%20DESC&quot;&gt;click here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;notable-commits-to-the-16-branch&quot;&gt;Notable commits to the 1.6 branch:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Modules names should be lowercase &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/e501e7fecb8d7f1fe621458665faf544d9fe9108&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Cleaner tests directory, removed useless files, separated unit tests from integration tests &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/c04c8aeec1a779b07dd4fde42366c3085124e79b&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;IN =&amp;gt; EXISTS optimizations &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/c55f7dfa5303dd485aab8bcb82494667a2591c4e&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Merge remote-tracking branch ‘upstream/1.6’ into 1.6-upstream &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/de73e84bff780a125038070454c3198c1621670f&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it for last week!
+It’s the second edition of Core Weekly, so if you have suggestions or see anything that I missed, please comment!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Mar 2015 15:14:47 +0100</pubDate>
+        <link>http://prestashop.github.io/build.prestashop.com/news/prestashop-core-weekly-week-10/</link>
+        <guid isPermaLink="true">http://prestashop.github.io/build.prestashop.com/news/prestashop-core-weekly-week-10/</guid>
+        
+        <category>core-weekly</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>PrestaShop Core Weekly - Week 9</title>
+        <description>&lt;p&gt;Welcome to the inaugural post relating what has been going on in the development side of PrestaShop!&lt;/p&gt;
+
+&lt;p&gt;I aim to make this a weekly occurrence (as the title implies), in which I’ll highlight some of the more important happenings in and around the Core.
+In short, this is for those who do not visit &lt;a href=&quot;&quot;&gt;https://github.com/PrestaShop/PrestaShop/commits/1.6&lt;/a&gt; and &lt;a href=&quot;&quot;&gt;http://forge.prestashop.com/browse/PSCSX&lt;/a&gt;) on a daily basis :)&lt;/p&gt;
+
+&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
+
+&lt;p&gt;Last week was marked by two milestones:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We passed 30,000 commits on the 1.6 branch! (currently closing on 30,220)&lt;/li&gt;
+  &lt;li&gt;We released version 1.6.0.12 (and hotfix 1.6.0.13), with more than 200 changes and fixes, among which:
+    &lt;ul&gt;
+      &lt;li&gt;Big work on refund and partial refund&lt;/li&gt;
+      &lt;li&gt;New front office classes added to facilitate integration&lt;/li&gt;
+      &lt;li&gt;Ability to override specific controllers with ModuleAdminControler&lt;/li&gt;
+      &lt;li&gt;Display product images on invoices&lt;/li&gt;
+      &lt;li&gt;Installer in French (Quebec) and Portuguese (Portugal)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See the announcement forum post here: &lt;a href=&quot;&quot;&gt;https://www.prestashop.com/forums/topic/418728-prestashop-16013-is-available-for-download&lt;/a&gt;
+And the changelog for v1.6.0.13 is here: &lt;a href=&quot;&quot;&gt;https://www.prestashop.com/en/developers-versions/changelog/1.6.0.13&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;community-day&quot;&gt;Community day&lt;/h2&gt;
+
+&lt;p&gt;Thursday was also an intense day of discussions and exchanges, when a handful of community participants came to the PrestaShop office in Levallois-Perret (France) in order to talk about everything, from themes to modules, updates and module validation, the tax and rounding issues,  code quality and stability.&lt;/p&gt;
+
+&lt;p&gt;Participants where &lt;a href=&quot;https://www.prestashop.com/forums/user/343354-prestarocket/&quot;&gt;prestarocket&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/296243-2fr3/&quot;&gt;2FR3&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/41515-doekia/&quot;&gt;doekia&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/103589-j-danse/&quot;&gt;PrestaEdit&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/16609-atch/&quot;&gt;Atch&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/241780-eolia/&quot;&gt;EoliaHack&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/186884-samy_r/&quot;&gt;SamyRabih&lt;/a&gt; and &lt;a href=&quot;https://www.prestashop.com/forums/user/672955-mediacom87/&quot;&gt;Mediacom87&lt;/a&gt;.
+We plan on having more of those, with more diverse participants, soon!&lt;/p&gt;
+
+&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
+
+&lt;p&gt;Now, onto the past week, starting from Monday, February 23rd to Sunday, March 1st.&lt;/p&gt;
+
+&lt;h3 id=&quot;notable-accepted-pull-requests&quot;&gt;Notable accepted pull requests:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2507&quot;&gt;2507&lt;/a&gt;: Fixes for taxes &amp;amp; rounding errors on invoice. Props djfm.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2509&quot;&gt;2509&lt;/a&gt;: BO : Add $id_cart to Message in PaymentModule::validateOrder(). Props Elitius.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2510&quot;&gt;2510&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2511&quot;&gt;2511&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2512&quot;&gt;2512&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2513&quot;&gt;2513&lt;/a&gt;: Patches fixing delivery time for virtual products. Props Nobodaddy.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2514&quot;&gt;2514&lt;/a&gt;: Employee.getEmployees and Employee.getByEmail get a $active_only parameter. Props dpiquet.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2516&quot;&gt;2516&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2527&quot;&gt;2527&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2539&quot;&gt;2539&lt;/a&gt;: PHPDoc work on FrontController, Db, Context and many other classes. Props gskema.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2525&quot;&gt;2525&lt;/a&gt;: Fixed free shipping display on invoices. Props djfm.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2528&quot;&gt;2528&lt;/a&gt;: Fixed function return value in write context in AdminWarehousesController.php. Props guestisp.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Find all PRs closed last week &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-03-02+is%3Aclosed&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;notable-closed-forge-tickets&quot;&gt;Notable closed Forge tickets:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4773&quot;&gt;PSCSX-4773&lt;/a&gt;: override class installation&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4488&quot;&gt;PSCSX-4488&lt;/a&gt;: Blockcart cover image with attributes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4627&quot;&gt;PSCSX-4627&lt;/a&gt;: Administration Themes : Can’t install theme from directory&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4738&quot;&gt;PSCSX-4738&lt;/a&gt;: Copy and edit product disables available for order&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4646&quot;&gt;PSCSX-4646&lt;/a&gt;: after update quantity product is active in all stores&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4109&quot;&gt;PSCSX-4109&lt;/a&gt;: Module installation issue with multistore&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4746&quot;&gt;PSCSX-4746&lt;/a&gt;: CLONE - Can Not Remove Stock in Advanced Stock Manager&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4538&quot;&gt;PSCSX-4538&lt;/a&gt;: Unexcepted HTML entities in CSV export from stock instant state&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Find all Forge tickets closed last week here: &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4775?jql=project%20%3D%20PSCSX%20AND%20status%20in%20%28Resolved%2C%20Closed%29%20AND%20resolution%20in%20%28Fixed%2C%20Done%29%20AND%20resolved%20%3E%3D%202015-03-02%20AND%20resolved%20%3C%3D%202015-03-08%20ORDER%20BY%20updated%20DESC&quot;&gt;click here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;notable-commits-to-the-16-branch&quot;&gt;Notable commits to the 1.6 branch:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;30000th commit! &lt;a href=&quot;&quot;&gt;https://github.com/PrestaShop/PrestaShop/commit/be9ddb7e6a2f12dddaffe1e9fb098a64c66ecc29&lt;/a&gt; Props gRoussac.&lt;/li&gt;
+  &lt;li&gt;Invoice : Display shipping and wrapping breakdown by rate in case of summed taxes &lt;a href=&quot;&quot;&gt;https://github.com/PrestaShop/PrestaShop/commit/2d02b90f845ab75f21ec516de0d09dddef5390ad&lt;/a&gt; Props djfm.&lt;/li&gt;
+  &lt;li&gt;jocel1 closed bugs #PSCSX-4829 and many others; dramatically improving performances.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it for last week!
+It’s the first edition of Core Weekly, so if you have suggestions or see anything that I missed, please comment!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Mar 2015 18:17:47 +0100</pubDate>
+        <link>http://prestashop.github.io/build.prestashop.com/news/prestashop-core-weekly-week-9/</link>
+        <guid isPermaLink="true">http://prestashop.github.io/build.prestashop.com/news/prestashop-core-weekly-week-9/</guid>
+        
+        <category>core-weekly</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+  </channel>
+</rss>
