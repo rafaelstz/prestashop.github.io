@@ -3,18 +3,18 @@
   <channel>
     <title>PrestaShop Developers&#39; blog</title>
     <description>Official blog for PrestaShop development straight from the core dev team.</description>
-    <link>http://prestashop.github.io/build.prestashop.com/</link>
-    <atom:link href="http://prestashop.github.io/build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 01 Apr 2015 17:16:19 +0200</pubDate>
-    <lastBuildDate>Wed, 01 Apr 2015 17:16:19 +0200</lastBuildDate>
+    <link>http://build.prestashop.com/</link>
+    <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 03 Apr 2015 15:15:47 +0200</pubDate>
+    <lastBuildDate>Fri, 03 Apr 2015 15:15:47 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Welcome to build.prestashop.com!</title>
         <description>&lt;p&gt;Welcome to build.prestashop.com!&lt;/p&gt;
 
-&lt;p&gt;Brought to you by PrestaShop Core team, build.prestashop.com gives you insights of PrestaShop ongoing developments. 
-We’re here to share with you what we’re working on, and what developing for PrestaShop means for you, as a developer from the PrestaShop community.&lt;/p&gt;
+&lt;p&gt;Brought to you by PrestaShop Core team, build.prestashop.com gives you insights on PrestaShop’s ongoing development.
+We’re here to share with you what we’re working on, and discuss what creating with PrestaShop means for you, as a developing contributor from the PrestaShop community.&lt;/p&gt;
 
 &lt;h3 id=&quot;what-is-it-about-exactly&quot;&gt;What is it about exactly?&lt;/h3&gt;
 
@@ -28,23 +28,365 @@ We’re here to share with you what we’re working on, and what developing for 
 
 &lt;h3 id=&quot;what-is-there-for-you&quot;&gt;What is there for you?&lt;/h3&gt;
 
-&lt;p&gt;&lt;i class=&quot;fa fa-chevron-circle-right&quot;&gt;&lt;/i&gt; We’ve already started with the &lt;strong&gt;Core weekly&lt;/strong&gt; section: each week you’ll find the highlights of what happened in and around PrestaShop’s Core.&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; We’ve already started with the &lt;strong&gt;Core Weekly&lt;/strong&gt; section: each week you’ll find the highlights of what happened in and around PrestaShop’s Core.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;fa fa-chevron-circle-right&quot;&gt;&lt;/i&gt;  If a new method or feature requires some in-depth explanations, we’ll provide you with detailed &lt;strong&gt;how-tos&lt;/strong&gt; (don’t forget you can also check the [Developer Guide] (http://doc.prestashop.com/display/PS16/Developer+Guide)).&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;  If a new method or feature requires some in-depth explanations, we’ll provide you with detailed &lt;strong&gt;how-tos&lt;/strong&gt;, which will eventually find their way in either the &lt;a href=&quot;http://doc.prestashop.com/display/PS16/Developer+Guide&quot;&gt;Developer Guide&lt;/a&gt; or the &lt;a href=&quot;http://doc.prestashop.com/display/PS16/Designer+Guide&quot;&gt;Designer Guide&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;i class=&quot;fa fa-chevron-circle-right&quot;&gt;&lt;/i&gt;  If you’ve submitted a massive [pull-request on GitHub] (https://github.com/PrestaShop/PrestaShop), you might want to &lt;strong&gt;present your PR&lt;/strong&gt; to the community: what it brings, the choices you’ve made, how it impacts the Core. Here is the place to let people know about it! &lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;  If you’ve submitted &lt;a href=&quot;http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop&quot;&gt;a major pull-request&lt;/a&gt; on &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop&quot;&gt;our GitHub repo&lt;/a&gt; and it has been merged into the Core code, you might want to &lt;strong&gt;present your PR&lt;/strong&gt; to the community: what it brings, the choices you’ve made, how it impacts the Core, etc. Here is the place to let people know about it!&lt;/p&gt;
 
-&lt;p&gt;We’re an open-source project and we want to keep growing with you: see how [you can contribute] (https://prestashop.github.io/build.prestashop.com/misc/how-to-write-on-this-blog/) to build.prestashop.com.&lt;/p&gt;
+&lt;p&gt;We’re an open-source project and we want to keep growing with you: see how &lt;a href=&quot;/misc/how-to-write-on-this-blog/&quot;&gt;you can contribute&lt;/a&gt; to build.prestashop.com.&lt;/p&gt;
 
 &lt;p&gt;If there’s anything else you’d like to know or if you have some more ideas for this blog, don’t hesitate to comment!&lt;/p&gt;
 
 &lt;p&gt;Happy coding!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 31 Mar 2015 13:12:00 +0200</pubDate>
-        <link>http://prestashop.github.io/build.prestashop.com/news/welcome/</link>
-        <guid isPermaLink="true">http://prestashop.github.io/build.prestashop.com/news/welcome/</guid>
+        <pubDate>Fri, 03 Apr 2015 13:12:00 +0200</pubDate>
+        <link>http://build.prestashop.com/news/welcome/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/welcome/</guid>
         
         <category>news</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>PrestaShop Core Weekly - Week 12 &amp; 13</title>
+        <description>&lt;p&gt;Hello everyone, and welcome back to the weekly… Core Weekly!
+Well, this is a special bi-weekly edition, since a lot have happened outside of Core for PrestaShop lately :)
+We’ll get back to our weekly scheduling for the next Core Weekly.&lt;/p&gt;
+
+&lt;p&gt;As always, we try to highlight changes in PrestaShop core codebase last two week, from Monday 16th to Sunday 29th.&lt;/p&gt;
+
+&lt;p&gt;The Core Weekly report is ever evolving, so if you have ideas on how to improve it, let me know!&lt;/p&gt;
+
+&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
+
+&lt;p&gt;There’s been a huge milestone for PrestaShop this week: we moved! It took a few days, but now that we’re settling down (with Puff Daddy, our own in-house kitten!), I can finish the Core Weekly quietly :)
+Hey, I took a few picture and built an album with them, check it out! &lt;a href=&quot;&quot;&gt;http://imgur.com/a/Glx7d&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, we started a poll on the forum about moving to PSR-2’s Coding Style Guide. Let us know you opinion! &lt;a href=&quot;&quot;&gt;https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;a href=&quot;https://github.com/PrestaShop/build.prestashop.com&quot;&gt;something’s brewing here&lt;/a&gt;…&lt;/p&gt;
+
+&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
+
+&lt;p&gt;Instead of pointing out notable Pull Requests, we are changing the way this section has been presented so far, and list all the PRs from last week, each in its own category, in order to show that all contributions (and contributors!) are important.&lt;/p&gt;
+
+&lt;p&gt;As always, click on the PR’s number to open its page on GitHub.&lt;/p&gt;
+
+&lt;h4 id=&quot;code-typos&quot;&gt;Code typos&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2722&quot;&gt;2722&lt;/a&gt;: Minor concatenation correction. Thank you unlocomqx!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2692&quot;&gt;2692&lt;/a&gt;: Normalization. Thank you PrestaEdit!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2674&quot;&gt;2674&lt;/a&gt;: remove unnecessary variable, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2761&quot;&gt;2761&lt;/a&gt;: Remove unused variable + PHPDOC + norms, by jeromenadaud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;text-typos&quot;&gt;Text typos&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2719&quot;&gt;2719&lt;/a&gt;: fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5083&quot;&gt;#PSCSX-5083&lt;/a&gt; - correct typo in Russian, by AlexEven.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2670&quot;&gt;2670&lt;/a&gt;: PaymentModule -&amp;gt; missing translation. Thank you indesign47!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2669&quot;&gt;2669&lt;/a&gt;: AdminImagesController -&amp;gt; missing translations. Thank you indesign47!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2751&quot;&gt;2751&lt;/a&gt;: AdminOrderPreferences - typo, by AlexEven.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;core&quot;&gt;Core&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2683&quot;&gt;2683&lt;/a&gt;: Shop Base URL now can use secure mode + Hotfix jquery conflict protocol, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2750&quot;&gt;2750&lt;/a&gt;: Fix warning in the BO, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2742&quot;&gt;2742&lt;/a&gt;: add the config var like htmlpurifier do, by sfroment42.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2728&quot;&gt;2728&lt;/a&gt;: Fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4594&quot;&gt;#PSCSX-4594&lt;/a&gt; escape { } if purify for mail template, by sfroment42.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2740&quot;&gt;2740&lt;/a&gt;: Rename AdminMeta Robot file hook, by jeromenadaud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;search&quot;&gt;Search&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2721&quot;&gt;2721&lt;/a&gt;: set proper shop context during search indexing (&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5097&quot;&gt;#PSCSX-5097&lt;/a&gt;), by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2666&quot;&gt;2666&lt;/a&gt;: Fix bug &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5040&quot;&gt;#PSCSX-5040&lt;/a&gt;, could not see availability with tag search, by gRoussac.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;phpdoc&quot;&gt;phpDoc&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2720&quot;&gt;2720&lt;/a&gt;: inline docs for local variables. Thank you gskema!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2684&quot;&gt;2684&lt;/a&gt;: Fix undefined PHPDoc types of method and local variables + remove static tag. Thank you gskema!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2772&quot;&gt;2772&lt;/a&gt;: PHPDocs for inline class variables. Thank you gskema!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;javascript&quot;&gt;JavaScript&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2718&quot;&gt;2718&lt;/a&gt;: Fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5103&quot;&gt;#PSCSX-5103&lt;/a&gt; cat image not resized whitout decription, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2693&quot;&gt;2693&lt;/a&gt;: Fix bug not showing error in carrier wizard. Thank you bercik999!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2682&quot;&gt;2682&lt;/a&gt;: Fix bug &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5077&quot;&gt;#PSCSX-5077&lt;/a&gt;, Country ISO code js validation, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2676&quot;&gt;2676&lt;/a&gt;: Back button won’t return to previous page. Thank you dkarvounaris!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2725&quot;&gt;2725&lt;/a&gt;: Move js call in AdminAttributeGeneratorController, by jeromenadaud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;currency&quot;&gt;Currency&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2749&quot;&gt;2749&lt;/a&gt;: Fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4326&quot;&gt;#PSCSX-4326&lt;/a&gt;, Incorrect prices on product page using reduction amount and more currencies, first part, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2737&quot;&gt;2737&lt;/a&gt;: &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4326&quot;&gt;#PSCSX-4326&lt;/a&gt;, currency unit to real currency, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2756&quot;&gt;2756&lt;/a&gt;: Fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4326&quot;&gt;#PSCSX-4326&lt;/a&gt;, bad roundings on product page + refacto. Thank you eric-rouvier!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2733&quot;&gt;2733&lt;/a&gt;: Fix NaN on price if ecotax isn’t set, by sfroment42.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;date&quot;&gt;Date&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2716&quot;&gt;2716&lt;/a&gt; and 2717: Exception correction, by gRoussac.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;product-attributes&quot;&gt;Product attributes&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2715&quot;&gt;2715&lt;/a&gt;: Fix bug &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4358&quot;&gt;#PSCSX-4358&lt;/a&gt;, could not reorder features and attributes, by gRoussac.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;internationalization-i18n&quot;&gt;Internationalization (i18n)&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2714&quot;&gt;2714&lt;/a&gt;: RTL compliance in translated string, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2758&quot;&gt;2758&lt;/a&gt;: Set correct CHF currency format, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2757&quot;&gt;2757&lt;/a&gt;: format currency Switzerland. Thank you webbax!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;cart-rules&quot;&gt;Cart Rules&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2713&quot;&gt;2713&lt;/a&gt;: Force currency cast, by jeromenadaud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;frontcontroller&quot;&gt;FrontController&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2712&quot;&gt;2712&lt;/a&gt;: Take the ID directly bypassing Currency::getCurrencyInstance(). Thank you PrestaEdit!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2680&quot;&gt;2680&lt;/a&gt;: Fix bug &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4990&quot;&gt;#PSCSX-4990&lt;/a&gt;, inconstancy of PS_DETECT_COUNTRY, by gRoussac.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;installer&quot;&gt;Installer&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2708&quot;&gt;2708&lt;/a&gt;: Try to fix Warning: is_dir(): open_basedir restriction in effect, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2762&quot;&gt;2762&lt;/a&gt;: order_state -&amp;gt; translation of cashondelivery. Thank you indesign47!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;objectmodel&quot;&gt;ObjectModel&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2706&quot;&gt;2706&lt;/a&gt;: Fix date_add in multishop, by sfroment42.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2702&quot;&gt;2702&lt;/a&gt;: Fix default_on value update, by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2754&quot;&gt;2754&lt;/a&gt;: getFieldsLang should return parent, by jeromenadaud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;css&quot;&gt;CSS&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2704&quot;&gt;2704&lt;/a&gt;: btn gradient simplification (SASS). Thank you axometeam!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2691&quot;&gt;2691&lt;/a&gt;: layer cart css border radius when screen. Thank you Dvir-Julius!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2667&quot;&gt;2667&lt;/a&gt;: Fix missing $ on product css, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2767&quot;&gt;2767&lt;/a&gt;: Theme simplification: order step gradients. Thank you axometeam!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2763&quot;&gt;2763&lt;/a&gt;: icons.sass to scss. Thank you axometeam!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2743&quot;&gt;2743&lt;/a&gt;: fix sass errors, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2738&quot;&gt;2738&lt;/a&gt;: Missing uniform.default.css.map, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2734&quot;&gt;2734&lt;/a&gt;: fix disappearing radio button when hovering. Thank you Dvir-Julius!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2732&quot;&gt;2732&lt;/a&gt;: theme - useless CSS. Thank you axometeam!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;dashboard&quot;&gt;Dashboard&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2703&quot;&gt;2703&lt;/a&gt;: Avoid cached data on dashboard refresh (&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5092&quot;&gt;#PSCSX-5092&lt;/a&gt;). Thank you eric-rouvier!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;pdf&quot;&gt;PDF&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2701&quot;&gt;2701&lt;/a&gt;: Incorrect variable for delivery-slip pdf on mail attachment. Thank you PhpMadman!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2668&quot;&gt;2668&lt;/a&gt;: Fix bug &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5062&quot;&gt;#PSCSX-5062&lt;/a&gt; Return slip pdf is not possible to download from back-office, by gRoussac.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;product-categories&quot;&gt;Product categories&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2698&quot;&gt;2698&lt;/a&gt;: Fix tree category issue, by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2696&quot;&gt;2696&lt;/a&gt;: Fix filter category tree issue, by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2689&quot;&gt;2689&lt;/a&gt;: Fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5076&quot;&gt;#PSCSX-5076&lt;/a&gt;, wrong positions in category list, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2679&quot;&gt;2679&lt;/a&gt;: Fix tree category issue, by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2678&quot;&gt;2678&lt;/a&gt;: Norms + small refacto, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2671&quot;&gt;2671&lt;/a&gt;: Fix bug &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5065&quot;&gt;#PSCSX-5065&lt;/a&gt;, Wrong picture displayed after click on a color in category, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2768&quot;&gt;2768&lt;/a&gt;: fix issues with ajax tree loading when creating a new category, by jocel1.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;import&quot;&gt;Import&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2695&quot;&gt;2695&lt;/a&gt;: AdminImportController / Use $vars. Thank you PrestaEdit!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2675&quot;&gt;2675&lt;/a&gt;: Fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5006&quot;&gt;#PSCSX-5006&lt;/a&gt;, add forceid to addresses import. Thanks indesign47!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;module&quot;&gt;Module&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2694&quot;&gt;2694&lt;/a&gt;: Bad display of module description in module list, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2681&quot;&gt;2681&lt;/a&gt;: blockcms / Use dynamic year. Thank you PrestaEdit!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2752&quot;&gt;2752&lt;/a&gt;: Fix selector (missing ‘#’) in blockwishlist. Thank you prestarocket!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;tests&quot;&gt;Tests&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2685&quot;&gt;2685&lt;/a&gt;: Travis-ci : run tests on php 5.3, 5.4 , 5.5 and 5.6 - &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5072&quot;&gt;#PSCSX-5072&lt;/a&gt;. Thank you SebSept!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2673&quot;&gt;2673&lt;/a&gt;: renamed xxxExamples() functions to xxxDataProvider(). Thank you SebSept!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2760&quot;&gt;2760&lt;/a&gt;: Fix bug with various environments, by gaillafr.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;e-mails&quot;&gt;E-mails&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2665&quot;&gt;2665&lt;/a&gt;: AdminEmails / FIX &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-5000&quot;&gt;#PSCSX-5000&lt;/a&gt;. Thank you PrestaEdit!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;webservice&quot;&gt;Webservice&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2771&quot;&gt;2771&lt;/a&gt;: Fix undefined function in WebserviceRequest. Thank you gskema!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2730&quot;&gt;2730&lt;/a&gt;: Fix HOSTED-826 : Correct core link fixed on the image webservice, by Shudrum.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;hooks&quot;&gt;Hooks&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2765&quot;&gt;2765&lt;/a&gt;: Allow AdminLoginController setMedia hook, by jeromenadaud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;images&quot;&gt;Images&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2748&quot;&gt;2748&lt;/a&gt;: images optim with trimage. Thank you axometeam!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;stock&quot;&gt;Stock&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2747&quot;&gt;2747&lt;/a&gt;: Add $id_shop StockAvailable.php. Thank you richardlt!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;htaccess--robotstxt&quot;&gt;.htaccess &amp;amp; robots.txt&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2741&quot;&gt;2741&lt;/a&gt;: IfModule directives changes in upload/.htaccess. Thank you vitekj!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2729&quot;&gt;2729&lt;/a&gt;: New hooks for robots.txt creation. Thank you axometeam, and for the sample module too!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;admin&quot;&gt;Admin&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2735&quot;&gt;2735&lt;/a&gt;: Add shop activity on addons link, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2727&quot;&gt;2727&lt;/a&gt;: add preview link in product controller. Thank you axometeam!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;groups&quot;&gt;Groups&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls/2731&quot;&gt;2731&lt;/a&gt;: Fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4272&quot;&gt;#PSCSX-4272&lt;/a&gt; Groups customers list does not filter by shop, by gRoussac.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thank you to the PrestaShop Core developers for their high-spirit during this very demanding two weeks, and thank you to our awesome contributors for their useful pull requests: gskema, dkarvounaris, Dvir-Julius, cedricfontainte, prestarocket, indesign47 and PrestaEdit… and those whose contributions were not merged, too!&lt;/p&gt;
+
+&lt;p&gt;Remember: if you want to contribute to PrestaShop with code, read those:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop&quot;&gt;Contributing code to PrestaShop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message&quot;&gt;How to write a commit message&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;…and if you do not know how to fix an issue but wish to report it, read this: &lt;a href=&quot;http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop&quot;&gt;How to use the Forge to contribute to PrestaShop&lt;/a&gt;. Thank you!&lt;/p&gt;
+
+&lt;p&gt;That’s it for the previous two weeks! We’ll be back to a truly weekly report next week. Until then, let me know if I forgot something, or if you have ideas about how to improve the Core Weekly report!&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Apr 2015 05:45:00 +0200</pubDate>
+        <link>http://build.prestashop.com/news/prestashop-core-weekly-week-12-13/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-12-13/</guid>
+        
+        <category>core-weekly</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>PrestaShop Core Weekly - Week 11</title>
+        <description>&lt;p&gt;Howdy everyone!
+Here’s the third edition of the PrestaShop Core Weekly.&lt;/p&gt;
+
+&lt;p&gt;As a reminder, the Core Weekly posts highlight some of the more important happenings in and around the Core of PrestaShop.&lt;/p&gt;
+
+&lt;p&gt;This post is focused on the activity from March 9th to March 15th of 2015.&lt;/p&gt;
+
+&lt;p&gt;Do you have ideas on how to improve the Core Weekly posts? Let me know in the comments!&lt;/p&gt;
+
+&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
+
+&lt;p&gt;Some cool things are happening for our community and the overall improvement of the codebase. It’s not quite ready yet, but soon you’ll see it all, and you’ll be able to participate!&lt;/p&gt;
+
+&lt;p&gt;One thing to notice: PrestaShop developers now do all their work using Pull Requests (PR): no more direct commits to the codebase, now you can see where new code comes from, and comment on the PR!
+Consequently, the “Notable commits” section of this Core Weekly report is not needed anymore :)&lt;/p&gt;
+
+&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
+
+&lt;p&gt;Now, onto last week’s code changes…&lt;/p&gt;
+
+&lt;h3 id=&quot;notable-accepted-pull-requests&quot;&gt;Notable accepted pull requests&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2653&quot;&gt;2653&lt;/a&gt;: PHPDoc types for class members that are classes. Thanks gskema!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2652&quot;&gt;2652&lt;/a&gt;: FO: Fixing missing data-title attribute and translations. Thanks dkarvounaris!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2637&quot;&gt;2637&lt;/a&gt;: BO : fix count optimizations, by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2598&quot;&gt;2598&lt;/a&gt;: BO : Optimize cart rules loading &amp;amp; add a search filter field, by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2589&quot;&gt;2589&lt;/a&gt;: FO VAT field is shown when change country. Thanks prestarocket!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2582&quot;&gt;2582&lt;/a&gt;: Add hook actionPDFInvoiceRender. Thanks cedricfontaine!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2581&quot;&gt;2581&lt;/a&gt;: Hook actionPDFInvoiceRender consistency. Thanks cedricfontaine!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2568&quot;&gt;2568&lt;/a&gt;: CORE: Debug tools for printing into PHP error logs. Thanks gskema!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Find all PRs closed &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?page=4&amp;amp;pulls_only=true&amp;amp;q=is%3Apr+merged%3A%3E2015-03-09+is%3Aclosed&quot;&gt;last week here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Developers, do you have code suggestions, improvement ideas, typos you want to fix? Make your own Pull Request and become part of the PrestaShop contributors! See the &lt;a href=&quot;http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop&quot;&gt;contribution guide here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Do you want a first project to contribute with? &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2631&quot;&gt;Give us feedback on this PR&lt;/a&gt;. Thank you!&lt;/p&gt;
+
+&lt;h3 id=&quot;notable-closed-forge-tickets&quot;&gt;Notable closed Forge tickets&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2614&quot;&gt;2614&lt;/a&gt;: BO Fix &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-274&quot;&gt;#PSCSX-274&lt;/a&gt; : Cumulative specific rules fixed, by Shudrum. A ticket that dates back from November 2013, woohoo!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2648&quot;&gt;2648&lt;/a&gt;: Do not load the full category tree if it’s not needed (&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4591&quot;&gt;PSCSX-4591&lt;/a&gt;), by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2608&quot;&gt;2608&lt;/a&gt;: BO : Fix bug &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4733&quot;&gt;#PSCSX-4733&lt;/a&gt;, threads statuses not translated, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2601&quot;&gt;2601&lt;/a&gt;: FO : Fix css bug &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4757&quot;&gt;#PSCSX-4757&lt;/a&gt;, display nav on small screens, by gRoussac.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Find all Forge tickets closed last week here: &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4796?jql=project%20%3D%20PSCSX%20AND%20status%20in%20%28Resolved%2C%20Closed%29%20AND%20resolution%20in%20%28Fixed%2C%20Done%29%20AND%20resolved%20%3E%3D%202015-03-09%20AND%20resolved%20%3C%3D%202015-03-15%20ORDER%20BY%20updated%20DESC&quot;&gt;click here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Do you have an issue or idea but you are not a developer! Create a ticket &lt;a href=&quot;http://forge.prestashop.com/&quot;&gt;on the Forge&lt;/a&gt;, &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX/&quot;&gt;in the PSCSX project&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;That’s it for last week!
+This was the third edition of Core Weekly, so again, if you have suggestions or see anything that I missed, please comment!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 Mar 2015 09:06:00 +0100</pubDate>
+        <link>http://build.prestashop.com/news/prestashop-core-weekly-week-11/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-11/</guid>
+        
+        <category>core-weekly</category>
         
         
         <category>news</category>
@@ -101,8 +443,8 @@ As last week’s Core Weekly, I’ll highlight some of the more important happen
 It’s the second edition of Core Weekly, so if you have suggestions or see anything that I missed, please comment!&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Mar 2015 15:14:47 +0100</pubDate>
-        <link>http://prestashop.github.io/build.prestashop.com/news/prestashop-core-weekly-week-10/</link>
-        <guid isPermaLink="true">http://prestashop.github.io/build.prestashop.com/news/prestashop-core-weekly-week-10/</guid>
+        <link>http://build.prestashop.com/news/prestashop-core-weekly-week-10/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-10/</guid>
         
         <category>core-weekly</category>
         
@@ -190,8 +532,8 @@ We plan on having more of those, with more diverse participants, soon!&lt;/p&gt;
 It’s the first edition of Core Weekly, so if you have suggestions or see anything that I missed, please comment!&lt;/p&gt;
 </description>
         <pubDate>Wed, 04 Mar 2015 18:17:47 +0100</pubDate>
-        <link>http://prestashop.github.io/build.prestashop.com/news/prestashop-core-weekly-week-9/</link>
-        <guid isPermaLink="true">http://prestashop.github.io/build.prestashop.com/news/prestashop-core-weekly-week-9/</guid>
+        <link>http://build.prestashop.com/news/prestashop-core-weekly-week-9/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-9/</guid>
         
         <category>core-weekly</category>
         
