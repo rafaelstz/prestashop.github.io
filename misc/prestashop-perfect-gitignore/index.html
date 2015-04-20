@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Create the perfect .gitignore file for your PrestaShop projects</title>
+    <meta name="description" content="Official blog for PrestaShop development straight from the product and core dev team.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://build.prestashop.com/misc/prestashop-perfect-gitignore/">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8">
+        <a class="site-title" href="/">(new PrestaShop())->build();</a>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <nav class="site-nav">
+          <ul class="nav nav-pills pull-right">
+
+            <li><a class="page-link" href="/">News</a></li>
+
+            <li><a class="page-link" href="/how-tos">How-Tos</a></li>
+
+            <li><a class="page-link" href="/about">About</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class="post">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <header class="post-header">
+        <h1 class="post-title">Create the perfect .gitignore file for your PrestaShop projects</h1>
+        
+          <h3 class="post-subtitle">Commit only the right files</h3>
+        
+      </header>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-2">
+
+      <aside class="author">
+        
+
+<div class="author-avatar">
+  <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636">
+</div>
+
+<div class="aside-meta">By</div>
+<p class="author-name">
+  Julien Bourdeau
+</p>
+
+      </aside>
+
+      <aside class="share-buttons">
+        
+<hr class="vertical-rhythm" />
+
+<p class="aside-meta">Share this</p>
+
+<ul class="list-group">
+  
+  <li>
+    <a class="list-group-item" href="https://twitter.com/intent/tweet?text=Create the perfect .gitignore file for your PrestaShop projects&url=http://build.prestashop.com/misc/prestashop-perfect-gitignore/&via=PrestaShop&related=PrestaShop" rel="nofollow" target="_blank" title="Share on Twitter">
+      <i class="fa fa-twitter-square"></i> Twitter
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://facebook.com/sharer.php?u=http://build.prestashop.com/misc/prestashop-perfect-gitignore/" rel="nofollow" target="_blank" title="Share on Facebook">
+      <i class="fa fa-facebook-square"></i> Facebook
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://plus.google.com/share?url=http://build.prestashop.com/misc/prestashop-perfect-gitignore/" rel="nofollow" target="_blank" title="Share on Google+">
+      <i class="fa fa-google-plus-square"></i> Google+
+    </a>
+  </li>
+
+</ul>
+
+      </aside>
+
+    </div>
+
+    <div class="col-md-10">
+
+      <article class="post-content">
+        <p>As a serious developer, you need to use versioning (or “<a href="http://en.wikipedia.org/wiki/Revision_control">revision control</a>”) for your projects, in order to track changes to your files… and be able to travel back in time when a disaster happens. There are many CVS (<a href="http://en.wikipedia.org/wiki/Concurrent_Versions_System"><em>Concurrent Versions System</em></a>) available out there today, but <strong>Git</strong> is by far <a href="http://stackoverflow.com/research/developer-survey-2015#tech-sourcecontrol">the most popular in 2015</a>, and <a href="https://www.openhub.net/repositories/compare">one of the most used in the Open Source world</a>, right behind Subversion (svn).</p>
+
+<p>PrestaShop moved from Subversion to Git more than 2 years ago, <a href="https://www.prestashop.com/blog/en/prestashop-is-now-on-github/">and made the switch from our own SVN server to GitHub</a>, in order to make contribution easier for everyone. While doing so, we created a PrestaShop-specific <code>.gitignore</code> file. A <a href="http://git-scm.com/docs/gitignore">gitignore file</a> is a must-have for any Git-versioned project, as it specifies intentionally untracked files that Git should ignore.</p>
+
+<p>We created that file to help you better version your PrestaShop project. Let’s dive into that!</p>
+
+<h3 id="what-to-ignore">What to ignore</h3>
+
+<p>Generally, you shouldn’t version the following types of files:</p>
+
+<ul>
+  <li>Temporary files (such as cache)</li>
+  <li>Generated files (such as minified CSS or retrieved XMLs)</li>
+  <li>Files with credentials or personal information (such as <code>settings.inc.php</code>)</li>
+</ul>
+
+<h3 id="versioning-core-files">Versioning core files</h3>
+
+<p>The first thing you need to decide is whether you want to keep track of the PrestaShop core files changes or not. If you’re using PrestaShop correctly, you shouldn’t modify core files to suit your needs – you should <a href="http://doc.prestashop.com/display/PS16/Overriding+default+behaviors">override the core classes in order to modify PrestaShop’s behavior</a>.</p>
+
+<p>If you don’t want to version the core files, you have to clone your repo then drop the PrestaShop files (from a stable release) into the folder.</p>
+
+<p>But in my opinion, <strong>it is better to version core files</strong>.</p>
+
+<p>Indeed, even if you don’t intend to modify the core files, you might have to apply specific patches. It’s always <strong>better to make sure that all your environments are exactly the same</strong>. This way, it’s much easier to deploy a new environment.</p>
+
+<p>Even better: if you create a branch which tracks PrestaShop/PrestaShop (1.6 branch), <strong>you will be able to <a href="http://git-scm.com/docs/git-cherry-pick">cherry-pick</a> the patches you need</strong>.</p>
+
+<h2 id="with-core-files">With core files</h2>
+
+<p><img src="/assets/images/2015/04/github-new-repo-gitignore.jpg" alt=".gitignore from GitHub" /></p>
+
+<p>If you host your project on GitHub, you can choose to initialize your project with a <code>.gitignore</code> file.</p>
+
+<p>We recently <a href="https://github.com/github/gitignore/pull/1479">updated it</a>, as a result you’ll get the file below (<a href="https://github.com/github/gitignore/blob/master/Prestashop.gitignore">direct link</a>):</p>
+
+<script src="https://gist.github.com/julienbourdeau/0f7d629cb7f9bc6995fc.js"> </script>
+
+<h2 id="without-core-files">Without core files</h2>
+
+<p>If you don’t want to version the core files, PrestaShop contributor Adonis Karavokyros (also known as <a href="https://github.com/prestarocket">prestarocket</a>) wrote this file instead:</p>
+
+<script src="https://gist.github.com/prestarocket/1070872.js"> </script>
+
+<h3 id="generate-your-own-gitignore-file-with-gitignoreio">Generate your own <code>.gitignore</code> file with gitignore.io</h3>
+
+<p><a href="http://gitignore.io">gitignore.io</a> is a great tool, based on the official <a href="https://github.com/github/gitignore">GitHub/gitignore</a> repo. You can generate a perfect <code>.gitignore</code> file simply by listing the technologies you use in your project.</p>
+
+<p>The website offers an easy-to-use interface, but if (like me) you want to show off, you can use the following Git alias in your configuration:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git config --global alias.ignore <span class="err">&#39;</span><span class="s2">&quot;gi() { curl -L -s https://www.gitignore.io/api/$@ &gt;&gt; .gitignore ;}; gi&quot;</span></code></pre></div>
+
+<p>Next, the following command will generate a <code>.gitignore</code> file inside the current directory <a href="https://www.gitignore.io/api/prestashop,osx,phpstorm">containing these lines</a>.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>git ignore prestashop,osx,phpstorm</code></pre></div>
+
+<p>There you go! All of this should give a cleaner Git repository for your PrestaShop projects.</p>
+
+<p>Do you have ideas on how to improve this? Do you use alternate files? Tell us your story in the comments!</p>
+
+      </article>
+
+      
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+
+          <li><i class="fa fa-calendar"></i> Apr 20, 2015</li>
+
+          
+            <li>
+              <i class="fa fa-tags"></i>
+
+              
+                <span class="label label-primary">git</span>
+              
+                <span class="label label-primary">gitignore</span>
+              
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+              <h5>About the author</h5>
+              
+              <h4>
+                Julien Bourdeau
+                <span>Core developer</span>
+              </h4>
+              <p></p>
+
+              
+                <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+                  <i class="fa fa-twitter"></i> Twitter
+                </a>
+              
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'prestashopbuild';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development straight from the product and core dev team.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-4 col-md-offset-4">
+
+          <a href="/feed.xml" title="">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+
+          
+            <a href="https://github.com/PrestaShop" title="">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://twitter.com/PrestaShop" title="">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://instagram.com/prestacrew" title="">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://play.spotify.com/user/prestacrew" title="">
+              <i class="fa fa-spotify fa-2x"></i>
+            </a>
+          
+
+          <span class="separator"> | </span>
+
+          
+            <a href="http://status.prestashop.com/" title="PrestaShop Cloud Health">
+              <i class="fa fa-heartbeat fa-2x"></i>
+            </a>
+          
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-2753771-31', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/misc/prestashop-perfect-gitignore/',
+		  'title': 'Create the perfect .gitignore file for your PrestaShop projects'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+  </body>
+
+</html>
