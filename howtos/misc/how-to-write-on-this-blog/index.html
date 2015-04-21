@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>How to write on this blog</title>
+    <meta name="description" content="Official blog for PrestaShop development straight from the product and core dev team.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-2753771-31', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/howtos/misc/how-to-write-on-this-blog/',
+		  'title': 'How to write on this blog'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8">
+        <a class="site-title" href="/">(new PrestaShop())->build();</a>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <nav class="site-nav">
+          <ul class="nav nav-pills pull-right">
+
+            <li><a class="page-link" href="/">News</a></li>
+
+            <li><a class="page-link" href="/how-tos">How-Tos</a></li>
+
+            <li><a class="page-link" href="/about">About</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class="post">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <header class="post-header">
+        <h1 class="post-title">How to write on this blog</h1>
+        
+          <h3 class="post-subtitle">or: How we tried to ensure that only developers could write on the devblog :)</h3>
+        
+      </header>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-2">
+
+      <aside class="author">
+        
+
+<div class="author-avatar">
+  <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636">
+</div>
+
+<div class="aside-meta">By</div>
+<p class="author-name">
+  Julien Bourdeau
+</p>
+
+      </aside>
+
+      <aside class="share-buttons">
+        
+<hr class="vertical-rhythm" />
+
+<p class="aside-meta">Share this</p>
+
+<ul class="list-group">
+  
+  <li>
+    <a class="list-group-item" href="https://twitter.com/intent/tweet?text=How to write on this blog&url=http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/&via=PrestaShop&related=PrestaShop" rel="nofollow" target="_blank" title="Share on Twitter">
+      <i class="fa fa-twitter-square"></i> Twitter
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://facebook.com/sharer.php?u=http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/" rel="nofollow" target="_blank" title="Share on Facebook">
+      <i class="fa fa-facebook-square"></i> Facebook
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://plus.google.com/share?url=http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/" rel="nofollow" target="_blank" title="Share on Google+">
+      <i class="fa fa-google-plus-square"></i> Google+
+    </a>
+  </li>
+
+</ul>
+
+      </aside>
+
+    </div>
+
+    <div class="col-md-10">
+
+      <article class="post-content">
+        <p>When we started talking about a dev blog among us, we thought about who could write, what we wanted to talk about,
+who was going to review the articles…</p>
+
+<p>Technically, WordPress was the first solution we reviewed but after giving it more thought we realized it would be too much of a hassle to maintain: plugin updates, core updates, database backups, security issues, etc.</p>
+
+<p>We then came up with a better idea: <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+
+<p><img src="/assets/images/2015/04/jekyll.png" alt="Jekyll Logo" /></p>
+
+<p>Jekyll uses a set of configuration and data files, article files (written in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> or pretty much <a href="http://jekyllrb.com/docs/posts/">any other format</a>), and resources (CSS, images, fonts, etc.) to generate a <strong>fully static website, made only of plain HTML files</strong>.
+Since you can version everything with <em>Git</em> and you don’t have to set up any database, it seems like the easiest ‘CMS’. So that’s what we’re reading now: plain HTML generated from Markdown markup through Jekyll!</p>
+
+<p>This blog is also meant to become the ‘place to be’ for the PrestaShop tech community, and Jekyll is definitely the
+best option out there – and <strong>you can actually make a <em>Pull Request</em> on GitHub to edit any content.</strong> Actually, <a href="https://pages.github.com/">GitHub’s Pages</a> features is powered by Jekyll too, so we’re not really choosing in the blind here :)</p>
+
+<h2 id="tldr">TL;DR</h2>
+
+<div class="alert alert-note" role="alert"><h4><i class="fa fa-file-text-o"></i> Note</h4>
+<p>First: tell us what you want to write about! We won’t accept just about any submission :)</p>
+
+<p>Write to us with your idea (we can be reached at build@prestashop.com), with a rough idea or the whole thing ready, and let’s talk about it. Once we agree on the subject, then you are good to go!</p>
+</div>
+
+<p>You don’t have to read all the details below: if you want to write an article right away, you can simply follow those steps:</p>
+
+<ol>
+  <li>Fork <a href="https://github.com/PrestaShop/build.prestashop.com">the repo</a> (see <a href="https://help.github.com/articles/fork-a-repo/">GitHub doc</a>)</li>
+  <li>Download <a href="https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown" download="2015-12-31-demo-post.markdown">this sample file</a>.</li>
+  <li>Rename it according to the date and your topic <strong>(NOTE: the date in the file name is mandatory)</strong>.</li>
+  <li>Move it to the right folder: <code>news/_posts</code> for a blog post, <code>howtos/CATEGORY</code> for a tutorial.</li>
+  <li>Write it.</li>
+  <li>Make a <a href="https://help.github.com/articles/creating-a-pull-request/">Pull-Request</a> on the initial project you forked.</li>
+</ol>
+
+<p class="text-center"><a href="https://gist.githubusercontent.com/julienbourdeau/98a944e00c3ceb5dff5e/raw/a7d6c292ca501c66cb24e34ff805630f1289c306/2015-12-31-demo-post.markdown" class="btn btn-success" download="2015-12-31-demo-post.markdown">Download a demo article</a></p>
+
+<p>You can even get GitHub to do most of the work for you: see the video below.</p>
+
+<iframe width="797" height="598" src="https://www.youtube.com/embed/vU4pj0-3Odc?rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+<h2 id="the-whole-">The whole #!</h2>
+
+<p>You only need this section if you intend to set everything up locally. You don’t have to do that, but let’s be honest, when you write your article, you want to preview how it will render, before sending it over to us :)</p>
+
+<p>Still, this is pretty much developer-targetted, so beware: technical stuffs ahead!</p>
+
+<h3 id="installing-the-required-software">Installing the required software</h3>
+
+<p>In order to get the blog working locally, you will need a few (command line) tools. I’ll let you find out how to do so
+on their respective websites, according to your OS.</p>
+
+<ul>
+  <li><a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby</a> (I use Ruby 2.0.0)</li>
+  <li><a href="https://www.npmjs.com/">NPM</a></li>
+  <li><a href="http://bower.io/">Bower</a></li>
+  <li><a href="http://bundler.io/">Bundler</a></li>
+</ul>
+
+<p>Download them, install them, then come back here for more! Of course you can also read their doc and get acquainted about the awesome NPM, Bower and Bundler tools – they might be of great use for your other web projects!</p>
+
+<h3 id="forking-and-cloning">Forking and cloning</h3>
+
+<p>Next, <a href="https://help.github.com/articles/fork-a-repo/">fork</a> <a href="https://github.com/PrestaShop/build.prestashop.com">the build.prestashop.com repo</a> into your GitHub account, then <a href="https://help.github.com/articles/fetching-a-remote/">clone it</a> on your local machine.</p>
+
+<h3 id="installing-dependencies-and-building-jekyll">Installing dependencies and building Jekyll</h3>
+
+<p><em>Bundler</em> will install Jekyll and all the Ruby dependencies. Then <em>Bower</em> will install all the front-end required libraries, such as ‘bootstrap-sass’ and ‘fontawesome’. Finally, we use Bundler to build Jekyll and <em>watch</em> any file change.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">bundle install
+bower install
+bundle <span class="nb">exec </span>jekyll build --watch</code></pre></div>
+
+<div class="alert alert-note" role="alert"><h4><i class="fa fa-file-text-o"></i> Note</h4>
+<p>When you’re using the <code>--watch</code> option, it only watches content and styles. So if you are changing any plugin or any line in your <code>_config.yml</code>, you’ll have to quit (<code>ctrl+C</code>) and rebuild.</p>
+</div>
+
+<h2 id="creating-your-article">Creating your article</h2>
+
+<h3 id="directory-structure">Directory structure</h3>
+
+<p>As a contributing writer on the Build blog, you are mostly interested in <strong>/assets</strong>, <strong>/howtos</strong> and <strong>/news</strong> folders.</p>
+
+<p><img src="/assets/images/2015/04/directory_structure.png" alt="Jekyll Logo" /></p>
+
+<h3 id="article-directories">Article directories</h3>
+
+<p>With Jekyll, the location of your files matter. On this blog, we have two kinds of articles:</p>
+
+<ul>
+  <li><strong>News</strong>: They live in the <code>news/_posts</code> folder and they show up on the home page.</li>
+  <li><strong>How-Tos</strong>: They live in the <code>howtos</code> folder and are sorted by topic. These posts are displayed on the home page as well as the How-Tos
+page which is sorted by topic.</li>
+</ul>
+
+<div class="alert alert-note" role="alert"><h4><i class="fa fa-file-text-o"></i> Note</h4>
+<p>If you need to create a new topic, create a subfolder in <code>howtos</code> and edit the <code>howtos</code> configuration in <code>_config.yml</code>.</p>
+
+<p>The topics are displayed in the same order as shown in the <code>_config.yml</code> file.</p>
+
+<p>Please ask us before creating a brand new topic!</p>
+</div>
+
+<h3 id="file-name">File name</h3>
+
+<p>Any article of any type has to be in a file named using the following the time-based pattern. Make sure to follow that convention: if you do not, Jekyll won’t recognize your file.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">YYYY-MM-DD-some-hyphen-separated-name.markdown</code></pre></div>
+
+<h3 id="file-header-yaml-front-matter">File header (<em>YAML Front Matter</em>)</h3>
+
+<p>Jekyll makes it really easy to set your post meta information. The top of your file has to include some information like ‘author’ or ‘layout’, <a href="http://jekyllrb.com/docs/frontmatter/">in YAML format</a>.</p>
+
+<p>Copy and paste the following lines at the top of your new file, and customize the relevant values.</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="l-Scalar-Plain">layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">post</span>
+<span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>  <span class="s">&quot;Here</span><span class="nv"> </span><span class="s">goes</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">title</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">article&quot;</span>
+<span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">text</span><span class="nv"> </span><span class="s">will</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">displayed</span><span class="nv"> </span><span class="s">below</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">title&quot;</span>
+<span class="l-Scalar-Plain">date</span><span class="p-Indicator">:</span>   <span class="l-Scalar-Plain">2015-03-04 15:12:00</span>
+<span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">julienbourdeau</span>
+<span class="l-Scalar-Plain">icon</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">fa-pencil</span>
+<span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">sample</span><span class="p-Indicator">,</span> <span class="nv">tags</span><span class="p-Indicator">,</span> <span class="nv">example</span><span class="p-Indicator">]</span>
+<span class="l-Scalar-Plain">published</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">false</span>
+<span class="nn">---</span></code></pre></div>
+
+<p>I assume you will understand what you are supposed to change. <em>Icon</em> can be <a href="http://fortawesome.github.io/Font-Awesome/icons/">any icon from FontAwesome</a>.</p>
+
+<div class="alert alert-important" role="alert"><h4><i class="fa fa-exclamation-triangle"></i> Important</h4>
+<p>Articles must be submitted with the ‘published’ setting set to false. We will only publish it after review.</p>
+</div>
+
+<h2 id="making-sure-youre-an-author">Making sure you’re an author</h2>
+
+<p>If this is your first article, you will have to add yourself to the author list. Open up the <code>_data/authors.yml</code> file and add your personal details. The first line is your ID and that’s what you have to use in your article header.</p>
+
+<p>Now fill up as much info as you can. <code>display_name</code> and <code>avatar</code> are mandatory.</p>
+
+<p>Exemple:</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">julienbourdeau</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">display_name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Julien Bourdeau</span>
+    <span class="l-Scalar-Plain">role</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Core developer</span>
+    <span class="l-Scalar-Plain">avatar</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">https://avatars1.githubusercontent.com/u/1525636</span>
+    <span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">julien@prestashop.com</span>
+    <span class="l-Scalar-Plain">twitter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">julienbourdeau</span>
+    <span class="l-Scalar-Plain">github</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">julienbourdeau</span>
+    <span class="l-Scalar-Plain">website</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://www.example.com</span>
+    <span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="p-Indicator">&gt;</span>
+        <span class="no">This is a description of the author with details about what he really does</span>
+        <span class="no">and the cool thing is: it&#39;s multiline.</span></code></pre></div>
+
+<h2 id="writing-your-article">Writing your article</h2>
+
+<h3 id="markdown--liquid">Markdown &amp; Liquid</h3>
+
+<p>All article must be written using the Markdown syntax. With Jekyll, we use <a href="http://kramdown.gettalong.org/index.html">Kramdown</a> as a markdown converter, and the <a href="https://github.com/Shopify/liquid">Liquid template engine</a>.</p>
+
+<p>If you are struggling to get the result you want, you can still use pure HTML.</p>
+
+<p><strong>References:</strong></p>
+
+<ul>
+  <li><a href="http://kramdown.gettalong.org/quickref.html">Official Kramdown documentation</a></li>
+  <li><a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">Official Liquid documentation</a></li>
+  <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">A good Markdown CheetSheat</a></li>
+</ul>
+
+<h2 id="tips-and-tricks">Tips and tricks</h2>
+
+<p>This part describes some important tricks to write a good article.</p>
+
+<h3 id="images">Images</h3>
+
+<p>Images have to be in the <code>assets/images/YYYY/MM</code> folder (with a custom YYYY and MM, of course): find or create the subdirectory according to the date of the article.</p>
+
+<p>Using Markdown, your image should look like this:</p>
+
+<div class="highlight"><pre><code class="language-liquid" data-lang="liquid">![Jekyll Logo](/assets/images/2015/04/jekyll.png)</code></pre></div>
+
+<h3 id="code">Code</h3>
+
+<h4 id="inline-code">Inline code</h4>
+
+<p>When you need to refer to a <code>CSS property</code>, a <code>specific file</code>, a <code>function name</code> or anything similar, use the following syntax to highlight it in your text:</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">`define(&#39;_PS_DEV_MODE_&#39;)` in file  `config.inc.php` or  `Tools::getValue()`</code></pre></div>
+
+<h4 id="block-of-code">Block of code</h4>
+
+<p>When it comes to serious code blocks, it’s always better to use syntax highlighting. With Jekyll, it works a bit differently compared to GitHub (because GitHub uses their own <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub-flavored Markdown</a>): you have to use a <a href="https://github.com/Shopify/liquid">Liquid tag</a>: <code>{% highlight LANG OPT_1 OPT_2 %}</code></p>
+
+<pre><code>{% highlight php startinline=true linenos %}
+class IndexControllerCore extends FrontController
+{
+	// SAMPLE CODE
+	public function initContent()
+	{
+		// SAMPLE CODE
+	}
+}
+{% endhighlight %}
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>LANG</code></td>
+      <td><strong>Mandatory</strong>. Can take almost any language: html, php, ruby, javascript, etc.</td>
+    </tr>
+    <tr>
+      <td><code>startinline=true</code></td>
+      <td><strong>Optional</strong>. Only used for PHP, this way you don’t have to write <code>&lt;?php</code> and  <code>?&gt;</code>. If you are mixing up PHP and HTML, don’t set this parameter.</td>
+    </tr>
+    <tr>
+      <td><code>lineos</code></td>
+      <td><strong>Optional</strong>. Display line number. Default: false.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="embed-a-github-gist">Embed a GitHub gist</h4>
+
+<p>If your code will or may be updated, you can easily embed a a <a href="https://gist.github.com/">GitHub gist</a> using the Liquid’s <code>gist</code> tag.</p>
+
+<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">gist</span><span class="w"> </span>YOUR_GIST_USER_ID/YOUR_GIST_ID<span class="w"> </span><span class="p">%}</span></code></pre></div>
+
+<h3 id="icons">Icons</h3>
+
+<p>We use a simple FontAwesome plugin that lets you display any icon using the following syntax:</p>
+
+<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">icon</span><span class="w"> </span>ICON_NAME<span class="w"> </span>OPTIONS<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">icon</span><span class="w"> </span>fa-coffee<span class="w"> </span>fa-<span class="mi">2</span>x<span class="w"> </span><span class="p">%}</span></code></pre></div>
+
+<h3 id="alerts">Alerts</h3>
+
+<p>If you want to highlight some content (hint, note, tip, alert, etc.), we have few types of highlighting available. They are similar to <a href="http://getbootstrap.com/components/#alerts">alerts from Bootstrap</a>.</p>
+
+<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">alert</span><span class="w"> </span>TYPE<span class="w">  </span>SHOW_TITLE<span class="w"> </span><span class="p">%}</span>
+You content goes here. **Markdown** _is_ `supported`.
+<span class="p">{%</span><span class="w"> </span><span class="nt">endalert</span><span class="w"> </span><span class="p">%}</span></code></pre></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>TYPE</code></td>
+      <td><strong>Mandatory</strong>. Define the type of hint: note/info/important/tip.</td>
+    </tr>
+    <tr>
+      <td><code>SHOW_TITLE</code></td>
+      <td><strong>Optional</strong>. Hide title like “note” or “tip” with icon. Default: true</td>
+    </tr>
+  </tbody>
+</table>
+
+      </article>
+
+      
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+
+          <li><i class="fa fa-calendar"></i> Mar 4, 2015</li>
+
+          
+            <li>
+              <i class="fa fa-tags"></i>
+
+              
+                <span class="label label-primary">help</span>
+              
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+              <h5>About the author</h5>
+              
+              <h4>
+                Julien Bourdeau
+                <span>Core developer</span>
+              </h4>
+              <p></p>
+
+              
+                <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+                  <i class="fa fa-twitter"></i> Twitter
+                </a>
+              
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'prestashopbuild';
+
+            
+
+            
+                var disqus_url = 'http://build.prestashop.com/misc/how-to-write-on-this-blog/';
+            
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development straight from the product and core dev team.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-4 col-md-offset-4">
+
+          <a href="/feed.xml" title="">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+
+          
+            <a href="https://github.com/PrestaShop" title="">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://twitter.com/PrestaShop" title="">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://instagram.com/prestacrew" title="">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://play.spotify.com/user/prestacrew" title="">
+              <i class="fa fa-spotify fa-2x"></i>
+            </a>
+          
+
+          <span class="separator"> | </span>
+
+          
+            <a href="http://status.prestashop.com/" title="PrestaShop Cloud Health">
+              <i class="fa fa-heartbeat fa-2x"></i>
+            </a>
+          
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+
+  </body>
+
+</html>
