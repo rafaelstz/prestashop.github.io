@@ -5,15 +5,15 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 06 May 2015 10:52:53 +0200</pubDate>
-    <lastBuildDate>Wed, 06 May 2015 10:52:53 +0200</lastBuildDate>
+    <pubDate>Thu, 07 May 2015 09:44:50 +0200</pubDate>
+    <lastBuildDate>Thu, 07 May 2015 09:44:50 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>PrestaShop Core Weekly - Week 17 &amp; 18</title>
         <description>&lt;p&gt;Missed a week, but the Core Weekly report is still alive and kicking!&lt;/p&gt;
 
-&lt;p&gt;I spent last half in a training session, and half on days off. Sorry if you missed our weekly meeting! …but that only means that this week, you get DOUBLE DOSE of that :)&lt;/p&gt;
+&lt;p&gt;I spent last week half in a training session, and half on days off. Sorry if you missed that weekly meeting of ours! …but that only means that this week, you get DOUBLE DOSE of that :)&lt;/p&gt;
 
 &lt;p&gt;This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 20th or April to Sunday 3rd of May, 2015.&lt;/p&gt;
 
@@ -30,6 +30,7 @@
   &lt;li&gt;In PR 2554, contributor PrestaEdit added a new Mail hook, named &lt;code&gt;actionGetExtraMailTemplateVars&lt;/code&gt;. Comment if you think “&lt;code&gt;actionMailSendTemplatesVariablesPrepareAfter&lt;/code&gt;” would be a better name!&lt;/li&gt;
   &lt;li&gt;In PR 2905, core dev julienboudreau introduced a much improved invoice template! The template is now split into multiple sub-templates (which can be overridden), there is a new zone for legal free text (along with the &lt;code&gt;displayInvoiceLegalFreeText&lt;/code&gt; hook), and made it much better looking! Also, the options for images in PDF moved from Preferences &amp;gt; orders to Orders &amp;gt; Invoices and Orders &amp;gt; credit slips. Let us know what you think of it!&lt;/li&gt;
   &lt;li&gt;In PR 2900, core dev jeromenadaud introduced a new check, to display a warning if the server uses a PHP version below 5.4.&lt;/li&gt;
+  &lt;li&gt;In PR 2967, core dev Shudrum removed the order_changed.html/.txt e-mail template, and replaced it with the new &lt;code&gt;actionOrderEdited&lt;/code&gt; hook. This follows &lt;a href=&quot;https://github.com/PrestaShop/mailalerts/pull/13&quot;&gt;PR 13&lt;/a&gt; on the &lt;code&gt;mailalerts&lt;/code&gt; module, which introduces two new mails: return_slip and order_changed. Explore those changes!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
