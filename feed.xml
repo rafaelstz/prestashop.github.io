@@ -5,9 +5,94 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 07 May 2015 09:44:50 +0200</pubDate>
-    <lastBuildDate>Thu, 07 May 2015 09:44:50 +0200</lastBuildDate>
+    <pubDate>Tue, 12 May 2015 18:05:28 +0200</pubDate>
+    <lastBuildDate>Tue, 12 May 2015 18:05:28 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>How to override modules in PrestaShop</title>
+        <description>&lt;p&gt;Since version 1.6.0.11 of PrestaShop, there is a new feature that allows developers to override a module’s instance classes (ie. its main module files, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2133&quot;&gt;see the PR by @axometeam&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Since PrestaShop uses lots of modules for both core and custom features, module overrides are a welcome addition to an already great override system in PrestaShop. Let’s take a look on how to use it.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-note&quot; role=&quot;alert&quot;&gt;&lt;h4&gt;&lt;i class=&quot;fa fa-file-text-o&quot;&gt;&lt;/i&gt; Note&lt;/h4&gt;
+&lt;p&gt;Remember that overrides in PrestaShop are exclusive. This means that if your module overrides one of PrestaShop’s behaviors, another module will not be able to use that behavior properly, or override it in an predictable way.&lt;/p&gt;
+
+&lt;p&gt;Therefore, overrides should only be used for your own local modules, when you have a specific need that cannot be applied without it.&lt;/p&gt;
+
+&lt;p&gt;It is not recommended to use an override in a module that you intend to distribute (for instance through the PrestaShop Addons marketplace), and they are forbidden in partner modules.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;override-a-modules-instance-class-by-extending-it&quot;&gt;Override a module’s instance class by extending it&lt;/h2&gt;
+
+&lt;p&gt;To override a module’s instance class, you have to extend it, giving the extended class the same name and adding &lt;code&gt;Override&lt;/code&gt; suffix:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/gskema/51aa05a814fa510a2202.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;This file should be put in &lt;code&gt;/override/modules/blockuserinfo/blockuserinfo.php&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you manually add an override, do not forget to clean the class reference cache by deleting &lt;code&gt;cache/class_index.php&lt;/code&gt;. The next time PrestaShop loads, it will regenerate &lt;code&gt;class_index.php&lt;/code&gt; and your module override will be active!&lt;/p&gt;
+
+&lt;p&gt;You may even make a module that has overrides for other modules! For example, &lt;code&gt;/modules/mymodule/override/modules/blockuserinfo/blockuserinfo.php&lt;/code&gt; will be copied to &lt;code&gt;/override/modules/blockuserinfo/blockuserinfo.php&lt;/code&gt; during the installation of the &lt;code&gt;mymodule&lt;/code&gt; module. However, this is not recommended, since the exact usage of a module to be overridden is unknown and may be different in a particular shop.&lt;/p&gt;
+
+&lt;h2 id=&quot;troubles-overriding-some-modules&quot;&gt;Troubles overriding some modules&lt;/h2&gt;
+
+&lt;p&gt;Some modules (mainly core modules) have methods that can’t be extended (at the moment).&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/gskema/04af5a98b56ee59f01e1.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;As you can see, this class has a variety of properties and methods. Some methods are &lt;code&gt;public&lt;/code&gt;, some are &lt;code&gt;protected&lt;/code&gt; and others are &lt;code&gt;private&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sometimes you may need to extend a method that is currently set to be &lt;code&gt;private&lt;/code&gt;. Unfortunately, it is not possible to extend private variables or methods in PHP (and most other class-based programming languages).&lt;/p&gt;
+
+&lt;p&gt;This is a design issue. Core modules were written long before the introduction of module overrides. Difference is that &lt;code&gt;private&lt;/code&gt; scope “locks down” class features, while &lt;code&gt;protected&lt;/code&gt; scope is less strict and allows overrides by a child class.&lt;/p&gt;
+
+&lt;p&gt;If you come across a core module method that is private, the best thing to do is change it to &lt;code&gt;protected&lt;/code&gt; and to make a pull request on GitHub for that module. Everyone will benefit!&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-make-cleaner-method-overrides&quot;&gt;How to make cleaner method overrides&lt;/h2&gt;
+
+&lt;p&gt;Overrides are great, but do they keep up with the updates? We are talking about a situation where the whole function is copied to an override and one minor modification is made:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/gskema/751e2791b35008beb71f.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;We added the line &lt;code&gt;&#39;company_name&#39; =&amp;gt; ($this-&amp;gt;context-&amp;gt;customer-&amp;gt;logged ? $this-&amp;gt;context-&amp;gt;customer-&amp;gt;company : false),&lt;/code&gt;, which adds a &lt;code&gt;company_name&lt;/code&gt; Smarty variable that we want to use in our template.&lt;/p&gt;
+
+&lt;p&gt;The problem is that we essentially “snapshotted” the method code that we took from the module. The code of this method may and will change in the future version. What if wanted to have the updated code but also add our one little modification?&lt;/p&gt;
+
+&lt;p&gt;When the code structure and logic allows it, you should always aim to execute the whole unmodified parent method &lt;strong&gt;and then&lt;/strong&gt; (before or after) add that one little modification. The way you can do this is by using &lt;code&gt;parent&lt;/code&gt; keyword, which calls the method from the parent class:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/gskema/0adf2da86ff78750d161.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In the example above, we add our Smarty variable, and then return the parent method, which will call the unmodified and possibly updated &lt;code&gt;hookDisplayTop&lt;/code&gt; method. There is no need to copy the whole method.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt; There is one small issue in the example, which you may have noticed. In the parent method, there is a  statement, &lt;code&gt;if (!$this-&amp;gt;active)&lt;/code&gt;, which should’ve been taken into consideration when making the override. We could put it in our overridden method, or for the purpose of this example, we can imagine that it’s not there :)&lt;/p&gt;
+
+&lt;h2 id=&quot;module-overrides-are-great&quot;&gt;Module overrides are great!&lt;/h2&gt;
+
+&lt;p&gt;As we mentioned before, PrestaShop already has a great system for overrides, and module overrides make it even greater. Overrides truly empower developers and saves a lot of time for everyone.&lt;/p&gt;
+
+&lt;p&gt;In the past, overriding module behaviour was a real issue. If using hooks, modifying templates and JavaScript files wasn’t enough, you had to write your own module or rename and modify the module you were trying to change. The updates were instantly lost.&lt;/p&gt;
+
+&lt;p&gt;Luckily, now it is possible to override module classes and change the behaviours right at their sources.&lt;/p&gt;
+
+&lt;p&gt;Modules overrides have not been documented very well, so not many of you may know about it. Hopefully this gave you some clearance on how to use them.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 10 May 2015 14:15:00 +0200</pubDate>
+        <link>http://build.prestashop.com/howtos/module/how-to-override-modules/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/howtos/module/how-to-override-modules/</guid>
+        
+        <category>override</category>
+        
+        <category>module</category>
+        
+        
+        <category>howtos</category>
+        
+        <category>module</category>
+        
+      </item>
     
       <item>
         <title>PrestaShop Core Weekly - Week 17 &amp; 18</title>
@@ -1000,95 +1085,6 @@ It’s the second edition of Core Weekly, so if you have suggestions or see anyt
         <pubDate>Thu, 12 Mar 2015 15:14:47 +0100</pubDate>
         <link>http://build.prestashop.com/news/prestashop-core-weekly-week-10/</link>
         <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-10/</guid>
-        
-        <category>core-weekly</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>PrestaShop Core Weekly - Week 9</title>
-        <description>&lt;p&gt;Welcome to the inaugural post relating what has been going on in the development side of PrestaShop!&lt;/p&gt;
-
-&lt;p&gt;I aim to make this a weekly occurrence (as the title implies), in which I’ll highlight some of the more important happenings in and around the Core.
-In short, this is for those who do not visit &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commits/1.6&quot;&gt;https://github.com/PrestaShop/PrestaShop/commits/1.6&lt;/a&gt; and &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX&quot;&gt;http://forge.prestashop.com/browse/PSCSX&lt;/a&gt;) on a daily basis :)&lt;/p&gt;
-
-&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
-
-&lt;p&gt;Last week was marked by two milestones:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;We passed 30,000 commits on the 1.6 branch! (currently closing on 30,220)&lt;/li&gt;
-  &lt;li&gt;We released version 1.6.0.12 (and hotfix 1.6.0.13), with more than 200 changes and fixes, among which:
-    &lt;ul&gt;
-      &lt;li&gt;Big work on refund and partial refund&lt;/li&gt;
-      &lt;li&gt;New front office classes added to facilitate integration&lt;/li&gt;
-      &lt;li&gt;Ability to override specific controllers with ModuleAdminControler&lt;/li&gt;
-      &lt;li&gt;Display product images on invoices&lt;/li&gt;
-      &lt;li&gt;Installer in French (Quebec) and Portuguese (Portugal)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See the announcement forum post here: &lt;a href=&quot;https://www.prestashop.com/forums/topic/418728-prestashop-16013-is-available-for-download&quot;&gt;https://www.prestashop.com/forums/topic/418728-prestashop-16013-is-available-for-download&lt;/a&gt;
-And the changelog for v1.6.0.13 is here: &lt;a href=&quot;https://www.prestashop.com/en/developers-versions/changelog/1.6.0.13&quot;&gt;https://www.prestashop.com/en/developers-versions/changelog/1.6.0.13&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;community-day&quot;&gt;Community day&lt;/h2&gt;
-
-&lt;p&gt;Thursday was also an intense day of discussions and exchanges, when a handful of community participants came to the PrestaShop office in Levallois-Perret (France) in order to talk about everything, from themes to modules, updates and module validation, the tax and rounding issues,  code quality and stability.&lt;/p&gt;
-
-&lt;p&gt;Participants where &lt;a href=&quot;https://www.prestashop.com/forums/user/343354-prestarocket/&quot;&gt;prestarocket&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/296243-2fr3/&quot;&gt;2FR3&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/41515-doekia/&quot;&gt;doekia&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/103589-j-danse/&quot;&gt;PrestaEdit&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/16609-atch/&quot;&gt;Atch&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/241780-eolia/&quot;&gt;EoliaHack&lt;/a&gt;, &lt;a href=&quot;https://www.prestashop.com/forums/user/186884-samy_r/&quot;&gt;SamyRabih&lt;/a&gt; and &lt;a href=&quot;https://www.prestashop.com/forums/user/672955-mediacom87/&quot;&gt;Mediacom87&lt;/a&gt;.
-We plan on having more of those, with more diverse participants, soon!&lt;/p&gt;
-
-&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
-
-&lt;p&gt;Now, onto the past week, starting from Monday, February 23rd to Sunday, March 1st.&lt;/p&gt;
-
-&lt;h3 id=&quot;notable-accepted-pull-requests&quot;&gt;Notable accepted pull requests:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2507&quot;&gt;2507&lt;/a&gt;: Fixes for taxes &amp;amp; rounding errors on invoice. Props djfm.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2509&quot;&gt;2509&lt;/a&gt;: BO : Add $id_cart to Message in PaymentModule::validateOrder(). Props Elitius.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2510&quot;&gt;2510&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2511&quot;&gt;2511&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2512&quot;&gt;2512&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2513&quot;&gt;2513&lt;/a&gt;: Patches fixing delivery time for virtual products. Props Nobodaddy.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2514&quot;&gt;2514&lt;/a&gt;: Employee.getEmployees and Employee.getByEmail get a $active_only parameter. Props dpiquet.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2516&quot;&gt;2516&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2527&quot;&gt;2527&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2539&quot;&gt;2539&lt;/a&gt;: PHPDoc work on FrontController, Db, Context and many other classes. Props gskema.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2525&quot;&gt;2525&lt;/a&gt;: Fixed free shipping display on invoices. Props djfm.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2528&quot;&gt;2528&lt;/a&gt;: Fixed function return value in write context in AdminWarehousesController.php. Props guestisp.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Find all PRs closed last week &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-03-02+is%3Aclosed&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;notable-closed-forge-tickets&quot;&gt;Notable closed Forge tickets:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4773&quot;&gt;PSCSX-4773&lt;/a&gt;: override class installation&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4488&quot;&gt;PSCSX-4488&lt;/a&gt;: Blockcart cover image with attributes&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4627&quot;&gt;PSCSX-4627&lt;/a&gt;: Administration Themes : Can’t install theme from directory&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4738&quot;&gt;PSCSX-4738&lt;/a&gt;: Copy and edit product disables available for order&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4646&quot;&gt;PSCSX-4646&lt;/a&gt;: after update quantity product is active in all stores&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4109&quot;&gt;PSCSX-4109&lt;/a&gt;: Module installation issue with multistore&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4746&quot;&gt;PSCSX-4746&lt;/a&gt;: CLONE - Can Not Remove Stock in Advanced Stock Manager&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4538&quot;&gt;PSCSX-4538&lt;/a&gt;: Unexcepted HTML entities in CSV export from stock instant state&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Find all Forge tickets closed last week here: &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4775?jql=project%20%3D%20PSCSX%20AND%20status%20in%20%28Resolved%2C%20Closed%29%20AND%20resolution%20in%20%28Fixed%2C%20Done%29%20AND%20resolved%20%3E%3D%202015-03-02%20AND%20resolved%20%3C%3D%202015-03-08%20ORDER%20BY%20updated%20DESC&quot;&gt;click here!&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;notable-commits-to-the-16-branch&quot;&gt;Notable commits to the 1.6 branch:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;30000th commit! &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/be9ddb7e6a2f12dddaffe1e9fb098a64c66ecc29&quot;&gt;https://github.com/PrestaShop/PrestaShop/commit/be9ddb7e6a2f12dddaffe1e9fb098a64c66ecc29&lt;/a&gt; Props gRoussac.&lt;/li&gt;
-  &lt;li&gt;Invoice : Display shipping and wrapping breakdown by rate in case of summed taxes &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/2d02b90f845ab75f21ec516de0d09dddef5390ad&quot;&gt;https://github.com/PrestaShop/PrestaShop/commit/2d02b90f845ab75f21ec516de0d09dddef5390ad&lt;/a&gt; Props djfm.&lt;/li&gt;
-  &lt;li&gt;jocel1 closed bugs #PSCSX-4829 and many others; dramatically improving performances.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That’s it for last week!
-It’s the first edition of Core Weekly, so if you have suggestions or see anything that I missed, please comment!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 04 Mar 2015 18:17:47 +0100</pubDate>
-        <link>http://build.prestashop.com/news/prestashop-core-weekly-week-9/</link>
-        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-9/</guid>
         
         <category>core-weekly</category>
         
