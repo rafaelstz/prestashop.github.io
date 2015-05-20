@@ -5,9 +5,138 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 17 May 2015 10:42:39 +0200</pubDate>
-    <lastBuildDate>Sun, 17 May 2015 10:42:39 +0200</lastBuildDate>
+    <pubDate>Wed, 20 May 2015 17:37:48 +0200</pubDate>
+    <lastBuildDate>Wed, 20 May 2015 17:37:48 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>PrestaShop Core Weekly - Week 19 &amp; 20</title>
+        <description>&lt;p&gt;Another set of short weeks here in Paris, which means another edition of the Core Weekly report that spans two weeks of change to the PrestaShop codebase.&lt;/p&gt;
+
+&lt;p&gt;This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 4th of May to Sunday 17th of May, 2015.&lt;/p&gt;
+
+&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
+
+&lt;p&gt;The PSR-2 survey is still running, &lt;a href=&quot;https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/&quot;&gt;and you can still vote&lt;/a&gt;. It seems pretty settled, though. More updates about this soon!&lt;/p&gt;
+
+&lt;p&gt;Of note among the merged PRs in the last two weeks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3007&quot;&gt;3007&lt;/a&gt;, core dev jeromenadaud we introduce a new style to the back-office and login form of PrestaShop, in accordance to the rebranding currently under way at PrestaShop. More about that very soon! The design work was done by PrestaShop UX designer syswarren.&lt;/li&gt;
+  &lt;li&gt;In &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2967&quot;&gt;2967&lt;/a&gt;, core dev Shudrum kept on modifying the email template, removing order_changed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
+
+&lt;p&gt;Let’s review last week’s merged pull-requests!&lt;/p&gt;
+
+&lt;p&gt;As always, click on the PR’s number to open its page on GitHub.&lt;/p&gt;
+
+&lt;h4 id=&quot;text-fixes&quot;&gt;Text fixes&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2990&quot;&gt;2990&lt;/a&gt;: Invoice controller - wording, by AlexEven.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3009&quot;&gt;3009&lt;/a&gt;: AdminTaxRulesGroupController - wording dissociation (All), by AlexEven.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;front-office&quot;&gt;Front office&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2983&quot;&gt;2983&lt;/a&gt;: input label and input title enhancements. Thank you inetbiz!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2994&quot;&gt;2994&lt;/a&gt;: wrong compass font folder for default-bootstrap. Thank you inetbiz!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3017&quot;&gt;3017&lt;/a&gt;: Remove old 404 image, by jeromenadaud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;back-office&quot;&gt;Back office&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2975&quot;&gt;2975&lt;/a&gt;: Fix memory leak during thumbnail generation, by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2976&quot;&gt;2976&lt;/a&gt;: Fix generation of exported themes, by sfroment42.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2989&quot;&gt;2989&lt;/a&gt;: Fix error when adding customized product from BO order process. Thank you MaX3315!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2997&quot;&gt;2997&lt;/a&gt;: More detailed error message on themes export, by sfroment42.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3010&quot;&gt;3010&lt;/a&gt;: Improved adding to Quick Access. Thank you kpodemski!&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;core&quot;&gt;Core&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2969&quot;&gt;2969&lt;/a&gt;: Optimize tag count computation, by jocel1.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2967&quot;&gt;2967&lt;/a&gt;: Remove the order_changed email and replace it by a hook, by Shudrum.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2972&quot;&gt;2972&lt;/a&gt;: Better function and variable naming, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2978&quot;&gt;2978&lt;/a&gt;: Flush cache option was not being fully applied within some Cart methods. Thank you eric-rouvier!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2870&quot;&gt;2870&lt;/a&gt;: Fix duplicate $customer object declaration. Thank you samy!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2998&quot;&gt;2998&lt;/a&gt;: Before setting a carrier free you need to check if the cart rule is in the cart, by sfroment42.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2993&quot;&gt;2993&lt;/a&gt;: parser error in ajaxProcessProductManufacturers. Thank you el-tenkova!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2992&quot;&gt;2992&lt;/a&gt;: PHPDoc for controller methods. Thank you gskema!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2991&quot;&gt;2991&lt;/a&gt;: Fix minimal quantity calculation in CartController::processDeleteProductInCart. Thank you djbuch!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2929&quot;&gt;2929&lt;/a&gt;: Adding getter for DB link. Thank you iNem0o!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;modules&quot;&gt;Modules&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2988&quot;&gt;2988&lt;/a&gt;: Images were not shown for bought products, by maximebiloe.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2877&quot;&gt;2877&lt;/a&gt;: Make Module installation handle class constants correctly. Thank you tiennou!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;css&quot;&gt;CSS&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3007&quot;&gt;3007&lt;/a&gt;: Rebranding project, by jeromenadaud, with design input by syswarren.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3015&quot;&gt;3015&lt;/a&gt;: Fix navigation hover on active menu, by jeromenadaud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;pdf&quot;&gt;PDF&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2985&quot;&gt;2985&lt;/a&gt;: Update supply-order-footer.tpl. Thank you Nobodaddy!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3000&quot;&gt;3000&lt;/a&gt;: Revert “[-] PDF : Update supply-order-footer.tpl”, by jeromenadaud.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3005&quot;&gt;3005&lt;/a&gt;: Fix supply order PDF generation, by julienbourdeau.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3011&quot;&gt;3011&lt;/a&gt;: Add sprintf capability to {l} for PDF, by julienbourdeau.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/3012&quot;&gt;3012&lt;/a&gt;: supply-order-footer.tpl is now translatable, by julienbourdeau.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;multishop&quot;&gt;Multishop&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2962&quot;&gt;2962&lt;/a&gt;: Fix bad results when filtering items in a multishop context, by gRoussac.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2996&quot;&gt;2996&lt;/a&gt;: Fix situations where customizations could be errased when updating in multishop context. Thank you djbuch!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;importer&quot;&gt;Importer&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2959&quot;&gt;2959&lt;/a&gt;: Improve import performances, by jocel1.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See all the PRs merged into the codebase since May the 4th (be with you!) &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?page=1&amp;amp;pulls_only=true&amp;amp;q=is%3Apr+merged%3A%3E2015-05-04+is%3Aclosed+sort%3Aupdated&amp;amp;utf8=%E2%9C%93&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thank you to our contributors for their Pull Requests: &lt;a href=&quot;https://github.com/djbuch&quot;&gt;djbuch&lt;/a&gt;, &lt;a href=&quot;https://github.com/el-tenkova&quot;&gt;el-tenkova&lt;/a&gt;, &lt;a href=&quot;https://github.com/eric-rouvier&quot;&gt;eric-rouvier&lt;/a&gt;, &lt;a href=&quot;https://github.com/gskema&quot;&gt;gskema&lt;/a&gt;, &lt;a href=&quot;https://github.com/iNem0o&quot;&gt;iNem0o&lt;/a&gt;, &lt;a href=&quot;https://github.com/inetbiz&quot;&gt;inetbiz&lt;/a&gt;, &lt;a href=&quot;https://github.com/kpodemski&quot;&gt;kpodemski&lt;/a&gt;, &lt;a href=&quot;https://github.com/MaX3315&quot;&gt;MaX3315&lt;/a&gt;, &lt;a href=&quot;https://github.com/Nobodaddy&quot;&gt;Nobodaddy&lt;/a&gt;, &lt;a href=&quot;https://github.com/samy&quot;&gt;samy&lt;/a&gt;, and &lt;a href=&quot;https://github.com/tiennou&quot;&gt;tiennou&lt;/a&gt;. Also, thank you to the contributors whose PRs haven’t been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!&lt;/p&gt;
+
+&lt;p&gt;Remember: if you want to contribute to PrestaShop with code, read those:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop&quot;&gt;Contributing code to PrestaShop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message&quot;&gt;How to write a commit message&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;…and if you do not know how to fix an issue but wish to report it, read this: &lt;a href=&quot;http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop&quot;&gt;How to use the Forge to contribute to PrestaShop&lt;/a&gt;. Thank you!&lt;/p&gt;
+
+&lt;p&gt;Until the next Core Weekly report, let me know if I forgot something here, or if you have ideas about how to improve this report!&lt;/p&gt;
+
+&lt;p&gt;Happy contributin’ everyone!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 May 2015 20:29:47 +0200</pubDate>
+        <link>http://build.prestashop.com/news/prestashop-core-weekly-weeks-19-20/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-weeks-19-20/</guid>
+        
+        <category>core-weekly</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>How to override modules in PrestaShop</title>
@@ -1025,66 +1154,6 @@ This was the third edition of Core Weekly, so again, if you have suggestions or 
         <pubDate>Thu, 19 Mar 2015 09:06:00 +0100</pubDate>
         <link>http://build.prestashop.com/news/prestashop-core-weekly-week-11/</link>
         <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-11/</guid>
-        
-        <category>core-weekly</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>PrestaShop Core Weekly - Week 10</title>
-        <description>&lt;p&gt;Hi everyone, and welcome to the second edition of the PrestaShop Core Weekly post, focusing on the activity from March 2nd to March 8th of 2015.
-As last week’s Core Weekly, I’ll highlight some of the more important happenings in and around the Core of PrestaShop.&lt;/p&gt;
-
-&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
-
-&lt;p&gt;Last week saw the release of &lt;a href=&quot;https://www.prestashop.com/forums/topic/423651-new-release-prestashop-16014/&quot;&gt;version 1.6.0.14&lt;/a&gt;, right after a big week which saw two releases on two consecutive days, &lt;a href=&quot;https://www.prestashop.com/forums/topic/428304-prestashop-core-weekly-week-10/&quot;&gt;1.6.0.12 and 1.6.0.13&lt;/a&gt;. As you can see, the PrestaShop team is willing to go the extra mile to make sure that the user have the best e-commerce software in the industry, and are not willing to compromise, even if it means pushing a new version because of newfound blocker bug.
-&lt;a href=&quot;https://www.prestashop.com/en/developers-versions/changelog/1.6.0.14&quot;&gt;See the (short) changelog for 1.6.0.14&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
-
-&lt;p&gt;Now, onto the past week, starting from Monday, March 2nd to Sunday, March 8th.&lt;/p&gt;
-
-&lt;h3 id=&quot;notable-accepted-pull-requests&quot;&gt;Notable accepted pull requests:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2567&quot;&gt;2567&lt;/a&gt;: PHPDocs + Code formatting + Refractoring for CategoryController. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2547&quot;&gt;2547&lt;/a&gt;: FO: re-open customer thread from history page. Thanks Axome!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2544&quot;&gt;2544&lt;/a&gt;: Project: Huge work on code standardization. Thanks PrestaEdit!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Find all PRs closed last week &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-03-02+is%3Aclosed&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;notable-closed-forge-tickets&quot;&gt;Notable closed Forge tickets:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4733&quot;&gt;PSCSX-4733&lt;/a&gt;: threads statuses could not be translated&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4857&quot;&gt;PSCSX-4857&lt;/a&gt;: Wrong product url translation&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4853&quot;&gt;PSCSX-4853&lt;/a&gt;: classes/productsale.php crash&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4850&quot;&gt;PSCSX-4850&lt;/a&gt;: employee permissions: employee has no access to state in addresses when Localization -&amp;gt; state is not selected&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4816&quot;&gt;PSCSX-4816&lt;/a&gt;: Property Carrier-&amp;gt;name is not valid causes multiple bugs&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4791&quot;&gt;PSCSX-4791&lt;/a&gt;: Unable to add stock (classic system) after disabling advanced stock&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Find all Forge tickets closed last week here: &lt;a href=&quot;http://forge.prestashop.com/browse/PSCSX-4775?jql=project%20%3D%20PSCSX%20AND%20status%20in%20%28Resolved%2C%20Closed%29%20AND%20resolution%20in%20%28Fixed%2C%20Done%29%20AND%20resolved%20%3E%3D%202015-03-02%20AND%20resolved%20%3C%3D%202015-03-08%20ORDER%20BY%20updated%20DESC&quot;&gt;click here!&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;notable-commits-to-the-16-branch&quot;&gt;Notable commits to the 1.6 branch:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Modules names should be lowercase &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/e501e7fecb8d7f1fe621458665faf544d9fe9108&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Cleaner tests directory, removed useless files, separated unit tests from integration tests &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/c04c8aeec1a779b07dd4fde42366c3085124e79b&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;IN =&amp;gt; EXISTS optimizations &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/c55f7dfa5303dd485aab8bcb82494667a2591c4e&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Merge remote-tracking branch ‘upstream/1.6’ into 1.6-upstream &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/commit/de73e84bff780a125038070454c3198c1621670f&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That’s it for last week!
-It’s the second edition of Core Weekly, so if you have suggestions or see anything that I missed, please comment!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 12 Mar 2015 15:14:47 +0100</pubDate>
-        <link>http://build.prestashop.com/news/prestashop-core-weekly-week-10/</link>
-        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-10/</guid>
         
         <category>core-weekly</category>
         
