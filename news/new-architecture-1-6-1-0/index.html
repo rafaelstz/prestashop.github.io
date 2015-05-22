@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Architecture Improvements in 1.6.1.0</title>
+    <meta name="description" content="Official blog for PrestaShop development straight from the product and core dev team.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://build.prestashop.com/news/new-architecture-1-6-1-0/">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-2753771-31', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/news/new-architecture-1-6-1-0/',
+		  'title': 'Architecture Improvements in 1.6.1.0'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8">
+        <a class="site-title" href="/">(new PrestaShop())->build();</a>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <nav class="site-nav">
+          <ul class="nav nav-pills pull-right">
+
+            <li><a class="page-link" href="/">News</a></li>
+
+            <li><a class="page-link" href="/how-tos">How-Tos</a></li>
+
+            <li><a class="page-link" href="/about">About</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class="post">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <header class="post-header">
+        <h1 class="post-title">Architecture Improvements in 1.6.1.0</h1>
+        
+          <h3 class="post-subtitle">Cool new toys for PrestaShop developers</h3>
+        
+      </header>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div id="post-sidebar" class="col-md-2">
+
+      <aside class="author">
+        
+
+<div class="author-avatar">
+  <img class="img-circle" src="https://avatars0.githubusercontent.com/u/1460499">
+</div>
+
+<div class="aside-meta">Written by</div>
+<p class="author-name">
+  François-Marie de Jouvencel
+</p>
+
+      </aside>
+
+      <aside class="share-buttons">
+        
+<p class="aside-meta">Share this</p>
+
+<ul class="list-group">
+
+  <li>
+    <a class="list-group-item" href="https://twitter.com/intent/tweet?text=Architecture Improvements in 1.6.1.0&url=http://build.prestashop.com/news/new-architecture-1-6-1-0/&via=PrestaShop&related=PrestaShop" rel="nofollow" target="_blank" title="Share on Twitter">
+      <i class="fa fa-twitter-square"></i> Twitter
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://facebook.com/sharer.php?u=http://build.prestashop.com/news/new-architecture-1-6-1-0/" rel="nofollow" target="_blank" title="Share on Facebook">
+      <i class="fa fa-facebook-square"></i> Facebook
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://plus.google.com/share?url=http://build.prestashop.com/news/new-architecture-1-6-1-0/" rel="nofollow" target="_blank" title="Share on Google+">
+      <i class="fa fa-google-plus-square"></i> Google+
+    </a>
+  </li>
+
+</ul>
+
+      </aside>
+
+    </div>
+
+    <div class="col-md-10">
+
+      <article class="post-content">
+        <p>With the release of PrestaShop 1.6.1.0 we are going to introduce exciting new tools in the codebase that are designed to help write more modular, testable code that enforces <a href="http://en.wikipedia.org/wiki/Separation_of_concerns">separation of concerns</a>.</p>
+
+<p>We are releasing our work on the software architecture of PrestaShop to start discussing it with our community, gather ideas and feedback, and improve it together.</p>
+
+<p>Since we are introducing many new concepts we felt a few explanations were in order.</p>
+
+<h2 id="the-plan">The Plan</h2>
+
+<p>The driving idea behind this project is that we want our code to be more robust.</p>
+
+<p>To be robust, code needs unit tests. To have unit tests, code needs to be modular. To write modular code, we need a few tools. The recent changes provide some of these tools, which will be enriched in the coming months.</p>
+
+<p>First of all, don’t panic. We are not breaking anything (yet). We’re just adding new abstraction layers that are primarily meant to be used by new code.</p>
+
+<p>As much as possible, new features will be implemented using the elements from the new architecture. Old code will benefit from the new components where they provide an obvious improvement but we have no intent to systematically rewrite legacy code and move it to the new architecture. This is not a 2.0 version, but a (big) step to bring PrestaShop up to speed.</p>
+
+<p>Besides architecture improvements, our plan for the coming year includes:</p>
+
+<ul>
+  <li>adopting the PSR-2 norm</li>
+  <li>switching to PHP 5.4 (namespaces, closures…!)</li>
+  <li>switching to composer for dependency management (no more submodules!)</li>
+</ul>
+
+<p>Stay tuned!</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+
+<p>Before getting into more details we want to insist on the fact that the architecture changes we have introduced are at this stage still a work in progress.</p>
+
+<p><em>The code is production ready, but the APIs may change in the near future.</em></p>
+
+<p>You’re of course welcome to experiment with the new classes and services, but please be warned there will likely be short notice breaking changes in the coming months.</p>
+
+<p>If in doubt, do not directly depend on code in the <code>Core</code> of <code>Adapter</code> folders.</p>
+
+<h2 id="new-directories-in-the-source-tree">New Directories in the Source Tree</h2>
+
+<pre><code>PrestaShop/
+    |-- Core/
+    |    |-- Foundation/
+    |    └-- Business/
+    |-- Adapter/
+    └-- *Legacy*/
+</code></pre>
+
+<p>Two new top-level directories were added to the source tree, <code>Core</code> and <code>Adapter</code>.</p>
+
+<p>Code in the <code>Core</code> directory is what we refer to when we say “the new architecture”.</p>
+
+<p>There are two main requirements for all the code in <code>Core</code> :</p>
+
+<ul>
+  <li>Code in <code>Core</code> MUST HAVE <em>meaningful</em> unit tests</li>
+  <li>Code in <code>Core</code> MUST BE modular
+    <ul>
+      <li>no hidden dependencies: use Dependency Injection</li>
+      <li>as a general rule, NO global variables use, direct or indirect (e.g. no access to <code>$_GET</code> so no <code>Tools::getValue()</code>)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The code in <code>Adapter</code> serves as a bridge between the <code>Core</code> and the legacy parts. Code in <code>Core</code> MAY call into legacy code, but only through an <code>Adapter</code>.</p>
+
+<p>Currently we’re using pseudo-namespaces, which leads to cumbersome class names like <code>Core_Foundation_Database_EntityManager</code>.</p>
+
+<p>They will be replaced as soon as possible with proper namespaces, so:</p>
+
+<blockquote>
+  <p><code>Core_Foundation_Database_EntityManager</code></p>
+</blockquote>
+
+<p>will soon become:</p>
+
+<blockquote>
+  <p><code>Core\Foundation\Database\EntityManager</code></p>
+</blockquote>
+
+<p>which will improve readability a lot. Please bear with us for a little longer :)</p>
+
+<h2 id="key-new-software-components">Key New Software Components</h2>
+
+<h3 id="dependency-injection">Dependency Injection</h3>
+
+<p>To better manage the many dependencies between components inside PrestaShop, we introduced an Inversion Of Control component (class <code>Core_Foundation_IoC_Container</code>).</p>
+
+<p>The job of the <code>Core_Foundation_IoC_Container</code> class is to store all of the application-wide services (like the database, the configuration…) and pass them on to other components that need them.</p>
+
+<p>Services are bound to the container at the very early stage of the application initialization (<code>config/bootstrap.php</code>).</p>
+
+<p>At the moment you mostly access the IoC container through the Service Locator.</p>
+
+<p>For instance:  <code>Adapter_ServiceLocator::get('Core_Foundation_Database_DatabaseInterface')</code> will retrieve the instance of the database from the container.</p>
+
+<p><em>In the future, Adapter_ServiceLocator will no longer be needed. The IoC container will be threaded down from the application bootstrapping code to the controllers layer and controllers will pull their dependencies from the container directly. Using the <code>Adapter_ServiceLocator</code> is a temporary measure that enables us to work with the concepts from the new architecture without the need for risky refactoring.</em></p>
+
+<p>The dependency injection component is already used in one very interesting place: module constructors.</p>
+
+<p>Now if you declare a dependency in your module constructor, it will be injected into your module automatically.</p>
+
+<p>This helps make modules safer, because they can specify to the application which components they need to do their work.</p>
+
+<p>For instance, let’s say I need access to the database for my module.</p>
+
+<p>Instead of writing things like:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="k">class</span> <span class="nc">MyModule</span> <span class="k">extends</span> <span class="nx">Module</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// initialization code</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getSomeData</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// Where does Db come from?!</span>
+        <span class="nx">Db</span><span class="o">::</span><span class="na">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">executeS</span><span class="p">(</span><span class="s1">&#39;SELECT x FROM Y&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>You can now write:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="k">class</span> <span class="nc">MyModule</span> <span class="k">extends</span> <span class="nx">Module</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="nv">$db</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">Core_Foundation_Database_DatabaseInterface</span> <span class="nv">$db</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// initialization code</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span> <span class="o">=</span> <span class="nv">$db</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getSomeData</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="s1">&#39;SELECT x FROM Y&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>There are several benefits to the new approach:</p>
+
+<ul>
+  <li>no access to global variables</li>
+  <li>easier to test: you can <code>new</code> the module and pass a database mock to it</li>
+  <li>people reading the code know immediately what kind of dependencies the module needs</li>
+</ul>
+
+<h3 id="entity-repositories">Entity Repositories</h3>
+
+<p>In PrestaShop many <code>ObjectModel</code> subclasses implement methods to retrieve models from the database according to some criteria.
+The methods are not generic even though they perform very generic tasks.</p>
+
+<p>For instance in <code>CountryCore</code> you can find this method:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">getByIso</span><span class="p">(</span><span class="nv">$iso_code</span><span class="p">,</span> <span class="nv">$active</span> <span class="o">=</span> <span class="k">false</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">Validate</span><span class="o">::</span><span class="na">isLanguageIsoCode</span><span class="p">(</span><span class="nv">$iso_code</span><span class="p">))</span>
+        <span class="k">die</span><span class="p">(</span><span class="nx">Tools</span><span class="o">::</span><span class="na">displayError</span><span class="p">());</span>
+    <span class="nv">$result</span> <span class="o">=</span> <span class="nx">Db</span><span class="o">::</span><span class="na">getInstance</span><span class="p">(</span><span class="nx">_PS_USE_SQL_SLAVE_</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getRow</span><span class="p">(</span><span class="s1">&#39;</span>
+<span class="s1">        SELECT `id_country`</span>
+<span class="s1">        FROM `&#39;</span><span class="o">.</span><span class="nx">_DB_PREFIX_</span><span class="o">.</span><span class="s1">&#39;country`</span>
+<span class="s1">        WHERE `iso_code` = \&#39;&#39;</span><span class="o">.</span><span class="nx">pSQL</span><span class="p">(</span><span class="nb">strtoupper</span><span class="p">(</span><span class="nv">$iso_code</span><span class="p">))</span><span class="o">.</span><span class="s1">&#39;\&#39;&#39;</span>
+        <span class="o">.</span><span class="p">(</span><span class="nv">$active</span> <span class="o">?</span> <span class="s1">&#39; AND active = 1&#39;</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="p">);</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$result</span><span class="p">[</span><span class="s1">&#39;id_country&#39;</span><span class="p">];</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Which is not needed any longer thanks to the generic entity retrieving capabilities provided by the new <code>EntityRepository</code> class:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nv">$countryRepository</span> <span class="o">=</span> <span class="nv">$entityManager</span><span class="o">-&gt;</span><span class="na">getRepository</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">);</span>
+<span class="nv">$country</span> <span class="o">=</span> <span class="nv">$countryRepository</span><span class="o">-&gt;</span><span class="na">findOneBy</span><span class="p">([</span>
+    <span class="s1">&#39;iso_code&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;us&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;active&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span>
+<span class="p">]);</span></code></pre></div>
+
+<p>In the code above, you can get access to the <code>$entityManager</code> either by declaring it as a dependency in your constructor if you’re inside a module, or using the service locator if there is really no better way to pass the dependency:</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">Adapter_ServiceLocator</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;Core_Foundation_Database_EntityManager&#39;</span><span class="p">);</span></code></pre></div>
+
+<p><em>Again, <code>Adapter_ServiceLocator</code> will eventually disappear from the API. You should only use it where you cannot do proper dependency injection.</em></p>
+
+<p>Currently, entity repositories support the following methods:</p>
+
+<ul>
+  <li><code>findOne($id)</code> : finds an entity by its primary key</li>
+  <li><code>findOneByXYZ($XYZFieldValue)</code> : finds zero or one entity</li>
+  <li><code>findByXYZ($XYZFieldValue)</code> : finds zero or more entities</li>
+  <li><code>findOneBy(array $conditions)</code> : finds zero or one entity that matches all of the passed conditions</li>
+  <li><code>findOneBy(array $conditions)</code> : finds zero or more entities that match all of the passed conditions</li>
+</ul>
+
+<p><em>It remains to be decided how to fit the more complex parts of our ORM into this abstraction: language fields, multishop fields. Ideas?</em></p>
+
+<p>Going forward, we want to move all of the SQL queries out of the entity (<code>ObjectModel</code>) classes and into repository classes (or dedicated service classes for more complex tasks that involve different types of entities).</p>
+
+<p>We want models to be as small as possible and <code>EntityRepository</code>s provide a great way to separate the database interaction layer from the business code.</p>
+
+<p>For database interaction in general, we are considering a hybrid DataMapper / ActiveRecord pattern where <code>EntityRepository</code>s would be used to retrieve models from the database but where we would still have a <code>save</code> method on models that persists them to the database.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>We now have some of the building blocks we need to create more robust code with confidence.</p>
+
+<p>We’re releasing these new technical features knowing that they will need to be improved upon and nothing is set in stone yet.</p>
+
+<p>Please feel free to comment, share any concerns you may have, or <a href="https://github.com/PrestaShop">join us on GitHub</a> and contribute!</p>
+
+<p>More articles and examples from the new architecture will follow.</p>
+
+      </article>
+
+      
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+
+          <li><i class="fa fa-calendar"></i> May 21, 2015</li>
+
+          
+            <li>
+              <i class="fa fa-tags"></i>
+
+              
+                <span class="label label-primary">releases</span>
+              
+                <span class="label label-primary">architecture</span>
+              
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+              <h5>About the author</h5>
+
+              <h4>
+                François-Marie de Jouvencel
+                <span>Product Manager @ PrestaShop</span>
+              </h4>
+              <p></p>
+
+              
+                <a class="btn btn-default btn-sm" href="https://github.com/djfm">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+              
+              
+              
+              
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'prestashopbuild';
+
+            
+
+            
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development straight from the product and core dev team.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+          <a href="/feed.xml" title="">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+
+          
+            <a href="https://github.com/PrestaShop" title="">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://twitter.com/PrestaShop" title="">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://instagram.com/prestacrew" title="">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://play.spotify.com/user/prestacrew" title="">
+              <i class="fa fa-spotify fa-2x"></i>
+            </a>
+          
+
+          <span class="separator"> | </span>
+
+          
+            <a href="http://status.prestashop.com/" title="PrestaShop Cloud Health">
+              <i class="fa fa-heartbeat fa-2x"></i>
+            </a>
+          
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+
+  </body>
+
+</html>
