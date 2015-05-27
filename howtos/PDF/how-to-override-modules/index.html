@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>How to customize PrestaShop invoice template</title>
+    <meta name="description" content="Official blog for PrestaShop development straight from the product and core dev team.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://build.prestashop.com/howtos/pdf/how-to-override-modules/">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-2753771-31', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/howtos/pdf/how-to-override-modules/',
+		  'title': 'How to customize PrestaShop invoice template'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8">
+        <a class="site-title" href="/">(new PrestaShop())->build();</a>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <nav class="site-nav">
+          <ul class="nav nav-pills pull-right">
+
+            <li><a class="page-link" href="/">News</a></li>
+
+            <li><a class="page-link" href="/how-tos">How-Tos</a></li>
+
+            <li><a class="page-link" href="/about">About</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class="post">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <header class="post-header">
+        <h1 class="post-title">How to customize PrestaShop invoice template</h1>
+        
+          <h3 class="post-subtitle">todo</h3>
+        
+      </header>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div id="post-sidebar" class="col-md-2">
+
+      <aside class="author">
+        
+
+<div class="author-avatar">
+  <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636">
+</div>
+
+<div class="aside-meta">Written by</div>
+<p class="author-name">
+  Julien Bourdeau
+</p>
+
+      </aside>
+
+      <aside class="share-buttons">
+        
+<p class="aside-meta">Share this</p>
+
+<ul class="list-group">
+
+  <li>
+    <a class="list-group-item" href="https://twitter.com/intent/tweet?text=How to customize PrestaShop invoice template&url=http://build.prestashop.com/howtos/pdf/how-to-override-modules/&via=PrestaShop&related=PrestaShop" rel="nofollow" target="_blank" title="Share on Twitter">
+      <i class="fa fa-twitter-square"></i> Twitter
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://facebook.com/sharer.php?u=http://build.prestashop.com/howtos/pdf/how-to-override-modules/" rel="nofollow" target="_blank" title="Share on Facebook">
+      <i class="fa fa-facebook-square"></i> Facebook
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://plus.google.com/share?url=http://build.prestashop.com/howtos/pdf/how-to-override-modules/" rel="nofollow" target="_blank" title="Share on Google+">
+      <i class="fa fa-google-plus-square"></i> Google+
+    </a>
+  </li>
+
+</ul>
+
+      </aside>
+
+    </div>
+
+    <div class="col-md-10">
+
+      <article class="post-content">
+        <script src="https://gist.github.com/gskema/04af5a98b56ee59f01e1.js"> </script>
+
+<p>As you can see, this class has a variety of properties and methods. Some methods are <code>public</code>, some are <code>protected</code> and others are <code>private</code>.</p>
+
+<p>Sometimes you may need to extend a method that is currently set to be <code>private</code>. Unfortunately, it is not possible to extend private variables or methods in PHP (and most other class-based programming languages).</p>
+
+<p>This is a design issue. Core modules were written long before the introduction of module overrides. Difference is that <code>private</code> scope “locks down” class features, while <code>protected</code> scope is less strict and allows overrides by a child class.</p>
+
+<p>If you come across a core module method that is private, the best thing to do is change it to <code>protected</code> and to make a pull request on GitHub for that module. Everyone will benefit!</p>
+
+<h2 id="how-to-make-cleaner-method-overrides">How to make cleaner method overrides</h2>
+
+<p>Overrides are great, but do they keep up with the updates? We are talking about a situation where the whole function is copied to an override and one minor modification is made:</p>
+
+<script src="https://gist.github.com/gskema/751e2791b35008beb71f.js"> </script>
+
+<p>We added the line <code>'company_name' =&gt; ($this-&gt;context-&gt;customer-&gt;logged ? $this-&gt;context-&gt;customer-&gt;company : false),</code>, which adds a <code>company_name</code> Smarty variable that we want to use in our template.</p>
+
+<p>The problem is that we essentially “snapshotted” the method code that we took from the module. The code of this method may and will change in the future version. What if wanted to have the updated code but also add our one little modification?</p>
+
+<p>When the code structure and logic allows it, you should always aim to execute the whole unmodified parent method <strong>and then</strong> (before or after) add that one little modification. The way you can do this is by using <code>parent</code> keyword, which calls the method from the parent class:</p>
+
+<script src="https://gist.github.com/gskema/0adf2da86ff78750d161.js"> </script>
+
+<p>In the example above, we add our Smarty variable, and then return the parent method, which will call the unmodified and possibly updated <code>hookDisplayTop</code> method. There is no need to copy the whole method.</p>
+
+<p><strong>P.S.</strong> There is one small issue in the example, which you may have noticed. In the parent method, there is a  statement, <code>if (!$this-&gt;active)</code>, which should’ve been taken into consideration when making the override. We could put it in our overridden method, or for the purpose of this example, we can imagine that it’s not there :)</p>
+
+<h2 id="module-overrides-are-great">Module overrides are great!</h2>
+
+<p>As we mentioned before, PrestaShop already has a great system for overrides, and module overrides make it even greater. Overrides truly empower developers and saves a lot of time for everyone.</p>
+
+<p>In the past, overriding module behaviour was a real issue. If using hooks, modifying templates and JavaScript files wasn’t enough, you had to write your own module or rename and modify the module you were trying to change. The updates were instantly lost.</p>
+
+<p>Luckily, now it is possible to override module classes and change the behaviours right at their sources.</p>
+
+<p>Modules overrides have not been documented very well, so not many of you may know about it. Hopefully this gave you some clearance on how to use them.</p>
+
+      </article>
+
+      
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+
+          <li><i class="fa fa-calendar"></i> May 10, 2015</li>
+
+          
+            <li>
+              <i class="fa fa-tags"></i>
+
+              
+                <span class="label label-primary">override</span>
+              
+                <span class="label label-primary">module</span>
+              
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+              <h5>About the author</h5>
+
+              <h4>
+                Julien Bourdeau
+                <span>Core Developer @ PrestaShop</span>
+              </h4>
+              <p></p>
+
+              
+                <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/761923-julien-bourdeau">
+                  <i class="fa fa-comments"></i> Forum
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/julienbourdeau">
+                  <i class="fa fa-language"></i> Crowdin
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+                  <i class="fa fa-twitter"></i> Twitter
+                </a>
+              
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'prestashopbuild';
+
+            
+
+            
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development straight from the product and core dev team.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+          <a href="/feed.xml" title="">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+
+          
+            <a href="https://github.com/PrestaShop" title="">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://twitter.com/PrestaShop" title="">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://instagram.com/prestacrew" title="">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://play.spotify.com/user/prestacrew" title="">
+              <i class="fa fa-spotify fa-2x"></i>
+            </a>
+          
+
+          <span class="separator"> | </span>
+
+          
+            <a href="http://status.prestashop.com/" title="PrestaShop Cloud Health">
+              <i class="fa fa-heartbeat fa-2x"></i>
+            </a>
+          
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+
+  </body>
+
+</html>

@@ -5,8 +5,8 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 22 May 2015 13:51:02 +0200</pubDate>
-    <lastBuildDate>Fri, 22 May 2015 13:51:02 +0200</lastBuildDate>
+    <pubDate>Wed, 27 May 2015 18:17:24 +0200</pubDate>
+    <lastBuildDate>Wed, 27 May 2015 18:17:24 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -809,7 +809,7 @@ But I’m telling you, next week will bring a whole lot of merges!&lt;/p&gt;
 
 &lt;p&gt;The website offers an easy-to-use interface, but if (like me) you want to show off, you can use the following Git alias in your configuration:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config --global alias.ignore &lt;span class=&quot;err&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;gi() { curl -L -s https://www.gitignore.io/api/$@ &amp;gt;&amp;gt; .gitignore ;}; gi&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config --global alias.ignore &lt;span class=&quot;s2&quot;&gt;&amp;quot;!gi() { curl -L -s https://www.gitignore.io/api/$@ &amp;gt;&amp;gt; .gitignore ;}; gi&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Next, the following command will generate a &lt;code&gt;.gitignore&lt;/code&gt; file inside the current directory &lt;a href=&quot;https://www.gitignore.io/api/prestashop,osx,phpstorm&quot;&gt;containing these lines&lt;/a&gt;.&lt;/p&gt;
 
