@@ -5,9 +5,181 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 27 May 2015 18:17:24 +0200</pubDate>
-    <lastBuildDate>Wed, 27 May 2015 18:17:24 +0200</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 19:04:01 +0200</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 19:04:01 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>PrestaShop &amp;&amp; the PSR-2 coding style guide</title>
+        <description>&lt;p&gt;We are planning to switch to PSR-2, here is the why, the how and the when!&lt;/p&gt;
+
+&lt;h3 id=&quot;the-current-situation&quot;&gt;The current situation&lt;/h3&gt;
+
+&lt;p&gt;PrestaShop currently uses its own &lt;a href=&quot;http://doc.prestashop.com/display/PS16/Coding+Standards&quot;&gt;Coding Standards&lt;/a&gt;, based on &lt;a href=&quot;http://www.php-fig.org/psr/psr-1/&quot;&gt;PSR-1&lt;/a&gt;, with a few adaptations for historical reasons.&lt;/p&gt;
+
+&lt;p&gt;For a long time, we’ve wanted to move to a more generally-accepted coding standard. PrestaShop is loved by its community and we love our community, and we wanted to adopt a common coding standard in order to ease code contribution.&lt;/p&gt;
+
+&lt;p&gt;There are a few coding standards in use: &lt;a href=&quot;https://pear.php.net/manual/en/standards.php&quot;&gt;PHP’s PEAR project has its own&lt;/a&gt;, &lt;a href=&quot;http://framework.zend.com/manual/current/en/ref/coding.standard.html&quot;&gt;the Zend Framework has one&lt;/a&gt;, &lt;a href=&quot;https://make.wordpress.org/core/handbook/coding-standards/php/&quot;&gt;WordPress has one too&lt;/a&gt;, &lt;a href=&quot;https://www.drupal.org/coding-standards&quot;&gt;Drupal derives its standard from the PEAR one&lt;/a&gt;, …and then there is the &lt;a href=&quot;https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md&quot;&gt;PSR-1 coding standard&lt;/a&gt;, along with the &lt;a href=&quot;https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md&quot;&gt;PSR-2 coding style guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;PSR-1 and PSR-2, named “Basic Coding Standard” and “Coding Style Guide”, were conceived by the PHP Framework Interop Group, an informal group of representatives from major PHP projects, which offers a place to “talk about the commonalities between our projects and find ways we can work together” (&lt;a href=&quot;http://www.php-fig.org/faq/&quot;&gt;see the FAQ&lt;/a&gt;). The group issues a series of standards (PSRs, or PHP Standard Recommendation) on how to best build a PHP project.&lt;/p&gt;
+
+&lt;p&gt;We started a &lt;a href=&quot;https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/&quot;&gt;poll about moving the PrestaShop codebase to PSR-2&lt;/a&gt; (and therefore PSR-1 too) back on April 1st, and the result was clearly positive: 84.62% of the respondents agreed that this was a good idea!&lt;/p&gt;
+
+&lt;p&gt;So, time to prepare for that move!&lt;/p&gt;
+
+&lt;h3 id=&quot;when-will-it-happen-and-how&quot;&gt;When will it happen, and how?&lt;/h3&gt;
+
+&lt;h4 id=&quot;state-of-the-current-code&quot;&gt;1. State of the current code&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://build.prestashop.com/news/new-architecture-1-6-1-0/&quot;&gt;PrestaShop’s planned new architecture&lt;/a&gt; already follows the PSR-2 coding style. For instance, check &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/blob/1.6/Core/Business/Payment/Core_Business_Payment_PaymentOption.php&quot;&gt;the new Core_Business_Payment_PaymentOption.php class&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For the remaining PrestaShop core code (classes, controllers, etc.), we will start moving all files from the PrestaShop coding standards to PSR-2 once PrestaShop 1.6.1.0 has been released.&lt;/p&gt;
+
+&lt;p&gt;Please be bear with us, as there might bugs along the way: changing coding style is not automatic, and it will be a way for us to revise some old code and make the whole codebase stronger.&lt;/p&gt;
+
+&lt;p&gt;In any case, you can participate to this project just by making a pull request! Please have a look at &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/blob/1.6/CONTRIBUTING.md&quot;&gt;PrestaShop contribution process&lt;/a&gt; in order to help us move things faster and with more confidence! We will need code contributors, but also reviewers and testers!&lt;/p&gt;
+
+&lt;h4 id=&quot;start-of-the-psr-2-era&quot;&gt;2. Start of the PSR-2 era&lt;/h4&gt;
+
+&lt;p&gt;In effect, from the moment PrestaShop 1.6.1.0 is released, the &lt;strong&gt;next pull requests will HAVE TO follow the PSR-1 and PSR-2 standards&lt;/strong&gt;. Update your tools and methods!&lt;/p&gt;
+
+&lt;h4 id=&quot;about-pull-requests-that-are-currently-waiting-for-a-code-review&quot;&gt;3. About pull requests that are currently waiting for a code review&lt;/h4&gt;
+
+&lt;p&gt;Many pull requests were written before we announced the project to move to PSR-2.&lt;/p&gt;
+
+&lt;p&gt;Don’t worry, we will merge them as-is, and correct their use of PSR-2 afterwards ourselves.&lt;/p&gt;
+
+&lt;p&gt;Obviously, you are more than welcome to upgrade your PRs to PSR-2 yourself :)&lt;/p&gt;
+
+&lt;h4 id=&quot;about-existing-prestashop-modules&quot;&gt;4. About existing PrestaShop modules&lt;/h4&gt;
+
+&lt;p&gt;All existing modules’ contributors have worked hard to follow the PrestaShop Coding Standards over the years.&lt;/p&gt;
+
+&lt;p&gt;The fact that PrestaShop is changing and is going to use a common coding standard doesn’t mean existing modules will suddenly stop being valid!&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://validator.prestashop.com&quot;&gt;PrestaShop validator&lt;/a&gt; will not reject modules if they follow the old standard for quite some time.&lt;/p&gt;
+
+&lt;p&gt;For your future modules, please follow the PSR-2 coding standards: this will benefit the whole community.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-main-differences-between-the-current-norm-and-psr-2&quot;&gt;The main differences between the current norm and PSR-2&lt;/h3&gt;
+
+&lt;p&gt;Now it is time to see where the PrestaShop Coding Standards and PSR-2 differ.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-important&quot; role=&quot;alert&quot;&gt;&lt;h4&gt;&lt;i class=&quot;fa fa-exclamation-triangle&quot;&gt;&lt;/i&gt; Important&lt;/h4&gt;
+&lt;p&gt;At the time of writing, namespaces and closures are not allowed, because we first need to announce the switch to PHP 5.4 as the minimum version supported by PrestaShop.&lt;/p&gt;
+
+&lt;p&gt;This will be announced very soon, and applied in the coming year.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;lines&quot;&gt;1. Lines&lt;/h4&gt;
+
+&lt;p&gt;The soft limit on line length MUST be 120 characters; automated style checkers MUST warn but MUST NOT error at the soft limit.&lt;/p&gt;
+
+&lt;h4 id=&quot;keywords&quot;&gt;2. Keywords&lt;/h4&gt;
+
+&lt;p&gt;The PHP constants true, false, and null MUST be in lower case.&lt;/p&gt;
+
+&lt;h4 id=&quot;properties&quot;&gt;3. Properties&lt;/h4&gt;
+
+&lt;p&gt;Property names SHOULD NOT be prefixed with a single underscore to indicate protected or private visibility.&lt;/p&gt;
+
+&lt;h4 id=&quot;methods&quot;&gt;4. Methods&lt;/h4&gt;
+
+&lt;p&gt;Method names SHOULD NOT be prefixed with a single underscore to indicate protected or private visibility.&lt;/p&gt;
+
+&lt;h4 id=&quot;conditions&quot;&gt;5. Conditions&lt;/h4&gt;
+
+&lt;h5 id=&quot;if-elseif-else&quot;&gt;5.1. if, elseif, else&lt;/h5&gt;
+
+&lt;p&gt;An &lt;code&gt;if&lt;/code&gt; structure looks like the following. Note the placement of parenthesis, spaces, and braces; and that &lt;code&gt;else&lt;/code&gt; and &lt;code&gt;elseif&lt;/code&gt; are on the same line as the closing brace from the earlier body.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$expr1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// if body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;elseif&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$expr2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// elseif body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// else body;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h5 id=&quot;switch-case&quot;&gt;5.2. switch, case&lt;/h5&gt;
+
+&lt;p&gt;A &lt;code&gt;switch&lt;/code&gt; structure looks like the following. Note the placement of parenthesis, spaces, and braces. The case statement MUST be indented once from switch, and the break keyword (or other terminating keyword) MUST be indented at the same level as the case body. There MUST be a comment such as &lt;code&gt;// no break&lt;/code&gt; when fall-through is intentional in a non-empty case body.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$expr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;First case, with a break&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Second case, which falls through&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// no break&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Third case, return instead of break&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Default case&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h5 id=&quot;while-do-while-for-foreach-try-catch&quot;&gt;5.3. while, do while, for, foreach, try, catch&lt;/h5&gt;
+
+&lt;p&gt;A &lt;code&gt;while&lt;/code&gt; statement looks like the following. Note the placement of parenthesis, spaces, and braces.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$expr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// structure body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Similarly, a &lt;code&gt;do while&lt;/code&gt; statement looks like the following. Note the placement of parenthesis, spaces, and braces.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// structure body;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$expr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;code&gt;for&lt;/code&gt; statement looks like the following. Note the placement of parenthesis, spaces, and braces.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// for body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;code&gt;foreach&lt;/code&gt; statement looks like the following. Note the placement of parenthesis, spaces, and braces.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$iterable&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// foreach body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A try catch block looks like the following. Note the placement of parenthesis, spaces, and braces.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// try body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;FirstExceptionType&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// catch body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;OtherExceptionType&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// catch body&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;end-of-an-era-beginning-of-a-new-one&quot;&gt;End of an era, beginning of a new one!&lt;/h3&gt;
+
+&lt;p&gt;The switch to PSR-2 is just another mark of the changes that are happening at PrestaShop. More exciting things are coming, stay tuned!&lt;/p&gt;
+
+&lt;p&gt;If you have any question about this switch, let us know in the comments!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Jun 2015 20:54:00 +0200</pubDate>
+        <link>http://build.prestashop.com/news/prestashop-moves-to-psr-2/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-moves-to-psr-2/</guid>
+        
+        <category>PSR-2</category>
+        
+        <category>Norm</category>
+        
+        <category>PHP-FIG</category>
+        
+        <category>Coding Standards</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Architecture Improvements in 1.6.1.0</title>
@@ -1062,48 +1234,6 @@ As you can see, we’ve moved to the Build.PrestaShop blog, which is where all d
         <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-14/</guid>
         
         <category>core-weekly</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to build.prestashop.com!</title>
-        <description>&lt;p&gt;Welcome to build.prestashop.com!&lt;/p&gt;
-
-&lt;p&gt;Brought to you by PrestaShop Core team, build.prestashop.com gives you insights on PrestaShop’s ongoing development.
-We’re here to share with you what we’re working on, and discuss what creating with PrestaShop means for you, as a developing contributor from the PrestaShop community.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-it-about-exactly&quot;&gt;What is it about exactly?&lt;/h3&gt;
-
-&lt;p&gt;To make it short, this blog is here to &lt;strong&gt;keep you updated with PrestaShop latest technical evolutions&lt;/strong&gt;, by:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Communicating on the upcoming code updates&lt;/li&gt;
-  &lt;li&gt;Sharing the ongoing projects and developments&lt;/li&gt;
-  &lt;li&gt;Telling you about our latest news as a dev team&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;what-is-there-for-you&quot;&gt;What is there for you?&lt;/h3&gt;
-
-&lt;p&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; We’ve already started with the &lt;strong&gt;Core Weekly&lt;/strong&gt; section: each week you’ll find the highlights of what happened in and around PrestaShop’s Core.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;  If a new method or feature requires some in-depth explanations, we’ll provide you with detailed &lt;strong&gt;how-tos&lt;/strong&gt;, which will eventually find their way in either the &lt;a href=&quot;http://doc.prestashop.com/display/PS16/Developer+Guide&quot;&gt;Developer Guide&lt;/a&gt; or the &lt;a href=&quot;http://doc.prestashop.com/display/PS16/Designer+Guide&quot;&gt;Designer Guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;  If you’ve submitted &lt;a href=&quot;http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop&quot;&gt;a major pull-request&lt;/a&gt; on &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop&quot;&gt;our GitHub repo&lt;/a&gt; and it has been merged into the Core code, you might want to &lt;strong&gt;present your PR&lt;/strong&gt; to the community: what it brings, the choices you’ve made, how it impacts the Core, etc. Here is the place to let people know about it!&lt;/p&gt;
-
-&lt;p&gt;We’re an open-source project and we want to keep growing with you: see how &lt;a href=&quot;/misc/how-to-write-on-this-blog/&quot;&gt;you can contribute&lt;/a&gt; to build.prestashop.com.&lt;/p&gt;
-
-&lt;p&gt;If there’s anything else you’d like to know or if you have some more ideas for this blog, don’t hesitate to comment!&lt;/p&gt;
-
-&lt;p&gt;Happy coding!&lt;/p&gt;
-</description>
-        <pubDate>Fri, 03 Apr 2015 13:12:00 +0200</pubDate>
-        <link>http://build.prestashop.com/news/welcome/</link>
-        <guid isPermaLink="true">http://build.prestashop.com/news/welcome/</guid>
-        
-        <category>news</category>
         
         
         <category>news</category>
