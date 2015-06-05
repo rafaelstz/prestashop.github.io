@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>PrestaShop Core Weekly - Weeks 21 & 22</title>
+    <meta name="description" content="Official blog for PrestaShop development straight from the product and core dev team.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://build.prestashop.com/news/prestashop-core-weekly-weeks-21-22/">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-2753771-31', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/news/prestashop-core-weekly-weeks-21-22/',
+		  'title': 'PrestaShop Core Weekly - Weeks 21 & 22'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8">
+        <a class="site-title" href="/">(new PrestaShop())->build();</a>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <nav class="site-nav">
+          <ul class="nav nav-pills pull-right">
+
+            <li><a class="page-link" href="/">News</a></li>
+
+            <li><a class="page-link" href="/how-tos">How-Tos</a></li>
+
+            <li><a class="page-link" href="/about">About</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class="post">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <header class="post-header">
+        <h1 class="post-title">PrestaShop Core Weekly - Weeks 21 & 22</h1>
+        
+          <h3 class="post-subtitle">An inside look at PrestaShop's codebase</h3>
+        
+      </header>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div id="post-sidebar" class="col-md-2">
+
+      <aside class="author">
+        
+
+<div class="author-avatar">
+  <img class="img-circle" src="https://avatars2.githubusercontent.com/u/2833749">
+</div>
+
+<div class="aside-meta">Written by</div>
+<p class="author-name">
+  Xavier Borderie
+</p>
+
+      </aside>
+
+      <aside class="share-buttons">
+        
+<p class="aside-meta">Share this</p>
+
+<ul class="list-group">
+
+  <li>
+    <a class="list-group-item" href="https://twitter.com/intent/tweet?text=PrestaShop Core Weekly - Weeks 21 & 22&url=http://build.prestashop.com/news/prestashop-core-weekly-weeks-21-22/&via=PrestaShop&related=PrestaShop" rel="nofollow" target="_blank" title="Share on Twitter">
+      <i class="fa fa-twitter-square"></i> Twitter
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://facebook.com/sharer.php?u=http://build.prestashop.com/news/prestashop-core-weekly-weeks-21-22/" rel="nofollow" target="_blank" title="Share on Facebook">
+      <i class="fa fa-facebook-square"></i> Facebook
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://plus.google.com/share?url=http://build.prestashop.com/news/prestashop-core-weekly-weeks-21-22/" rel="nofollow" target="_blank" title="Share on Google+">
+      <i class="fa fa-google-plus-square"></i> Google+
+    </a>
+  </li>
+
+</ul>
+
+      </aside>
+
+    </div>
+
+    <div class="col-md-10">
+
+      <article class="post-content">
+        <p>This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 18th of May to Sunday 31st of May, 2015.</p>
+
+<p>May is a short/quick month in Paris, and I was quite absent in the last few days, while projects here were many. In short, sorry for the lateness of this edition of Core Weekly – which consequently spans two weeks instead of one, again. Back to our normal schedule next week!</p>
+
+<h2 id="milestones">Milestones</h2>
+
+<p>Version 1.6.1.0-rc3 was released last week! Help us test it! <a href="http://build.prestashop.com/news/prestashop-1-6-1-0-rc3/">Read all about it here</a>!</p>
+
+<p>The <a href="https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/">PSR-2 survey</a> is closed, and the participants chose to follow through! <a href="http://build.prestashop.com/news/prestashop-moves-to-psr-2/">Consequently, we’re adopting PSR-2 from 1.6.1.0 onward</a>!</p>
+
+<p>Of note among the merged PRs in the last two weeks:</p>
+
+<ul>
+  <li>As announced in <a href="http://build.prestashop.com/news/new-architecture-1-6-1-0/">a previous post on this blog</a>, the new architecture of PrestaShop is being worked on, and the first elements were merge into Core through PR 3053. A lot of thanks for djfm (François-Marie De Jouvencel), tchauviere (Thibaud Chauvière) and mdomenjoud (Michel Domenjoud) for the huge work that has been accomplished so far! There is still a long road to follow, and we call on the whole community to spread the word and help us achieve this goal!</li>
+  <li>In PR 3061, core developer sfroment42 (Sacha Froment) allowed the use of &lt;style&gt; in the email editor (TinyMCE).</li>
+  <li>In PR 3067, contributor frederic-benoist (Frédéric Benoist) added a cleanHtml modifier to Smarty Add in order to prevent XSS injections.</li>
+</ul>
+
+<h2 id="code-changes">Code changes</h2>
+
+<p>Let’s review the merged pull-requests from the previous two weeks!</p>
+
+<p>As always, click on the PR’s number to open its page on GitHub.</p>
+
+<h4 id="text-fixes">Text fixes</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3020">3020</a>: PDF : Update delivery-slip.tpl. Thank you Nobodaddy!</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3064">3064</a>: AdminOutstandingController - wording, by AlexEven.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3054">3054</a>: blockwishlist - wording, by AlexEven.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3110">3110</a>: BO - Wording, by AlexEven.</li>
+</ul>
+
+<h4 id="front-office">Front office</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3041">3041</a>: minimal quantity on add to cart button. Thank you vAugagneur!</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3047">3047</a>: order-detail / see order reference even if the re-order is disabled. Thank you PrestaEdit!</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2862">2862</a>: fatal error in guest OPC, by gRoussac.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2844">2844</a>: wrong condition for shipping message, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3066">3066</a>: refresh shipping cost when delayed shipping, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3071">3071</a>: Prevent errors after page redirect. Thank you rolandschuetz!</li>
+</ul>
+
+<h4 id="back-office">Back office</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3030">3030</a>: Dashboard filter date update, by maximebiloe.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3033">3033</a>: Adding shop name when not in multistore, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3036">3036</a>: Fix issue with checkbox / radio button in the category tree, by jocel1.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2971">2971</a>: Admin module’s position page updated, by Shudrum.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3037">3037</a>: correct employee permission, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3038">3038</a>: correct processsave return, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2941">2941</a>: default DateMonth selection in dashboard graph, by gRoussac.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3059">3059</a>: Set preselect month range as default, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2951">2951</a>: limit results for customers search in BO, by gRoussac.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3008">3008</a>: Display rights warnings while updating a language pack, by gRoussac.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3063">3063</a>: Fix Catalog prices rules shop group context, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3069">3069</a>: Fix issue with multiple cart rules, by jocel1.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3074">3074</a>: Optimize Theme::getByDirectory method query. Thank you gskema!</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2955">2955</a>: fix ‘undefined’ on images upload, by gRoussac.</li>
+</ul>
+
+<h4 id="core">Core</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3040">3040</a>: Remove language cache on localization install, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3043">3043</a>: Change spaces for tabs, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3045">3045</a>: Typographical error. Thank you joseantgv!</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2909">2909</a>: allow camelcase to be norm-compliant for modules, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3055">3055</a>: Correct appearance of warning, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3056">3056</a>: static error in php 5.2, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2781">2781</a>: allow &lt;style&gt; in email, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3058">3058</a>: revert 2781, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3060">3060</a>: PHPDoc for Customer:searchByName(), by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3065">3065</a>: correct query syntax error, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3061">3061</a>: allow &lt;style&gt; in email, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3081">3081</a>: Fixed issue with newInstanceArgs on PHP 5.3, by djfm.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3087">3087</a>: Performances : Lazy cache should use the local cache, when possible, by jocel1.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3053">3053</a>: Can I Haz a new Core?, by djfm, tchauviere, mdomenjoud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3091">3091</a>: Update new CORE : Fixes, by tchauviere and djfm.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3088">3088</a>: need to recalculate depth only when current depth as changed, by sfroment42.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3101">3101</a>: Performances - flush cache to avoid storing too big arrays, by jocel1.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3104">3104</a>: Optimize searchByName performances, by jocel1.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3106">3106</a>: Performances - improve search reindex performance with cache enabled, by jocel1.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3107">3107</a>: Performances - remove SQL_NO_CACHE from specificPrice, by jocel1.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3111">3111</a>: Performances - disable cache during import, by jocel1.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3019">3019</a>: set tax correctly with specific price, julienbourdeau.</li>
+</ul>
+
+<h4 id="unit-tests">Unit tests</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2776">2776</a>: loadSlaves() now uses dynamic constants, by tchauviere.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3070">3070</a>: Update PrestaShopAutoload unit test, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/2882">2882</a>: Added Travis build status img in README.md, by tchauviere.</li>
+</ul>
+
+<h4 id="modules">Modules</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3022">3022</a>: productscategory module title fix, by maximebiloe.</li>
+</ul>
+
+<h4 id="smarty">Smarty</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3067">3067</a>: Add new cleanHtml modifier. Thank you frederic-benoist!</li>
+</ul>
+
+<h4 id="pdf">PDF</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3032">3032</a>: Keep invoice and delivery address for invoicing, by julienbourdeau.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3062">3062</a>: Fix product lines, summary and notax label, by julienbourdeau.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3068">3068</a>: Invoice - remove total products after discounts, by julienbourdeau.</li>
+</ul>
+
+<h4 id="installer">Installer</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3029">3029</a>: Update active shops, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3044">3044</a>: Wrong PHP_VERSION, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3072">3072</a>: Missing picture + wording, by jeromenadaud.</li>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3083">3083</a>: Installer wording, by jeromenadaud.</li>
+</ul>
+
+<h4 id="multistore">Multistore</h4>
+
+<ul>
+  <li><a href="https://github.com/PrestaShop/PrestaShop/pull/3028">3028</a>: Multistore option rebranding, by jeromenadaud.</li>
+</ul>
+
+<p>See all the PRs merged into the codebase since May the 18th  <a href="https://github.com/PrestaShop/PrestaShop/pulls?page=1&amp;pulls_only=true&amp;q=is%3Apr+merged%3A%3E2015-05-18+is%3Aclosed+sort%3Aupdated&amp;utf8=%E2%9C%93">here</a>.</p>
+
+<p>Thank you to our contributors whose Pull Requests were merged: <a href="https://github.com/frederic-benoist">frederic-benoist</a>, <a href="https://github.com/gskema">gskema</a>, <a href="https://github.com/joseantgv">joseantgv</a>, <a href="https://github.com/Nobodaddy">Nobodaddy</a>, <a href="https://github.com/PrestaEdit">PrestaEdit</a>, <a href="https://github.com/rolandschuetz">rolandschuetz</a>, and <a href="https://github.com/vAugagneur">vAugagneur</a>. Also, thank you to the contributors whose PRs haven’t been merged yet! And of course, a big thank you to all those who contribute with tickets on the Forge!</p>
+
+<p>If you want to contribute to PrestaShop with code, read those:</p>
+
+<ul>
+  <li><a href="http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop">Contributing code to PrestaShop</a></li>
+  <li><a href="http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message">How to write a commit message</a></li>
+</ul>
+
+<p>…and if you do not know how to fix an issue but wish to report it, read this: <a href="http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop">How to use the Forge to contribute to PrestaShop</a>. Thank you!</p>
+
+<p>Until the next Core Weekly report, let me know if I forgot something here, or if you have ideas about how to improve this report!</p>
+
+<p>Happy contributin’ everyone!</p>
+
+      </article>
+
+      
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+
+          <li><i class="fa fa-calendar"></i> Jun 5, 2015</li>
+
+          
+            <li>
+              <i class="fa fa-tags"></i>
+
+              
+                <span class="label label-primary">core-weekly</span>
+              
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+              <h5>About the author</h5>
+
+              <h4>
+                Xavier Borderie
+                <span>Documentation Manager @ PrestaShop</span>
+              </h4>
+              <p></p>
+
+              
+                <a class="btn btn-default btn-sm" href="https://github.com/xBorderie">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/250750-xavier_borderie">
+                  <i class="fa fa-comments"></i> Forum
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/xibe">
+                  <i class="fa fa-language"></i> Crowdin
+                </a>
+              
+              
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'prestashopbuild';
+
+            
+
+            
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development straight from the product and core dev team.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+          <a href="/feed.xml" title="">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+
+          
+            <a href="https://github.com/PrestaShop" title="">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://twitter.com/PrestaShop" title="">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://instagram.com/prestacrew" title="">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://play.spotify.com/user/prestacrew" title="">
+              <i class="fa fa-spotify fa-2x"></i>
+            </a>
+          
+
+          <span class="separator"> | </span>
+
+          
+            <a href="http://status.prestashop.com/" title="PrestaShop Cloud Health">
+              <i class="fa fa-heartbeat fa-2x"></i>
+            </a>
+          
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+
+  </body>
+
+</html>
