@@ -5,9 +5,128 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Jun 2015 17:34:01 +0200</pubDate>
-    <lastBuildDate>Fri, 05 Jun 2015 17:34:01 +0200</lastBuildDate>
+    <pubDate>Mon, 08 Jun 2015 17:57:02 +0200</pubDate>
+    <lastBuildDate>Mon, 08 Jun 2015 17:57:02 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>A more semantic versioning scheme</title>
+        <description>&lt;p&gt;The upcoming version 1.6.1.0 represents an opportunity for us to make a lot of good changes for both the project and the community, as you may have noticed recently.&lt;/p&gt;
+
+&lt;p&gt;One thing that’s been bugging us for quite some time (and most probably users, developers, etc.) is the way PrestaShop’s version numbers are handled — in that they are not really handled as much as rarely consistent.&lt;/p&gt;
+
+&lt;p&gt;Let’s see for instance what happened in &lt;a href=&quot;https://www.prestashop.com/en/developers-versions/changelog/1.6.0.14&quot;&gt;the last few versions of the 1.6.x branch&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1.6.0.7: Many bugfixes, many improvements, a few new features.&lt;/li&gt;
+  &lt;li&gt;1.6.0.8: Several bugfixes, a few improvements.&lt;/li&gt;
+  &lt;li&gt;1.6.0.9: Many bugfixes, many improvements, a few new features.&lt;/li&gt;
+  &lt;li&gt;1.6.0.10: Internal version, never publicly released.&lt;/li&gt;
+  &lt;li&gt;1.6.0.11: Many bugfixes, many improvements, several new features.&lt;/li&gt;
+  &lt;li&gt;1.6.0.12: Many bugfixes, several improvements and some new features.&lt;/li&gt;
+  &lt;li&gt;1.6.0.13: 2 bugfixes.&lt;/li&gt;
+  &lt;li&gt;1.6.0.14: 1 bugfix.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See where I’m going with this? Looking only at the version numbers, you can never tell if a new version contains a few useful corrections, or if it brings many cool features, or if it changes the database schema or the whole system. It’s not easy to know if it is a simple update, or a complex one. It’s not clear if it’s going to be business as usual, or if you’ll have to rework your themes/modules.&lt;/p&gt;
+
+&lt;p&gt;In short, it’s difficult to know, just by looking at the version number, whether it’s a minor or a major version.&lt;/p&gt;
+
+&lt;p&gt;This has been going on for too long, and we’re taking the opportunity of the release of our new major version, v1.6.1.0, to improve the way we number our versions of PrestaShop.&lt;/p&gt;
+
+&lt;p&gt;From version 1.6.1.0 onward, we are moving towards SemVer.&lt;/p&gt;
+
+&lt;h3 id=&quot;semwhat&quot;&gt;SemWhat?!&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://semver.org/&quot;&gt;SemVer&lt;/a&gt;, short for Semantic Versioning, is a specification by Gravatar co-founder and GitHub ex-CEO Tom Preston-Werner. In its latest incarnation (v2.0.0), it describes its proposed versioning scheme as follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Given a version number MAJOR.MINOR.PATCH, increment the:
+- MAJOR version when you make incompatible API changes,
+- MINOR version when you add functionality in a backwards-compatible manner, and
+- PATCH version when you make backwards-compatible bug fixes.&lt;/p&gt;
+
+  &lt;p&gt;Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The most important point of SemVer is the predictability of potential breakage: looking at the version number, you know from the get-go whether that new version contains bugfixes; or bugfixes and features; or bugfixes, features and potentially impacting changes from the previous major version.&lt;/p&gt;
+
+&lt;p&gt;Version numbers become more coherent, updates become more predictable, and developers know when to check for impacts on their modules, themes or clients’ stores!&lt;/p&gt;
+
+&lt;h3 id=&quot;how-will-it-apply-to-prestashop-version-numbering&quot;&gt;How will it apply to PrestaShop version numbering?&lt;/h3&gt;
+
+&lt;p&gt;In the SemVer description, change “incompatible API changes” to “backwards compatible” and you will get the point: changes that have an impact on module/theme development will be limited to major versions only. Developers and designers won’t have to worry about whether or not they need to update their code for minor or patch versions.&lt;/p&gt;
+
+&lt;p&gt;The thing is, PrestaShop has long had version numbers that span four numerals, whereas SemVer requires projects to use 3 numerals. For instance, the current version is 1.6.0.14, and the coming version is 1.6.1.0. That is why we chose to move &lt;em&gt;towards&lt;/em&gt; SemVer, modifying it slightly instead of adopting it as-is. We will need to adapt SemVer to our historical way of versioning keeping the four numerals.&lt;/p&gt;
+
+&lt;p&gt;This means that version numbers will be based on 1.MAJOR.MINOR.PATCH. And we keep the possibility to switch to 2.0.0.0 on the day something rrrrrreally extra major happens :)&lt;/p&gt;
+
+&lt;h3 id=&quot;so-when-will-the-numerals-change&quot;&gt;So, when will the numerals change?&lt;/h3&gt;
+
+&lt;p&gt;1.6.1.0 is the forthcoming major version, which should be released in the coming weeks. It brings a few changes in the way things work internally but it keeps all retrocompatibility intact, so modules and themes that worked with 1.6.0.14 will continue to work with 1.6.1.0.&lt;/p&gt;
+
+&lt;p&gt;Starting with 1.6.1.0, new versions of PrestaShop will use the new SemVer-inspired numbering scheme.&lt;/p&gt;
+
+&lt;p&gt;What this means is:
+- The next bugfix-only version (or “patch” version) will be v1.6.1.1, then if we need more, v1.6.1.2, v1.6.1.3, etc.
+- The next version which brings retrocompatible changes (or “minor” version) will be 1.6.2.0. It will also contain bugfixes.
+- The next version which brings incompatible changes (or “major” version) will be 1.7.0.0. It will also contain retrocompatible changes and bugfixes. Also, the incompatible changes might be few and minor, but SemVer has strict rules…&lt;/p&gt;
+
+&lt;p&gt;Adopting this SemVer-inspired numbering scheme, version numbers will be much more consistent and coherent, the need for 3rd-party developers to update their code will be more predictable, and the whole community will get a better understanding of what an upgrade might imply.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-about-the-coming-new-architecture&quot;&gt;What about the coming new architecture?&lt;/h3&gt;
+
+&lt;p&gt;Since you read this blog every day (don’t you?), you know that &lt;a href=&quot;http://build.prestashop.com/news/new-architecture-1-6-1-0/&quot;&gt;we are working on a new architecture for PrestaShop&lt;/a&gt;, with the first bits having landed in v1.6.1.0 already. It will take some time and some API changes, but once it’s final, users and developers/designers will benefit from a much more robust codebase, without us having to rewrite everything from scratch :)&lt;/p&gt;
+
+&lt;h3 id=&quot;so-does-that-mean-1700-is-coming-soon&quot;&gt;So does that mean 1.7.0.0 is coming soon?&lt;/h3&gt;
+
+&lt;p&gt;Yes! Thanks to the new architecture, currently in the works, it might even be coming before winter of 2015! :)&lt;/p&gt;
+
+&lt;p&gt;What about 1.8.0.0? Well, maybe sooner than it took between 1.5 and 1.6!&lt;/p&gt;
+
+&lt;h3 id=&quot;so-you-are-planning-to-impact-backward-compatibility-regularly&quot;&gt;So you are planning to impact backward-compatibility regularly?&lt;/h3&gt;
+
+&lt;p&gt;Not at all! 2015 is a special year, where a lot of things are getting better, and where we prepare for the future of PrestaShop.&lt;/p&gt;
+
+&lt;p&gt;Also, note that if a major version could potentially impact compatibility under SemVer’s strict wording, it doesn’t mean that the whole ecosystem of themes and modules will effectively break! It simply means that parts of the API have changed, and these changes will be documented long before the major version is released!&lt;/p&gt;
+
+&lt;h3 id=&quot;what-about-security-updates&quot;&gt;What about security updates?&lt;/h3&gt;
+
+&lt;p&gt;Security updates, if there are any, are fixed in patch versions. Patch versions are released as fast as possible.&lt;/p&gt;
+
+&lt;p&gt;Patch versions fix critical bugs and security issues (which are more or less the same thing). They might also fix some trivial bugs, but the point of a patch version is to fix problematic issues, not to close non-critical Forge tickets.&lt;/p&gt;
+
+&lt;p&gt;Eventually, once we have proven that upgrading to a patch version is seamless for developers and designers, and beneficial for the whole community, we plan on implementing automatic background updates for patch versions: if there’s a critical issue in the software, PrestaShop will be able to update itself as soon as the fix is available on our servers, and you will wake up to an email from your store telling you that it just got better and safer during the night! Of course, a module would be able to disable that feature — but that’s another discussion we will have!&lt;/p&gt;
+
+&lt;h3 id=&quot;what-about-the-database&quot;&gt;What about the database?&lt;/h3&gt;
+
+&lt;p&gt;SemVer applies mostly to the way the code works. But the database is also a critical part of PrestaShop, and in past years the Core team updated it as needed.&lt;/p&gt;
+
+&lt;p&gt;With our SemVer-like versioning, the database will never be updated in patch versions. Tables and rows might be &lt;em&gt;added&lt;/em&gt; to it in minor versions, but &lt;em&gt;none of the existing ones shall be changed&lt;/em&gt;. Only a major version might change existing tables, rows and indexes.&lt;/p&gt;
+
+&lt;h3 id=&quot;alright-alright-i-get-it-its-better-so-when-is-1610-coming&quot;&gt;Alright, alright, I get it, it’s better! So, when is 1.6.1.0 coming?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://build.prestashop.com/news/prestashop-1-6-1-0-rc3/&quot;&gt;1.6.1.0-rc3 was released 2 weeks ago&lt;/a&gt;, 1.6.0.1-rc4 should be released this week, other RC versions might be released as needed, depending on the feedback from the community.&lt;/p&gt;
+
+&lt;p&gt;We plan on releasing the stable version of PrestaShop 1.6.1.0 by the end of June, or early-July. Until then, please help us make it the most robust version ever released!&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 08 Jun 2015 19:56:00 +0200</pubDate>
+        <link>http://build.prestashop.com/news/a-more-semantic-versioning-scheme/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/a-more-semantic-versioning-scheme/</guid>
+        
+        <category>version</category>
+        
+        <category>versioning</category>
+        
+        <category>semver</category>
+        
+        <category>semantic</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>PrestaShop Core Weekly - Weeks 21 &amp; 22</title>
@@ -1166,121 +1285,6 @@ But I’m telling you, next week will bring a whole lot of merges!&lt;/p&gt;
         <category>howtos</category>
         
         <category>misc</category>
-        
-      </item>
-    
-      <item>
-        <title>PrestaShop Core Weekly - Week 15</title>
-        <description>&lt;p&gt;Welcome to Week 15 in PrestaShop Core development! This is the Core Weekly!&lt;/p&gt;
-
-&lt;p&gt;As a reminder, this Core Weekly report highlights changes in PrestaShop core codebase last week, from Monday 6th to Sunday 12th of April, 2015.&lt;/p&gt;
-
-&lt;p&gt;The Core Weekly report is ever evolving, so if you have ideas on how to improve it, let me know!&lt;/p&gt;
-
-&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
-
-&lt;p&gt;The PSR-2 survey is still running, give us your opinion! &lt;a href=&quot;https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/&quot;&gt;https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Cool things are boiling, but we’ll keep that for another blogpost :)&lt;/p&gt;
-
-&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
-
-&lt;p&gt;Let’s review last week’s merged pull-requests!&lt;/p&gt;
-
-&lt;p&gt;As always, click on the PR’s number to open its page on GitHub.&lt;/p&gt;
-
-&lt;h4 id=&quot;code-typos&quot;&gt;Code typos&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2849&quot;&gt;2849&lt;/a&gt;: Missing space, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2851&quot;&gt;2851&lt;/a&gt; and &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2852&quot;&gt;2852&lt;/a&gt;: Replaces &amp;lt;/br&amp;gt; tag with &amp;lt;br /&amp;gt;. Thank you zimmi1!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;text-fixes&quot;&gt;Text fixes&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2840&quot;&gt;2840&lt;/a&gt;: AdminCustomer interested products block title and icon. Thank you eric-rouvier!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;front-office&quot;&gt;Front office&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2550&quot;&gt;2550&lt;/a&gt;: Clean Selectors. Thank you prestarocket!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2791&quot;&gt;2791&lt;/a&gt;: Fix bug #PSCSX-5145, cross-selling in shopping cart bxslider restart, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2797&quot;&gt;2797&lt;/a&gt;: Fix bug #PSCSX-4925, TCPDF ERROR: [Image] Unable to get image, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2824&quot;&gt;2824&lt;/a&gt;: Bad display of old_price, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2831&quot;&gt;2831&lt;/a&gt;: Fix breadcrumb home link with ssl in all pages, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2843&quot;&gt;2843&lt;/a&gt;: Correct IE8 syntax error. Thank you DanH42.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2854&quot;&gt;2854&lt;/a&gt;: Revert “&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2550&quot;&gt;2550&lt;/a&gt;: Clean Selectors”, by jeromenadaud. Take notice, people: do your PRs on the “1.6” branch, not the “master” branch!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2855&quot;&gt;2855&lt;/a&gt;: Clean Selectors. Thank you again, prestarocket! :)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2860&quot;&gt;2860&lt;/a&gt;: undefined var hasDeliveryAddress, by gRoussac.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;back-office&quot;&gt;Back office&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2477&quot;&gt;2477&lt;/a&gt;: Show SQL Manager &amp;amp; SQL Export only if sql manager is enabled in profile. Thank you guestisp!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2686&quot;&gt;2686&lt;/a&gt;: Use positions with HelperList. Thank you PrestaEdit!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2799&quot;&gt;2799&lt;/a&gt;: Fix #PSCSX-5159, warnings on tabs, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2809&quot;&gt;2809&lt;/a&gt;: Optimize import speed (thumbnail optimizations), by jocel1.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2812&quot;&gt;2812&lt;/a&gt;: Fix #PSCSX-2093 undefined $order, by sfroment42.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2836&quot;&gt;2836&lt;/a&gt;: Change getBaseURI call in filemanager config, by sfroment42.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2842&quot;&gt;2842&lt;/a&gt;: Correct search for catalog product, by sfroment42.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2848&quot;&gt;2848&lt;/a&gt;: make name accept PERCENT_PRODUCT_OUT_OF_STOCK_EXPIRE. Thank you doekia!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;core&quot;&gt;Core&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2774&quot;&gt;2774&lt;/a&gt;: Helper List / Change delete to default. Thank you PrestaEdit!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2801&quot;&gt;2801&lt;/a&gt;: Fix unreachable return statements. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2805&quot;&gt;2805&lt;/a&gt;: Fix undefined PHP variables. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2814&quot;&gt;2814&lt;/a&gt;: Fix #PSCSX-5217 check if isfeature active, by sfroment42.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2841&quot;&gt;2841&lt;/a&gt;: Add Random charlist to passwdGen, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2846&quot;&gt;2846&lt;/a&gt;: Add logs when unsetting a cart in FO, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2850&quot;&gt;2850&lt;/a&gt;: Use bool keyword for casting into boolean. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2858&quot;&gt;2858&lt;/a&gt;: Get changes back from master, by many contributors.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;unit-tests&quot;&gt;Unit tests&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2783&quot;&gt;2783&lt;/a&gt;: DatabaseDump should accept other host than localhost, by mdomenjoud.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;phpdoc&quot;&gt;phpDoc&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2833&quot;&gt;2833&lt;/a&gt;: DbQuery PHPDoc + refactor. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2853&quot;&gt;2853&lt;/a&gt;: PHPDoc + unused variable, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2859&quot;&gt;2859&lt;/a&gt;: PHPDoc + unused var, by jeromenadaud.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See all the PRs merged into the codebase since April 6th &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?q=is%3Apr+merged%3A%3E2015-04-06+is%3Aclosed&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thank you to our contributors for their PRs: &lt;a href=&quot;https://github.com/DanH42&quot;&gt;DanH42&lt;/a&gt;, &lt;a href=&quot;https://github.com/doekia&quot;&gt;doekia&lt;/a&gt;, &lt;a href=&quot;https://github.com/eric-rouvier&quot;&gt;eric-rouvier&lt;/a&gt;, &lt;a href=&quot;https://github.com/gskema&quot;&gt;gskema&lt;/a&gt;, &lt;a href=&quot;https://github.com/guestisp&quot;&gt;guestisp&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaEdit&quot;&gt;PrestaEdit&lt;/a&gt;, &lt;a href=&quot;https://github.com/prestarocket&quot;&gt;prestarocket&lt;/a&gt;, and &lt;a href=&quot;https://github.com/zimmi1&quot;&gt;zimmi1&lt;/a&gt;… and those whose contributions were not merged yet! Also, a big thanks to all those who contribute with tickets on the Forge!&lt;/p&gt;
-
-&lt;p&gt;Remember: if you want to contribute to PrestaShop with code, read those:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop&quot;&gt;Contributing code to PrestaShop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message&quot;&gt;How to write a commit message&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;…and if you do not know how to fix an issue but wish to report it, read this: &lt;a href=&quot;http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop&quot;&gt;How to use the Forge to contribute to PrestaShop&lt;/a&gt;. Thank you!&lt;/p&gt;
-
-&lt;p&gt;Until the next Core Weekly report, let me know if I forgot something here, or if you have ideas about how to improve this report!&lt;/p&gt;
-
-&lt;p&gt;Happy contributin’ everyone!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 16 Apr 2015 18:12:00 +0200</pubDate>
-        <link>http://build.prestashop.com/news/prestashop-core-weekly-week-15/</link>
-        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-15/</guid>
-        
-        <category>core-weekly</category>
-        
-        
-        <category>news</category>
         
       </item>
     
