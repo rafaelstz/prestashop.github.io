@@ -5,8 +5,8 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 12 Jun 2015 17:55:33 +0200</pubDate>
-    <lastBuildDate>Fri, 12 Jun 2015 17:55:33 +0200</lastBuildDate>
+    <pubDate>Fri, 12 Jun 2015 17:59:20 +0200</pubDate>
+    <lastBuildDate>Fri, 12 Jun 2015 17:59:20 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -24,7 +24,7 @@
 &lt;p&gt;Of note among the merged PRs in the last two weeks:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;In PR 3090, Core developer Julien Martin (Shudrum) rewrote the way the maintenance message is displayed, made it translatable (finally)!), and added two new admin hooks to control its display.&lt;/li&gt;
+  &lt;li&gt;In PR 3090, Core developer Julien Martin (Shudrum) rewrote the way the maintenance message is displayed, made it translatable (finally!), and added two new admin hooks to control its display.&lt;/li&gt;
   &lt;li&gt;In PR 3142, product manager François-Marie de Jouvencel (djfm) added 5 languages to the installer: Bulgarian, Croatian, Lithuanian, Slovene, and Swedish!&lt;/li&gt;
   &lt;li&gt;In PR 3079, Core developer Gregory Roussac (gRoussac) added the ability to edit the caption of product images.&lt;/li&gt;
 &lt;/ul&gt;
