@@ -5,8 +5,8 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 12 Jun 2015 17:59:20 +0200</pubDate>
-    <lastBuildDate>Fri, 12 Jun 2015 17:59:20 +0200</lastBuildDate>
+    <pubDate>Sun, 14 Jun 2015 20:59:25 +0200</pubDate>
+    <lastBuildDate>Sun, 14 Jun 2015 20:59:25 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -17,11 +17,11 @@
 
 &lt;p&gt;Yesterday was &lt;a href=&quot;http://www.prestashopday.com/&quot;&gt;PrestaShop Day&lt;/a&gt;, THE yearly event for the PrestaShop community! We met many of you, learnt a lot, and got to tell about our plans for the future – among which &lt;a href=&quot;http://build.prestashop.com/news/new-architecture-1-6-1-0/&quot;&gt;the new architecture&lt;/a&gt;, and most importantly, &lt;a href=&quot;https://www.prestashop.com/blog/en/prestashop-launches-1000000-integration-fund-community/&quot;&gt;PrestaShop’s Integration Fund&lt;/a&gt;, for which the company will dedicate $1,000,000 to the Community to build more local modules! Developers, this is your chance to shine!&lt;/p&gt;
 
-&lt;p&gt;Also, version 1.6.1.0-rc4 was earlier this week! Help us test it! &lt;a href=&quot;http://build.prestashop.com/news/prestashop-1-6-1-0-rc4/&quot;&gt;Read all about it here&lt;/a&gt;! Test, test, test!&lt;/p&gt;
+&lt;p&gt;Also, version 1.6.1.0-rc4 was released earlier this week! Help us test it! &lt;a href=&quot;http://build.prestashop.com/news/prestashop-1.6.1.0-rc4/&quot;&gt;Read all about it here&lt;/a&gt;! Test, test, test!&lt;/p&gt;
 
 &lt;p&gt;In the News department, after choosing to &lt;a href=&quot;http://build.prestashop.com/news/prestashop-moves-to-psr-2/&quot;&gt;change our Coding Standards to PSR-2&lt;/a&gt;, we are &lt;a href=&quot;http://build.prestashop.com/news/a-more-semantic-versioning-scheme/&quot;&gt;adopting a SemVer-like versioning scheme&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Of note among the merged PRs in the last two weeks:&lt;/p&gt;
+&lt;p&gt;Of note among the merged PRs in the last weeks&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;In PR 3090, Core developer Julien Martin (Shudrum) rewrote the way the maintenance message is displayed, made it translatable (finally!), and added two new admin hooks to control its display.&lt;/li&gt;
@@ -169,8 +169,8 @@
 &lt;p class=&quot;text-center&quot;&gt;&lt;a href=&quot;https://www.prestashop.com/download/private/prestashop_1.6.1.0-RC4.zip&quot; class=&quot;btn btn-lg btn-success&quot;&gt;Test PrestaShop 1.6.1.0 RC4&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 09 Jun 2015 21:29:47 +0200</pubDate>
-        <link>http://build.prestashop.com/news/prestashop-1.6.0.1-rc4/</link>
-        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-1.6.0.1-rc4/</guid>
+        <link>http://build.prestashop.com/news/prestashop-1.6.1.0-rc4/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-1.6.1.0-rc4/</guid>
         
         <category>1.6.1.x</category>
         
