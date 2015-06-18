@@ -5,18 +5,18 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 18 Jun 2015 09:41:26 +0200</pubDate>
-    <lastBuildDate>Thu, 18 Jun 2015 09:41:26 +0200</lastBuildDate>
+    <pubDate>Thu, 18 Jun 2015 10:43:14 +0200</pubDate>
+    <lastBuildDate>Thu, 18 Jun 2015 10:43:14 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Do you speak PrestaShop? – May 2015 edition</title>
-        <description>&lt;p&gt;With the launch of the build.prestashop.com blog, we’ve been planning for a while to highlight the dedicated work of the community on the &lt;a href=&quot;https://crowdin.com/project/prestashop-official&quot;&gt;PrestaShop translation project on Crowdin&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;With the launch of the build.prestashop.com blog, we’ve been planning for a while to highlight the dedicated work of the community on the &lt;a href=&quot;https://crowdin.com/project/prestashop-official&quot;&gt;PrestaShop translation project on Crowdin&lt;/a&gt;. &lt;/p&gt;
 
 &lt;p&gt;So, better late than never, here is the report for May 2015, which is a snapshot of the project at the end of May.
 The idea is to give you a quick summary of what has been going on over there, what languages are the most active and other information about our translating community.&lt;/p&gt;
 
-&lt;p&gt;All the figures and statistics are based on the 1.6.0.14 project, which is the last stable version released to date.&lt;/p&gt;
+&lt;p&gt;All the figures and statistics are based on the 1.6.0.14 project, which is the last stable version released to date. &lt;/p&gt;
 
 &lt;h2 id=&quot;top-contributors&quot;&gt;Top contributors&lt;/h2&gt;
 
@@ -37,7 +37,7 @@ The idea is to give you a quick summary of what has been going on over there, wh
     &lt;tr&gt;
       &lt;td&gt;1.&lt;/td&gt;
       &lt;td&gt;xymarior&lt;/td&gt;
-      &lt;td&gt;(Portuguese)&lt;/td&gt;
+      &lt;td&gt;Portuguese&lt;/td&gt;
       &lt;td&gt;4694&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -112,7 +112,7 @@ The idea is to give you a quick summary of what has been going on over there, wh
     &lt;tr&gt;
       &lt;td&gt;1.&lt;/td&gt;
       &lt;td&gt;xymarior&lt;/td&gt;
-      &lt;td&gt;(Portuguese)&lt;/td&gt;
+      &lt;td&gt;Portuguese&lt;/td&gt;
       &lt;td&gt;5563&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -180,6 +180,8 @@ The idea is to give you a quick summary of what has been going on over there, wh
 
 &lt;ul&gt;
   &lt;li&gt;Croatian&lt;/li&gt;
+  &lt;li&gt;English&lt;/li&gt;
+  &lt;li&gt;French&lt;/li&gt;
   &lt;li&gt;German&lt;/li&gt;
   &lt;li&gt;Norwegian&lt;/li&gt;
   &lt;li&gt;Persian&lt;/li&gt;
@@ -187,19 +189,21 @@ The idea is to give you a quick summary of what has been going on over there, wh
   &lt;li&gt;Russian&lt;/li&gt;
   &lt;li&gt;Slovenian&lt;/li&gt;
   &lt;li&gt;Swedish&lt;/li&gt;
-  &lt;li&gt;(English and French)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;translated-languages&quot;&gt;99% translated languages&lt;/h2&gt;
 
-&lt;p&gt;… and almost fully translated (and validated) in the following 7 languages:
-* Dutch
-* Indonesian
-* Italian
-* Lithuanian
-* Polish
-* Portuguese BR
-* Spanish&lt;/p&gt;
+&lt;p&gt;… and almost fully translated (and validated) in the following 7 languages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dutch&lt;/li&gt;
+  &lt;li&gt;Indonesian&lt;/li&gt;
+  &lt;li&gt;Italian&lt;/li&gt;
+  &lt;li&gt;Lithuanian&lt;/li&gt;
+  &lt;li&gt;Polish&lt;/li&gt;
+  &lt;li&gt;Portuguese BR&lt;/li&gt;
+  &lt;li&gt;Spanish&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Among which Indonesian is a newcomer, &lt;strong&gt;well done to our Indonesian translators&lt;/strong&gt;!&lt;/p&gt;
 
@@ -250,20 +254,22 @@ The idea is to give you a quick summary of what has been going on over there, wh
 &lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;80 contributors&lt;/strong&gt; joined the project this month, for a &lt;strong&gt;total of 1,869 members&lt;/strong&gt; at the end of May.
 60 members (including PrestaShop employees) were active on the project this month.
-A total of &lt;strong&gt;28,470 words have been translated&lt;/strong&gt; and 21,925 validated, in 36 different languages - this is huge!&lt;/p&gt;
+A total of &lt;strong&gt;28,470 words have been translated&lt;/strong&gt; and 21,925 validated, in 36 different languages - this is huge! &lt;/p&gt;
 
 &lt;p&gt;We can’t thank you enough!&lt;/p&gt;
 
 &lt;p&gt;If you haven’t joined us on Crowdin yet, &lt;a href=&quot;https://crowdin.com/project/prestashop-official&quot;&gt;it’s still time&lt;/a&gt;!
 If you want to gather your fellow translators to work towards a better harmonization (let’s dream a bit), do let us know, we’ll include a word in the next monthly report.
-A question, a remark? Don’t hesitate to leave a comment.&lt;/p&gt;
+A question, a remark? Don’t hesitate to leave a comment. &lt;/p&gt;
 
 &lt;p&gt;See you next month!&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 18 Jun 2015 11:29:47 +0200</pubDate>
+        <pubDate>Thu, 18 Jun 2015 12:29:47 +0200</pubDate>
         <link>http://build.prestashop.com/news/do-you-speak-prestashop-may-2015-edition/</link>
         <guid isPermaLink="true">http://build.prestashop.com/news/do-you-speak-prestashop-may-2015-edition/</guid>
+        
+        <category>translation</category>
         
         <category>i18n</category>
         
