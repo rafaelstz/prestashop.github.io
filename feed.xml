@@ -5,9 +5,274 @@
     <description>Official blog for PrestaShop development straight from the product and core dev team.</description>
     <link>http://build.prestashop.com/</link>
     <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 14 Jun 2015 20:59:25 +0200</pubDate>
-    <lastBuildDate>Sun, 14 Jun 2015 20:59:25 +0200</lastBuildDate>
+    <pubDate>Thu, 18 Jun 2015 09:41:26 +0200</pubDate>
+    <lastBuildDate>Thu, 18 Jun 2015 09:41:26 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Do you speak PrestaShop? – May 2015 edition</title>
+        <description>&lt;p&gt;With the launch of the build.prestashop.com blog, we’ve been planning for a while to highlight the dedicated work of the community on the &lt;a href=&quot;https://crowdin.com/project/prestashop-official&quot;&gt;PrestaShop translation project on Crowdin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, better late than never, here is the report for May 2015, which is a snapshot of the project at the end of May.
+The idea is to give you a quick summary of what has been going on over there, what languages are the most active and other information about our translating community.&lt;/p&gt;
+
+&lt;p&gt;All the figures and statistics are based on the 1.6.0.14 project, which is the last stable version released to date.&lt;/p&gt;
+
+&lt;h2 id=&quot;top-contributors&quot;&gt;Top contributors&lt;/h2&gt;
+
+&lt;p&gt;A lot of you are working everyday on Crowdin to have PrestaShop available in many languages. Here are the &lt;strong&gt;most active translators and proofreaders&lt;/strong&gt; for the month of May:&lt;/p&gt;
+
+&lt;h4 id=&quot;top-10-translators&quot;&gt;Top 10 translators:&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Translator&lt;/th&gt;
+      &lt;th&gt;Language&lt;/th&gt;
+      &lt;th&gt;# Words&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1.&lt;/td&gt;
+      &lt;td&gt;xymarior&lt;/td&gt;
+      &lt;td&gt;(Portuguese)&lt;/td&gt;
+      &lt;td&gt;4694&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2.&lt;/td&gt;
+      &lt;td&gt;MartinsZB&lt;/td&gt;
+      &lt;td&gt;Latvian&lt;/td&gt;
+      &lt;td&gt;3131&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3.&lt;/td&gt;
+      &lt;td&gt;xabigar&lt;/td&gt;
+      &lt;td&gt;Basque&lt;/td&gt;
+      &lt;td&gt;1605&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4.&lt;/td&gt;
+      &lt;td&gt;martinlaihm&lt;/td&gt;
+      &lt;td&gt;Trad. Chinese&lt;/td&gt;
+      &lt;td&gt;1551&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5.&lt;/td&gt;
+      &lt;td&gt;michalurva&lt;/td&gt;
+      &lt;td&gt;Slovak&lt;/td&gt;
+      &lt;td&gt;1336&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6.&lt;/td&gt;
+      &lt;td&gt;Koral&lt;/td&gt;
+      &lt;td&gt;Polish&lt;/td&gt;
+      &lt;td&gt;1106&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7.&lt;/td&gt;
+      &lt;td&gt;juandortech&lt;/td&gt;
+      &lt;td&gt;Spanish&lt;/td&gt;
+      &lt;td&gt;982&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;8.&lt;/td&gt;
+      &lt;td&gt;ggedamed&lt;/td&gt;
+      &lt;td&gt;Romanian&lt;/td&gt;
+      &lt;td&gt;888&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9.&lt;/td&gt;
+      &lt;td&gt;nghiazer&lt;/td&gt;
+      &lt;td&gt;Vietnamese&lt;/td&gt;
+      &lt;td&gt;716&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10.&lt;/td&gt;
+      &lt;td&gt;extendus&lt;/td&gt;
+      &lt;td&gt;Swedish&lt;/td&gt;
+      &lt;td&gt;611&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;top-10-proofreaders&quot;&gt;Top 10 proofreaders:&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Translator&lt;/th&gt;
+      &lt;th&gt;Language&lt;/th&gt;
+      &lt;th&gt;# Words&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1.&lt;/td&gt;
+      &lt;td&gt;xymarior&lt;/td&gt;
+      &lt;td&gt;(Portuguese)&lt;/td&gt;
+      &lt;td&gt;5563&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2.&lt;/td&gt;
+      &lt;td&gt;MartinsZB&lt;/td&gt;
+      &lt;td&gt;Latvian&lt;/td&gt;
+      &lt;td&gt;3470&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3.&lt;/td&gt;
+      &lt;td&gt;ggedamed&lt;/td&gt;
+      &lt;td&gt;Romanian&lt;/td&gt;
+      &lt;td&gt;1304&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4.&lt;/td&gt;
+      &lt;td&gt;marionetarh&lt;/td&gt;
+      &lt;td&gt;Spanish&lt;/td&gt;
+      &lt;td&gt;789&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5.&lt;/td&gt;
+      &lt;td&gt;mortenborg&lt;/td&gt;
+      &lt;td&gt;Danish&lt;/td&gt;
+      &lt;td&gt;762&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6.&lt;/td&gt;
+      &lt;td&gt;xabigar&lt;/td&gt;
+      &lt;td&gt;Basque&lt;/td&gt;
+      &lt;td&gt;674&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7.&lt;/td&gt;
+      &lt;td&gt;DaoKakao&lt;/td&gt;
+      &lt;td&gt;Russian&lt;/td&gt;
+      &lt;td&gt;632&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;8.&lt;/td&gt;
+      &lt;td&gt;extendus&lt;/td&gt;
+      &lt;td&gt;Swedish&lt;/td&gt;
+      &lt;td&gt;611&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9.&lt;/td&gt;
+      &lt;td&gt;lolypop000&lt;/td&gt;
+      &lt;td&gt;Slovenian&lt;/td&gt;
+      &lt;td&gt;607&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10.&lt;/td&gt;
+      &lt;td&gt;filipfilipovic&lt;/td&gt;
+      &lt;td&gt;Croatian&lt;/td&gt;
+      &lt;td&gt;607&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;A big applause to them!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;fully-translated-languages&quot;&gt;Fully translated languages&lt;/h2&gt;
+
+&lt;p&gt;PrestaShop was fully available (= 100% translated and validated) in 10 languages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Croatian&lt;/li&gt;
+  &lt;li&gt;German&lt;/li&gt;
+  &lt;li&gt;Norwegian&lt;/li&gt;
+  &lt;li&gt;Persian&lt;/li&gt;
+  &lt;li&gt;Portuguese&lt;/li&gt;
+  &lt;li&gt;Russian&lt;/li&gt;
+  &lt;li&gt;Slovenian&lt;/li&gt;
+  &lt;li&gt;Swedish&lt;/li&gt;
+  &lt;li&gt;(English and French)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;translated-languages&quot;&gt;99% translated languages&lt;/h2&gt;
+
+&lt;p&gt;… and almost fully translated (and validated) in the following 7 languages:
+* Dutch
+* Indonesian
+* Italian
+* Lithuanian
+* Polish
+* Portuguese BR
+* Spanish&lt;/p&gt;
+
+&lt;p&gt;Among which Indonesian is a newcomer, &lt;strong&gt;well done to our Indonesian translators&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;languages-with-the-best-evolution&quot;&gt;Languages with the best evolution&lt;/h2&gt;
+
+&lt;p&gt;In comparison with the previous month, these languages had the best progress in May:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Basque (+27% to reach 19% translated)&lt;/li&gt;
+  &lt;li&gt;Latvian (+18% to reach 32% translated)&lt;/li&gt;
+  &lt;li&gt;Chinese (Trad.) (+5% to reach 59% translated)&lt;/li&gt;
+  &lt;li&gt;Slovak (+4% to reach 75% translated)&lt;/li&gt;
+  &lt;li&gt;Vietnamese (+ 2% to reach 42% translated)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2015/06/Build_Crowdin_progress_may15.png&quot; alt=&quot;May 2015 best translation progress&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A big applause to all our contributors for the hard work!&lt;/p&gt;
+
+&lt;h2 id=&quot;languages-that-need-more-proofreaders&quot;&gt;Languages that need (more) proofreaders&lt;/h2&gt;
+
+&lt;p&gt;As you might know a translated string will not be available in PrestaShop as long as it is not validated. For this reason, it’s important we should keep a good level of validated strings vs translated string, to make sure everyone benefit from the latest translations!&lt;/p&gt;
+
+&lt;p&gt;These languages need you as proofreaders as well:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Turkish (89% translated vs 0% validated)&lt;/li&gt;
+  &lt;li&gt;Slovak (75% vs 25%)&lt;/li&gt;
+  &lt;li&gt;Ukrainian (92% vs 48%)&lt;/li&gt;
+  &lt;li&gt;Vietnamese (42% vs 16%)&lt;/li&gt;
+  &lt;li&gt;Hungarian (96% vs 80%)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2015/06/Build_Crowdin_proofreading_may15.png&quot; alt=&quot;May 2015 best translation progress&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you wish to help proofreading what has been translated, please &lt;a href=&quot;https://crowdin.com/profile/alex-even&quot;&gt;contact me on Crowdin&lt;/a&gt; with the language you’d like to proofread.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-word-from-the-community&quot;&gt;A word from the community&lt;/h2&gt;
+
+&lt;p&gt;Some members are trying to gather the translating community to harmonize the translation effort.&lt;/p&gt;
+
+&lt;h4 id=&quot;spanish&quot;&gt;Spanish&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;oMega&lt;/strong&gt; has &lt;a href=&quot;https://crowdin.com/project/prestashop-official/discussions/213&quot;&gt;started a discussion&lt;/a&gt; on the Crowdin project (Discussions tab, “Coordinate Spanish translation efforts”). Join him to make sure we all work in the same direction!&lt;/p&gt;
+
+&lt;h4 id=&quot;romanian&quot;&gt;Romanian&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;ggedamed&lt;/strong&gt; has &lt;a href=&quot;https://www.prestashop.com/forums/topic/338148-romani-votati-ne-trebuie-reguli-de-traducere-turul-1/&quot;&gt;created a topic&lt;/a&gt; on our forum to harmonize the Romanian translation. Talk with him to make things even better!&lt;/p&gt;
+
+&lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;80 contributors&lt;/strong&gt; joined the project this month, for a &lt;strong&gt;total of 1,869 members&lt;/strong&gt; at the end of May.
+60 members (including PrestaShop employees) were active on the project this month.
+A total of &lt;strong&gt;28,470 words have been translated&lt;/strong&gt; and 21,925 validated, in 36 different languages - this is huge!&lt;/p&gt;
+
+&lt;p&gt;We can’t thank you enough!&lt;/p&gt;
+
+&lt;p&gt;If you haven’t joined us on Crowdin yet, &lt;a href=&quot;https://crowdin.com/project/prestashop-official&quot;&gt;it’s still time&lt;/a&gt;!
+If you want to gather your fellow translators to work towards a better harmonization (let’s dream a bit), do let us know, we’ll include a word in the next monthly report.
+A question, a remark? Don’t hesitate to leave a comment.&lt;/p&gt;
+
+&lt;p&gt;See you next month!&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 18 Jun 2015 11:29:47 +0200</pubDate>
+        <link>http://build.prestashop.com/news/do-you-speak-prestashop-may-2015-edition/</link>
+        <guid isPermaLink="true">http://build.prestashop.com/news/do-you-speak-prestashop-may-2015-edition/</guid>
+        
+        <category>i18n</category>
+        
+        <category>l10n</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>PrestaShop Core Weekly - Week 23</title>
@@ -1146,173 +1411,6 @@ If you want to really test the thing, make a copy of your real store and update 
         <category>howtos</category>
         
         <category>module</category>
-        
-      </item>
-    
-      <item>
-        <title>PrestaShop Core Weekly - Week 17 &amp; 18</title>
-        <description>&lt;p&gt;Missed a week, but the Core Weekly report is still alive and kicking!&lt;/p&gt;
-
-&lt;p&gt;I spent last week half in a training session, and half on days off. Sorry if you missed that weekly meeting of ours! …but that only means that this week, you get DOUBLE DOSE of that :)&lt;/p&gt;
-
-&lt;p&gt;This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 20th or April to Sunday 3rd of May, 2015.&lt;/p&gt;
-
-&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
-
-&lt;p&gt;The PSR-2 survey is still running, &lt;a href=&quot;https://www.prestashop.com/forums/topic/434831-psr2-development-norm-for-prestashop/&quot;&gt;give us your opinion&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;Of note among the merged PRs in the last two weeks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In PR 2865, contributor gskema added a new method, &lt;code&gt;Language::getIDs()&lt;/code&gt;, which returns an array of language IDs. Very useful when you only need the language ID and not the whole language array. A lot of functions could be refactored by using this new method. Some lines could even lose their &lt;code&gt;foreach&lt;/code&gt; loops.&lt;/li&gt;
-  &lt;li&gt;In PR 2891, core dev jeromenadaud updated Font Awesome to version 4.3.0 (from version 4.0.3).&lt;/li&gt;
-  &lt;li&gt;In PR 2655, contributor PrestaEdit added a new Cart hook, named &lt;code&gt;actionAfterDeleteProductInCart&lt;/code&gt;. Comment if you think “&lt;code&gt;actionCartProductRemoveAfter&lt;/code&gt;” would be a better name!&lt;/li&gt;
-  &lt;li&gt;In PR 2554, contributor PrestaEdit added a new Mail hook, named &lt;code&gt;actionGetExtraMailTemplateVars&lt;/code&gt;. Comment if you think “&lt;code&gt;actionMailSendTemplatesVariablesPrepareAfter&lt;/code&gt;” would be a better name!&lt;/li&gt;
-  &lt;li&gt;In PR 2905, core dev julienboudreau introduced a much improved invoice template! The template is now split into multiple sub-templates (which can be overridden), there is a new zone for legal free text (along with the &lt;code&gt;displayInvoiceLegalFreeText&lt;/code&gt; hook), and made it much better looking! Also, the options for images in PDF moved from Preferences &amp;gt; orders to Orders &amp;gt; Invoices and Orders &amp;gt; credit slips. Let us know what you think of it!&lt;/li&gt;
-  &lt;li&gt;In PR 2900, core dev jeromenadaud introduced a new check, to display a warning if the server uses a PHP version below 5.4.&lt;/li&gt;
-  &lt;li&gt;In PR 2967, core dev Shudrum removed the order_changed.html/.txt e-mail template, and replaced it with the new &lt;code&gt;actionOrderEdited&lt;/code&gt; hook. This follows &lt;a href=&quot;https://github.com/PrestaShop/mailalerts/pull/13&quot;&gt;PR 13&lt;/a&gt; on the &lt;code&gt;mailalerts&lt;/code&gt; module, which introduces two new mails: return_slip and order_changed. Explore those changes!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;code-changes&quot;&gt;Code changes&lt;/h2&gt;
-
-&lt;p&gt;Let’s review last week’s merged pull-requests!&lt;/p&gt;
-
-&lt;p&gt;As always, click on the PR’s number to open its page on GitHub.&lt;/p&gt;
-
-&lt;h4 id=&quot;text-fix&quot;&gt;Text fix&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2916&quot;&gt;2916&lt;/a&gt;: AdminCustomerPreferencesController: Text clarification, by xBorderie.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;front-office&quot;&gt;Front office&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2807&quot;&gt;2807&lt;/a&gt;: Fix #PSCSX-4346 specific price + group reduction price isn’t right, by sfroment42.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2785&quot;&gt;2785&lt;/a&gt;: Wrong number of displayed products in Search. Thank you kpodemski!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2811&quot;&gt;2811&lt;/a&gt;: Fix #PSCSX-5199, prevent undefined for ajax param, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2878&quot;&gt;2878&lt;/a&gt;: Use email input type. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2914&quot;&gt;2914&lt;/a&gt;: Fix language in Dispatcher, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2830&quot;&gt;2830&lt;/a&gt;: Fix bug #PSCSX-4326, Specific prices + group reduction, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2934&quot;&gt;2934&lt;/a&gt;: Correct company field JS validation function. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2944&quot;&gt;2944&lt;/a&gt;: duplicated var in product.js, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2924&quot;&gt;2924&lt;/a&gt;: FixBug #PSCSX-5255 - Quantity reduction now based on original price, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2950&quot;&gt;2950&lt;/a&gt;: Fix #PSCSX-5397, bad bigpic display, by gRoussac.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;back-office&quot;&gt;Back office&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2764&quot;&gt;2764&lt;/a&gt;: Fix #PSCSX-5006, duplicated addresses on customers import + could not update addresses, by gRoussac. Thank you indesign47 for the help!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2907&quot;&gt;2907&lt;/a&gt;: Fix parent category selection in category creation, by jocel1.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2723&quot;&gt;2723&lt;/a&gt;: Wrong multi-language feature. Thank you kpodemski!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2913&quot;&gt;2913&lt;/a&gt;: Add status page indicator, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2912&quot;&gt;2912&lt;/a&gt;: Fix bug #PSCSX-5209 Bad positions moving on other page than first page, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2956&quot;&gt;2956&lt;/a&gt;: Fix #PSCSX-5440 avoid too much quantity refund in standard refund, by sfroment42.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;modules&quot;&gt;Modules&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2864&quot;&gt;2864&lt;/a&gt;: Remove blocklayered start/end tags to prevent spam, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2839&quot;&gt;2839&lt;/a&gt;: blockwishlist work, by sfroment42.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2949&quot;&gt;2949&lt;/a&gt;: Add short description into crossselling module. Thank you cdesbouche-acipia!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;core&quot;&gt;Core&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2865&quot;&gt;2865&lt;/a&gt;: New method Language::getIDs. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2897&quot;&gt;2897&lt;/a&gt;: error_log to Tools::error_log, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2655&quot;&gt;2655&lt;/a&gt;: Cart / hook “actionAfterDeleteProductInCart”. Thank you PrestaEdit!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2554&quot;&gt;2554&lt;/a&gt;: Mail / hook “actionGetExtraMailTemplateVars”. Thank you PrestaEdit!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2885&quot;&gt;2885&lt;/a&gt;: pdf prefix in order returns, by gRoussac and AlexEven.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2566&quot;&gt;2566&lt;/a&gt;: Refactor Category::getProducts methods. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2793&quot;&gt;2793&lt;/a&gt;: Fix #PSCSX-5130 check if is free, by sfroment.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2813&quot;&gt;2813&lt;/a&gt;: Fix #PSCSX-5204, undefined var $languages, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2901&quot;&gt;2901&lt;/a&gt;: Normalize int and bool PHPDoc variable types. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2798&quot;&gt;2798&lt;/a&gt;: Fix Warehouse::getWarehouseById replace stock table by warehouse_product_location, by sfroment42.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2569&quot;&gt;2569&lt;/a&gt;: Update AdminController.php - trim BO filter values. Thank you nodexpl!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2904&quot;&gt;2904&lt;/a&gt;: norms as keyword in lowercase, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2871&quot;&gt;2871&lt;/a&gt;: Fix unity validation. Thank you pbirnzain!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2908&quot;&gt;2908&lt;/a&gt;: Create cart if cart object does not exist, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2910&quot;&gt;2910&lt;/a&gt;: Module::displayError() now handles arrays passed as parameter, by tchauviere.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2902&quot;&gt;2902&lt;/a&gt;: Refactor Language::getLanguages calls. Thank you gskema!&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2923&quot;&gt;2923&lt;/a&gt;: FixBug #PSCSX-5022 - Wrong rounding price display, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2937&quot;&gt;2937&lt;/a&gt;: warnings, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2938&quot;&gt;2938&lt;/a&gt;: company_address to shop_address, by gRoussac.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2943&quot;&gt;2943&lt;/a&gt;: Be sure the local cache will not grow out of control, by jocel1.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2946&quot;&gt;2946&lt;/a&gt;: PHPDoc + Wording, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2953&quot;&gt;2953&lt;/a&gt;: StockAvailable / Fix #PSCSX-5432. Thank you PrestaEdit!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;css&quot;&gt;CSS&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2891&quot;&gt;2891&lt;/a&gt;: Font Awesome updated to 4.3.0, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2898&quot;&gt;2898&lt;/a&gt;: Remove unused sass variables, by jeromenadaud.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;pdf&quot;&gt;PDF&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2905&quot;&gt;2905&lt;/a&gt;: Introduce new Invoice template, by julienbourdeau.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2906&quot;&gt;2906&lt;/a&gt;: Invoice pdf cols alignment, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2942&quot;&gt;2942&lt;/a&gt;: Set header title for PDF, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2947&quot;&gt;2947&lt;/a&gt;: Invoice - Add Country in shop address, by julienbourdeau.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;installer&quot;&gt;Installer&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2900&quot;&gt;2900&lt;/a&gt;: Add warning when php version is less than 5.4, by jeromenadaud.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2903&quot;&gt;2903&lt;/a&gt;: Fix #PSCSX-4951 Do less request and don’t download same file multiple time, by sfroment42.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;tests&quot;&gt;Tests&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2918&quot;&gt;2918&lt;/a&gt;: Added tests on Module::displayError(), by tchauviere.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2925&quot;&gt;2925&lt;/a&gt;: Fix bug #PSCSX-5361, bad regex in packJSinHTML, by gRoussac. Thank you ZiZuu-store for your help!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;localization&quot;&gt;Localization&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2922&quot;&gt;2922&lt;/a&gt;: add state for Malaysia. Thank you li9ht!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;import&quot;&gt;Import&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pull/2959&quot;&gt;2959&lt;/a&gt;: Improve import performances, by jocel1.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See all the PRs merged into the codebase since April 20th &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?page=1&amp;amp;pulls_only=true&amp;amp;q=is%3Apr+merged%3A%3E2015-04-20+is%3Aclosed+sort%3Aupdated&amp;amp;utf8=%E2%9C%93&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thank you to our contributors for their PRs: &lt;a href=&quot;https://github.com/cdesbouche-acipia&quot;&gt;cdesbouche-acipia&lt;/a&gt;, &lt;a href=&quot;https://github.com/gskema&quot;&gt;gskema&lt;/a&gt;, &lt;a href=&quot;https://github.com/indesign47&quot;&gt;indesign47&lt;/a&gt;, &lt;a href=&quot;https://github.com/kpodemski&quot;&gt;kpodemski&lt;/a&gt;, &lt;a href=&quot;https://github.com/li9ht&quot;&gt;li9ht&lt;/a&gt;, &lt;a href=&quot;https://github.com/nodexpl&quot;&gt;nodexpl&lt;/a&gt;, &lt;a href=&quot;https://github.com/pbirnzain&quot;&gt;pbirnzain&lt;/a&gt;, &lt;a href=&quot;https://github.com/PrestaEdit&quot;&gt;PrestaEdit&lt;/a&gt;, &lt;a href=&quot;https://github.com/ZiZuu-store&quot;&gt;ZiZuu-store&lt;/a&gt;, and those whose contributions haven’t been merged yet! Also, a big thanks to all those who contribute with tickets on the Forge!&lt;/p&gt;
-
-&lt;p&gt;Remember: if you want to contribute to PrestaShop with code, read those:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://doc.prestashop.com/display/PS16/Contributing+code+to+PrestaShop&quot;&gt;Contributing code to PrestaShop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://doc.prestashop.com/display/PS16/How+to+write+a+commit+message&quot;&gt;How to write a commit message&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;…and if you do not know how to fix an issue but wish to report it, read this: &lt;a href=&quot;http://doc.prestashop.com/display/PS16/How+to+use+the+Forge+to+contribute+to+PrestaShop&quot;&gt;How to use the Forge to contribute to PrestaShop&lt;/a&gt;. Thank you!&lt;/p&gt;
-
-&lt;p&gt;Until the next Core Weekly report, let me know if I forgot something here, or if you have ideas about how to improve this report!&lt;/p&gt;
-
-&lt;p&gt;Happy contributin’ everyone!&lt;/p&gt;
-</description>
-        <pubDate>Tue, 05 May 2015 20:29:47 +0200</pubDate>
-        <link>http://build.prestashop.com/news/prestashop-core-weekly-week-17-18/</link>
-        <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-week-17-18/</guid>
-        
-        <category>core-weekly</category>
-        
-        
-        <category>news</category>
         
       </item>
     
