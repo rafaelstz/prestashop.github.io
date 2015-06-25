@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dropping support for PHP 5.2 and 5.3</title>
+    <meta name="description" content="Official blog for PrestaShop development straight from the product and core dev team.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://build.prestashop.com/news/Dropping-support-php52-and-53/">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-2753771-31', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/news/Dropping-support-php52-and-53/',
+		  'title': 'Dropping support for PHP 5.2 and 5.3'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8">
+        <a class="site-title" href="/"><img src="/buildheader@2x.png" width="60%" height="60%"></a>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <nav class="site-nav">
+          <ul class="nav nav-pills pull-right">
+
+            <li><a class="page-link" href="/">News</a></li>
+
+            <li><a class="page-link" href="/how-tos">How-Tos</a></li>
+
+            <li><a class="page-link" href="/about">About</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class="post">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <header class="post-header">
+        <h1 class="post-title">Dropping support for PHP 5.2 and 5.3</h1>
+        
+          <h3 class="post-subtitle">Welcome Namespaces, Closures, Traits, Composer, and much more!</h3>
+        
+      </header>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div id="post-sidebar" class="col-md-2">
+
+      <aside class="author">
+        
+
+<div class="author-avatar">
+  <img class="img-circle" src="https://avatars1.githubusercontent.com/u/1525636">
+</div>
+
+<div class="aside-meta">Written by</div>
+<p class="author-name">
+  Julien Bourdeau
+</p>
+
+      </aside>
+
+      <aside class="share-buttons">
+        
+<p class="aside-meta">Share this</p>
+
+<ul class="list-group">
+
+  <li>
+    <a class="list-group-item" href="https://twitter.com/intent/tweet?text=Dropping support for PHP 5.2 and 5.3&url=http://build.prestashop.com/news/Dropping-support-php52-and-53/&via=PrestaShop&related=PrestaShop" rel="nofollow" target="_blank" title="Share on Twitter">
+      <i class="fa fa-twitter-square"></i> Twitter
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://facebook.com/sharer.php?u=http://build.prestashop.com/news/Dropping-support-php52-and-53/" rel="nofollow" target="_blank" title="Share on Facebook">
+      <i class="fa fa-facebook-square"></i> Facebook
+    </a>
+  </li>
+
+  <li>
+    <a class="list-group-item" href="https://plus.google.com/share?url=http://build.prestashop.com/news/Dropping-support-php52-and-53/" rel="nofollow" target="_blank" title="Share on Google+">
+      <i class="fa fa-google-plus-square"></i> Google+
+    </a>
+  </li>
+
+</ul>
+
+      </aside>
+
+    </div>
+
+    <div class="col-md-10">
+
+      <article class="post-content">
+        <p>At PrestaShop, we want to make e-commerce possible for everyone. No matter where you are, no matter how much you can
+(or cannot) spend on your hosting, no matter how big or how small your store is. Because we’ve always made sure your
+PrestaShop store could run on a cheap shared hosting plan in a far far away land, we had to support PHP all the way
+back to version 5.2 – a version that has been unsupported <a href="http://php.net/eol.php">since January 2011</a>.</p>
+
+<p>But today, things have changed. Not that all of a sudden cheap hosts have begun to drop deprecated versions of PHP
+(although it’s getting there), but because we have released PrestaShop Cloud a few months ago. PrestaShop Cloud is a
+free service offering high-quality PrestaShop hosting for everyone. And by free, we mean really free, with no hidden
+fee: those who cannot afford to get a quality host with a recent version of PrestaShop can choose to create their store
+on PrestaShop Cloud, and start selling without any charge!</p>
+
+<p>Thus, we remain true to our quest: make it possible for everyone to have their own online store. If you have a good
+up-to-date host, then PrestaShop will keep evolving for you. If you cannot afford a good host, then PrestaShop will
+host your store for you, with the PrestaShop Cloud service.</p>
+
+<p>Hence, if your hosting plan only supports an old version of PHP, you are welcome to drop it and open a
+<a href="https://www.prestashop.com/">free account on PrestaShop Cloud</a>.</p>
+
+<p>Now, as you understand it, PrestaShop Cloud frees us from having to be stuck with PHP 5.2, and allows us to move to
+more recent pastures. Yes, we are planning to skip PHP 5.3 altogether (a version that has also been deprecated since
+August 2014, and has not received any update since, not even security-related ones), and get working directly with all
+the PHP 5.4 features soon. That version is still receiving development love for the coming months (namely,
+<a href="http://php.net/supported-versions.php">it is in Security Support mode until September 2015</a>) and <a href="http://w3techs.com/technologies/details/pl-php/5.4/all">its adoption rate is growing steadily</a>. We could jump all the way to
+version 5.5 or even 5.6, but those are still supported <a href="http://w3techs.com/technologies/details/pl-php/5/all">by very few hosts</a>.</p>
+
+<p>So, what can you expect from the PrestaShop codebase once we move to PHP 5.4? Let’s see…</p>
+
+<h2 id="what-to-expect-with-php-54">What to expect with PHP 5.4</h2>
+
+<h3 id="composer-and-namespaces">Composer and Namespaces</h3>
+
+<p>The past few years, the PHP community has lived a lot of changes and my favourite is: <strong>Composer</strong>.</p>
+
+<blockquote>
+  <p>Composer is an application-level dependency manager for the PHP programming language that provides a standard
+format for managing dependencies of PHP software and required libraries. Composer is strongly inspired by
+Node.js’s “npm” and Ruby’s “bundler”.
+-– <cite>Wikipedia</cite></p>
+</blockquote>
+
+<p>With Composer and namespaces, our override system will get some attention and get better.</p>
+
+<p>There will also be an easy way for you to use external libraries in your modules and we think you are going
+to seriously like it.</p>
+
+<h3 id="closures-and-lambda-functions">Closures and lambda functions</h3>
+
+<p>If you are using JavaScript you are already familiar with lambda functions (aka anonymous functions) and closures.
+They exist in PHP as well but they’ve been introduced in PHP 5.3. They will be used to simplify the code base.
+For example maybe you need a simple function to pass as an argument of <code>array_map()</code>. We will then avoid polluting the
+global scope with code we don’t reuse.</p>
+
+<p>I recommend <a href="http://fabien.potencier.org/article/17/on-php-5-3-lambda-functions-and-closures">this article from Fabien Potiencier</a>
+if you want to learn more about it.</p>
+
+<h3 id="shorthands">Shorthands</h3>
+
+<p>I know it’s much smaller improvements but few shorthands have been introduced in PHP 5.3 and PHP 5.4 and they usually
+make life way easier.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">)</span> <span class="o">?:</span> <span class="s2">&quot;John Doe&quot;</span>
+  <span class="c1">// instead of</span>
+  <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">)</span> <span class="o">?</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">:</span> <span class="s2">&quot;John Doe&quot;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nv">$var</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+  <span class="c1">// instead of</span>
+  <span class="nv">$var</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nv">$var</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Customer</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">firstname</span><span class="p">;</span>
+  <span class="c1">// instead of</span>
+  <span class="nv">$customer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Customer</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="nv">$var</span> <span class="o">=</span> <span class="nv">$customer</span><span class="o">-&gt;</span><span class="na">firstname</span><span class="p">;</span></code></pre></div>
+
+<h2 id="when-to-expect-these-changes">When to expect these changes</h2>
+
+<p>Since <a href="http://build.prestashop.com/news/a-more-semantic-versioning-scheme/">we moved to a more semantic versioning</a>,
+this change is to expect for the next major release: <strong>PrestaShop 1.7</strong>.</p>
+
+<p>There is no release date yet but we are very excited about it and we can’t wait to tell you more!</p>
+
+
+      </article>
+
+      
+  <div class="post-meta">
+    <div class="row">
+
+      <div class="col-md-4">
+        <ul class="details">
+
+          <li>Jun 24, 2015</li>
+
+          
+            <li>
+              <i class="fa fa-tags"></i>
+
+              
+                <span class="label label-primary">php</span>
+              
+                <span class="label label-primary">composer</span>
+              
+                <span class="label label-primary">major version</span>
+              
+
+            </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="author-details">
+
+          <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+              <h5>About the author</h5>
+
+              <h4>
+                Julien Bourdeau
+                <span>Core Developer @ PrestaShop</span>
+              </h4>
+              <p></p>
+
+              
+                <a class="btn btn-default btn-sm" href="https://github.com/julienbourdeau">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://www.prestashop.com/forums/user/761923-julien-bourdeau">
+                  <i class="fa fa-comments"></i> Forum
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://crowdin.com/profile/julienbourdeau">
+                  <i class="fa fa-language"></i> Crowdin
+                </a>
+              
+              
+                <a class="btn btn-default btn-sm" href="https://twitter.com/julienbourdeau">
+                  <i class="fa fa-twitter"></i> Twitter
+                </a>
+              
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'prestashopbuild';
+
+            
+
+            
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+    </div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <p>Official blog for PrestaShop development straight from the product and core dev team.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="social-icons" class="col-sm-12 col-md-6 col-md-offset-3">
+
+          <a href="/feed.xml" title="">
+            <i class="fa fa-rss fa-2x"></i>
+          </a>
+
+          
+            <a href="https://github.com/PrestaShop" title="">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://twitter.com/PrestaShop" title="">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://instagram.com/prestacrew" title="">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          
+
+          
+            <a href="https://play.spotify.com/user/prestacrew" title="">
+              <i class="fa fa-spotify fa-2x"></i>
+            </a>
+          
+
+          <span class="separator"> | </span>
+
+          
+            <a href="http://status.prestashop.com/" title="PrestaShop Cloud Health">
+              <i class="fa fa-heartbeat fa-2x"></i>
+            </a>
+          
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+
+  </body>
+
+</html>
