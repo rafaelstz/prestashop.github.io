@@ -7,6 +7,19 @@
         <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>PrestaShop 1.6.1.0 released!</title>
+                
+                
+                    <description>&lt;p&gt;Here it is!&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Thu, 02 Jul 2015 20:54:47 +0200</pubDate>
+                <link>http://build.prestashop.com/news/1-6-1-0-released/</link>
+                <guid isPermaLink="true">http://build.prestashop.com/news/1-6-1-0-released/</guid>
+            </item>
+        
+            <item>
                 <title>PrestaShop Core Weekly - Weeks 25 &amp; 26</title>
                 
                 
@@ -121,19 +134,6 @@
                 <pubDate>Mon, 08 Jun 2015 19:56:00 +0200</pubDate>
                 <link>http://build.prestashop.com/news/a-more-semantic-versioning-scheme/</link>
                 <guid isPermaLink="true">http://build.prestashop.com/news/a-more-semantic-versioning-scheme/</guid>
-            </item>
-        
-            <item>
-                <title>PrestaShop Core Weekly - Weeks 21 &amp; 22</title>
-                
-                
-                    <description>&lt;p&gt;This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 18th of May to Sunday 31st of May, 2015.&lt;/p&gt;
-
-</description>
-                
-                <pubDate>Fri, 05 Jun 2015 18:29:47 +0200</pubDate>
-                <link>http://build.prestashop.com/news/prestashop-core-weekly-weeks-21-22/</link>
-                <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-weeks-21-22/</guid>
             </item>
         
     </channel>
