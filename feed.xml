@@ -7,6 +7,19 @@
         <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>Hurrah for the 2000th member of our translation project!</title>
+                
+                
+                    <description>&lt;p&gt;Hurrah for the 2000th member of our translation project!&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Fri, 17 Jul 2015 20:29:47 +0200</pubDate>
+                <link>http://build.prestashop.com/news/hurrah-crowdin-2000-edition/</link>
+                <guid isPermaLink="true">http://build.prestashop.com/news/hurrah-crowdin-2000-edition/</guid>
+            </item>
+        
+            <item>
                 <title>PrestaShop Core Weekly - Week 27</title>
                 
                 
@@ -121,19 +134,6 @@
                 <pubDate>Fri, 19 Jun 2015 14:29:47 +0200</pubDate>
                 <link>http://build.prestashop.com/news/prestashop-core-weekly-weeks-24/</link>
                 <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-weeks-24/</guid>
-            </item>
-        
-            <item>
-                <title>Do you speak PrestaShop? – May 2015 edition</title>
-                
-                
-                    <description>&lt;p&gt;With the launch of the build.prestashop.com blog, we’ve been planning for a while to highlight the dedicated work of the community on the &lt;a href=&quot;https://crowdin.com/project/prestashop-official&quot;&gt;PrestaShop translation project on Crowdin&lt;/a&gt;. &lt;/p&gt;
-
-</description>
-                
-                <pubDate>Thu, 18 Jun 2015 12:29:47 +0200</pubDate>
-                <link>http://build.prestashop.com/news/do-you-speak-prestashop-may-2015-edition/</link>
-                <guid isPermaLink="true">http://build.prestashop.com/news/do-you-speak-prestashop-may-2015-edition/</guid>
             </item>
         
     </channel>
