@@ -1,6 +1,7 @@
 function getHtaccessContent() {
   var path = document.getElementById('admin_abs_path').value;
 
+  var content;
   content += 'AuthUserFile ' + path + '/.htpasswd';
   content += 'AuthName "Dave\'s Login Area"';
   content += 'AuthType Basic';
