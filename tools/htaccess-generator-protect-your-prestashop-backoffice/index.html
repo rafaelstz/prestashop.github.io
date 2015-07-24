@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>About</title>
+    <title>.htaccess generator</title>
     <meta name="description" content="Official blog for PrestaShop development straight from the product and core dev team.">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://build.prestashop.com/about/">
+    <link rel="canonical" href="http://build.prestashop.com/tools/htaccess-generator-protect-your-prestashop-backoffice/">
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
@@ -23,8 +23,8 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-2753771-31', 'auto');
 		ga('send', 'pageview', {
-		  'page': '/about/',
-		  'title': 'About'
+		  'page': '/tools/htaccess-generator-protect-your-prestashop-backoffice/',
+		  'title': '.htaccess generator'
 		});
 	</script>
 	<!-- End Google Analytics -->
@@ -75,7 +75,9 @@
     <div class="col-sm-12">
 
       <header class="post-header">
-        <h1 class="post-title">About</h1>
+        <h1 class="post-title">.htaccess generator</h1>
+        
+          <h3 class="post-subtitle">Add another security layer to your back office</h3>
         
       </header>
 
@@ -87,39 +89,39 @@
     <div class="col-md-12">
 
       <article class="post-content">
-        <h2 id="why-this-blog">Why this blog</h2>
+        <p>Even if your back office is already secured by PrestaShop’s login, you might want to add another layer of security from your webserver itself. This is done using the <code>htaccess.txt</code> and <code>htpasswd.txt</code> files. After you’ve uploaded them  at the root of the folder to secure (in our case, your back office folder), the server will ask you for a username and a password before you can even access your PrestaShop back office login page.</p>
 
-<p>We decided to create this blog in order to communicate more closely with the community, especially those who contribute to the Core of PrestaShop.</p>
+<ol>
+  <li>Find out what’s your website root path. Ask you host if necessary.</li>
+  <li>Generate your htaccess file with the tool on this page.</li>
+  <li>Rename it from <code>htaccess.txt</code> to <code>.htaccess</code>.</li>
+  <li>Generate your htpasswd file with the tool on this page.</li>
+  <li>Rename it from <code>htpasswd.txt</code> to <code>.htpasswd</code>.</li>
+  <li>Upload both files at the root of your back office’s folder through your FTP software.</li>
+</ol>
 
-<p>This blog is about everything that has to do with PrestaShop development. It is written by the whole PrestaShop product team: developers, designers, writers, etc. Contributions are also gladly accepted!</p>
+<h3 id="generate-htaccess-file">Generate htaccess file</h3>
 
-<p>We write about the upcoming improvement in the codebase, current and future architectures, or any behavior change that might affect you. You will also find a few How-Tos to learn how to use the new features – information that will eventually find its way in the Developer Guide or the Designer Guide.</p>
+<div class="form-group">
+  <label for="admin_abs_path">Absolute path of your back office folder </label>
+  <input type="text" name="admin_abs_path" class="form-control" id="admin_abs_path" placeholder="/homez.106/myname/www/admin4152" />
+</div>
 
-<h2 id="contribute">Contribute</h2>
+<p><a id="generate-htaccess" class="btn btn-lg btn-info">Download your custom .htaccess file</a></p>
 
-<p>How about writing a guest post here? Maybe you’ve been working with PrestaShop for a while and you want to write about how you use it, or you feel a cool feature could use a highlight with sample code? Go ahead, <a href="http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/">suggest a new article</a> — that might even inspire other people in the community to write too!</p>
+<h3 id="generate-htpasswd-file">Generate htpasswd file</h3>
 
-<p>Before you start writing, please send us a short proposal at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#098;&#117;&#105;&#108;&#100;&#064;&#112;&#114;&#101;&#115;&#116;&#097;&#115;&#104;&#111;&#112;&#046;&#099;&#111;&#109;">&#098;&#117;&#105;&#108;&#100;&#064;&#112;&#114;&#101;&#115;&#116;&#097;&#115;&#104;&#111;&#112;&#046;&#099;&#111;&#109;</a>. Once we have agreed with you on the topic, you can submit your article using a simple pull request! Make sure you read the <a href="http://build.prestashop.com/howtos/misc/how-to-write-on-this-blog/">How To Write On This Blog</a> tutorial first!</p>
+<div class="form-group">
+  <label for="username">Username</label>
+  <input type="text" name="username" class="form-control" id="username" placeholder="yourname" />
+</div>
 
-<p>Note that all content on the Build.PrestaShop.com site is licensed under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a> – meaning that it is in the Public Domain. Use it however you want!</p>
+<div class="form-group">
+  <label for="password">Password</label>
+  <input type="text" name="password" class="form-control" id="password" />
+</div>
 
-<p><img src="/assets/images/2015/06/cc-zero.png" alt="CC0 Logo" /></p>
-
-<p>Also, if we merge one of your cool pull request on <a href="http://gihub.com/PrestaShop/PrestaShop">the PrestaShop project</a>, we will probably invite you to tell us more about it here.</p>
-
-<h2 id="guidelines">Guidelines</h2>
-
-<p><strong>Support</strong></p>
-
-<p>This blog is not for support. If you need help, you can search <a href="http://www.prestashop.com/forums">our forum</a> or open a new thread there.</p>
-
-<p><strong>Feature requests</strong></p>
-
-<p>If you want to see some feature added to PrestaShop, please open an ‘Improvement’ ticket on <a href="http://forge.prestashop.com">the Forge</a>.</p>
-
-<p><strong>Bug report</strong></p>
-
-<p>If you find a bug or something that doesn’t work as expected, please open a ‘Bug’ ticket on <a href="http://forge.prestashop.com">the Forge</a>.</p>
+<p><a id="generate-htpasswd" class="btn btn-lg btn-info">Download your custom .htpasswd file</a></p>
 
       </article>
 
