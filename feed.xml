@@ -7,6 +7,19 @@
         <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>PrestaShop Core Weekly - Weeks 28-29-30-31</title>
+                
+                
+                    <description>&lt;p&gt;This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last four weeks, from Monday 6th of July to Sunday 2nd of August, 2015.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Thu, 06 Aug 2015 18:37:41 +0200</pubDate>
+                <link>http://build.prestashop.com/news/core-weekly-28-29-0-31/</link>
+                <guid isPermaLink="true">http://build.prestashop.com/news/core-weekly-28-29-0-31/</guid>
+            </item>
+        
+            <item>
                 <title>Test PrestaShop 1.6.1.1 RC1</title>
                 
                 
@@ -123,19 +136,6 @@ file inside the project root directory.&lt;/p&gt;
                 <pubDate>Tue, 30 Jun 2015 19:37:41 +0200</pubDate>
                 <link>http://build.prestashop.com/news/prestashop-core-weekly-weeks-25-26/</link>
                 <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-weeks-25-26/</guid>
-            </item>
-        
-            <item>
-                <title>PrestaShop 1.6.1.0: RC5 and release date</title>
-                
-                
-                    <description>&lt;p&gt;You’ve all been very active in testing the previous Release Candidate - thank you very much for your feedback, both on the forums and on the Forge!&lt;/p&gt;
-
-</description>
-                
-                <pubDate>Fri, 26 Jun 2015 17:29:47 +0200</pubDate>
-                <link>http://build.prestashop.com/news/prestashop-1.6.1.0-rc5/</link>
-                <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-1.6.1.0-rc5/</guid>
             </item>
         
     </channel>
