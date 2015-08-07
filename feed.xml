@@ -7,6 +7,19 @@
         <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>PrestaShop Official Icon Pack - Beta</title>
+                
+                
+                    <description>&lt;p&gt;As part of PrestaShop’s product redesign, we decided to replace Font Awesome and start using our own icon pack. We’re sharing here the very first version of this new icon set, and we’ll keep you updated when it evolves.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Fri, 07 Aug 2015 17:12:00 +0200</pubDate>
+                <link>http://build.prestashop.com/news/icon-pack-beta/</link>
+                <guid isPermaLink="true">http://build.prestashop.com/news/icon-pack-beta/</guid>
+            </item>
+        
+            <item>
                 <title>PrestaShop Core Weekly - Weeks 28-29-30-31</title>
                 
                 
@@ -123,19 +136,6 @@ file inside the project root directory.&lt;/p&gt;
                 <pubDate>Thu, 02 Jul 2015 20:54:47 +0200</pubDate>
                 <link>http://build.prestashop.com/news/1-6-1-0-released/</link>
                 <guid isPermaLink="true">http://build.prestashop.com/news/1-6-1-0-released/</guid>
-            </item>
-        
-            <item>
-                <title>PrestaShop Core Weekly - Weeks 25 &amp; 26</title>
-                
-                
-                    <description>&lt;p&gt;This edition of the Core Weekly report highlights changes in PrestaShop core codebase during the last two weeks, from Monday 15th to Sunday 28st of June, 2015.&lt;/p&gt;
-
-</description>
-                
-                <pubDate>Tue, 30 Jun 2015 19:37:41 +0200</pubDate>
-                <link>http://build.prestashop.com/news/prestashop-core-weekly-weeks-25-26/</link>
-                <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-weeks-25-26/</guid>
             </item>
         
     </channel>
