@@ -7,6 +7,19 @@
         <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>Test PrestaShop 1.6.1.1 RC2!</title>
+                
+                
+                    <description>&lt;p&gt;Following the publication of &lt;a href=&quot;http://build.prestashop.com/news/prestashop-1-6-1-1-rc1/&quot;&gt;version 1.6.1.1 Release Candidate 1&lt;/a&gt;, we have fixed a few more issues that had been identified. Thanks for helping with the tests and for the feedback!&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Tue, 11 Aug 2015 17:45:41 +0200</pubDate>
+                <link>http://build.prestashop.com/news/prestashop-1-6-1-1-rc2/</link>
+                <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-1-6-1-1-rc2/</guid>
+            </item>
+        
+            <item>
                 <title>Do you speak PrestaShop? – July 2015 edition</title>
                 
                 
@@ -123,19 +136,6 @@ file inside the project root directory.&lt;/p&gt;
                 <pubDate>Thu, 09 Jul 2015 12:29:47 +0200</pubDate>
                 <link>http://build.prestashop.com/news/do-you-speak-prestashop-june-2015-edition/</link>
                 <guid isPermaLink="true">http://build.prestashop.com/news/do-you-speak-prestashop-june-2015-edition/</guid>
-            </item>
-        
-            <item>
-                <title>Presenting the Advanced EU Compliance module</title>
-                
-                
-                    <description>&lt;p&gt;As good news never come alone, let us introduce you to the new module that is included natively in PrestaShop from 1.6.1.0 version: &lt;strong&gt;&lt;a href=&quot;https://github.com/PrestaShop/advancedeucompliance&quot;&gt;Advanced EU Compliance&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-</description>
-                
-                <pubDate>Tue, 07 Jul 2015 16:00:00 +0200</pubDate>
-                <link>http://build.prestashop.com/news/advanced-eu-compliance/</link>
-                <guid isPermaLink="true">http://build.prestashop.com/news/advanced-eu-compliance/</guid>
             </item>
         
     </channel>
