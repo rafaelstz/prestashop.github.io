@@ -36,7 +36,7 @@
 
   <body>
 
-    <header class="site-header">
+    <header class="site-header has-search-form">
 
   <div class="container">
     <div class="row">
@@ -62,6 +62,22 @@
       </div>
 
     </div>
+
+    
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-md-offset-3">
+        <div id="search-container">
+          <input type="text" id="search-input" class="form-control" placeholder="search...">
+          <div id="results-container" class="list-group">
+          </div>
+          <small class="hint" style="display: none;">Use the tab key to nagivate in the results.</small>
+        </div>
+      </div>
+
+    </div>
+    
+
   </div>
 
 </header>
@@ -82,7 +98,7 @@
           <li>
 
             <div class="list-post-meta">
-              <span class="post-date"> 
+              <span class="post-date">
                 Mar 19, 2015
               </span>
               <span class="separator"></span>
@@ -117,7 +133,7 @@ Here’s the third edition of the PrestaShop Core Weekly.
           <li>
 
             <div class="list-post-meta">
-              <span class="post-date"> 
+              <span class="post-date">
                 Mar 12, 2015
               </span>
               <span class="separator"></span>
@@ -152,7 +168,7 @@ As last week’s Core Weekly, I’ll highlight some of the more important happen
           <li>
 
             <div class="list-post-meta">
-              <span class="post-date"> 
+              <span class="post-date">
                 Mar 4, 2015
               </span>
               <span class="separator"></span>
@@ -186,7 +202,7 @@ As last week’s Core Weekly, I’ll highlight some of the more important happen
           <li>
 
             <div class="list-post-meta">
-              <span class="post-date"> 
+              <span class="post-date">
                 Mar 4, 2015
               </span>
               <span class="separator"></span>
@@ -333,6 +349,9 @@ who was going to review the articles…
 
     <script type="text/javascript" src="/js/vendors/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="/js/vendors/md5.js"></script>
+    
+    <script type="text/javascript" src="/js/vendors/jekyll-search.js"></script>
+    
     <script type="text/javascript" src="/js/app.js"></script>
 
   </body>
