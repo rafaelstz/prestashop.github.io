@@ -7,6 +7,19 @@
         <atom:link href="http://build.prestashop.com/feed.xml" rel="self" type="application/rss+xml" />
         
             <item>
+                <title>Release of PrestaShop 1.6.1.1 </title>
+                
+                
+                    <description>&lt;p&gt;PrestaShop 1.6.1.1 is now available. This maintenance release &lt;a href=&quot;https://github.com/PrestaShop/PrestaShop/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+base%3A1.6.1.x+is%3Aclosed+updated%3A%3C2015-08-20+&quot;&gt;closes 220 issues&lt;/a&gt; in version 1.6.1.0.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Thu, 20 Aug 2015 14:00:41 +0200</pubDate>
+                <link>http://build.prestashop.com/news/1611-maintenance-release/</link>
+                <guid isPermaLink="true">http://build.prestashop.com/news/1611-maintenance-release/</guid>
+            </item>
+        
+            <item>
                 <title>Test PrestaShop 1.6.1.1 RC2!</title>
                 
                 
@@ -123,19 +136,6 @@ file inside the project root directory.&lt;/p&gt;
                 <pubDate>Fri, 10 Jul 2015 19:37:41 +0200</pubDate>
                 <link>http://build.prestashop.com/news/prestashop-core-weekly-weeks-27/</link>
                 <guid isPermaLink="true">http://build.prestashop.com/news/prestashop-core-weekly-weeks-27/</guid>
-            </item>
-        
-            <item>
-                <title>Do you speak PrestaShop? – June 2015 edition</title>
-                
-                
-                    <description>&lt;p&gt;Here is the new report to inform you of what has been going on &lt;a href=&quot;https://crowdin.com/project/prestashop-official&quot;&gt;PrestaShop translation project on Crowdin&lt;/a&gt; this June 2015.&lt;/p&gt;
-
-</description>
-                
-                <pubDate>Thu, 09 Jul 2015 12:29:47 +0200</pubDate>
-                <link>http://build.prestashop.com/news/do-you-speak-prestashop-june-2015-edition/</link>
-                <guid isPermaLink="true">http://build.prestashop.com/news/do-you-speak-prestashop-june-2015-edition/</guid>
             </item>
         
     </channel>

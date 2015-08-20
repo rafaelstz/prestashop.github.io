@@ -1,6 +1,14 @@
 [
 
 {
+  "title"    : "Release of PrestaShop 1.6.1.1 ",
+  "category" : "",
+  "tags"     : "version, maintenance, patch, releases, 1.6.1.x",
+  "url"      : "/news/1611-maintenance-release/",
+  "date"     : "2015-08-20 14:00:41 +0200"
+} ,
+
+{
   "title"    : "Test PrestaShop 1.6.1.1 RC2!",
   "category" : "",
   "tags"     : "version, rc, releases, development, 1.6.1.x",
